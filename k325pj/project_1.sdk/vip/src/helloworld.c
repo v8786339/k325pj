@@ -48,22 +48,26 @@
 #include <stdio.h>
 #include "platform.h"
 #include "xil_printf.h"
-#include "xaxivdma.h"
-#include "xaxivdma_i.h"
 #include "sleep.h"
+#include "xvip_maskmerge.h"
 
-
-#include "xparameters.h"
-#include "xil_printf.h"
 #define DDR_BASEADDR        0x00000000
 #define VDMA_BASEADDR       XPAR_AXI_VDMA_0_BASEADDR
+
+#define VDMA1_BASEADDR       XPAR_AXI_VDMA_1_BASEADDR
+
 #define H_STRIDE            1920
 #define H_ACTIVE            1920
 #define V_ACTIVE            1080
 
+#define CAM_H				640
+#define CAM_V				480
+
 #define VIDEO_BASEADDR0 DDR_BASEADDR + 0x1000000
 #define VIDEO_BASEADDR1 DDR_BASEADDR + 0x2000000
 #define VIDEO_BASEADDR2 DDR_BASEADDR + 0x3000000
+
+#define VIDEO1_OFFSET 0x3000000
 
 int main()
 {
@@ -123,10 +127,34 @@ int main()
         	Xil_Out32((VDMA_BASEADDR + 0x054), (H_ACTIVE*3)); 		// h size (H_ACTIVE * 3) bytes
         	Xil_Out32((VDMA_BASEADDR + 0x050), V_ACTIVE); 			// v size (V_ACTIVE)
 
+//camera vdma
+        	Xil_Out32((VDMA1_BASEADDR + 0x030), 0x8b);// enable circular mode
+        	        	Xil_Out32((VDMA1_BASEADDR + 0x0AC), VIDEO_BASEADDR0+VIDEO1_OFFSET);	// start address
+        	        	Xil_Out32((VDMA1_BASEADDR + 0x0B0), VIDEO_BASEADDR1+VIDEO1_OFFSET);	// start address
+        	        	Xil_Out32((VDMA1_BASEADDR + 0x0B4), VIDEO_BASEADDR2+VIDEO1_OFFSET);	// start address
+        	        	Xil_Out32((VDMA1_BASEADDR + 0x0A8), (CAM_H*3));		// h offset (H_STRIDE* 3) bytes
+        	        	Xil_Out32((VDMA1_BASEADDR + 0x0A4), (CAM_H*3));		// h size (H_ACTIVE * 3) bytes
+        	        	Xil_Out32((VDMA1_BASEADDR + 0x0A0), CAM_V);			// v size (V_ACTIVE)
+        	        		/*****************从DDR读数据设置**********************/
+        	        	Xil_Out32((VDMA1_BASEADDR + 0x000), 0x8b); 		// enable circular mode
+        	        	Xil_Out32((VDMA1_BASEADDR + 0x05c), VIDEO_BASEADDR0+VIDEO1_OFFSET); 	// start address
+        	        	Xil_Out32((VDMA1_BASEADDR + 0x060), VIDEO_BASEADDR1+VIDEO1_OFFSET); 	// start address
+        	        	Xil_Out32((VDMA1_BASEADDR + 0x064), VIDEO_BASEADDR2+VIDEO1_OFFSET); 	// start address
+        	        	Xil_Out32((VDMA1_BASEADDR + 0x058), (CAM_H*3)); 		// h offset (H_STRIDE * 3) bytes
+        	        	Xil_Out32((VDMA1_BASEADDR + 0x054), (CAM_H*3)); 		// h size (H_ACTIVE * 3) bytes
+        	        	Xil_Out32((VDMA1_BASEADDR + 0x050), CAM_V); 			// v size (V_ACTIVE)
 
     //unsigned int* p = (unsigned int *) (VIDEO_BASEADDR0);
     //(*p)=0x12378945;
     //unsigned int v=*(unsigned int *) (VIDEO_BASEADDR0);
+        	        	XVip_maskmerge mergeInst;
+        	        	XVip_maskmerge_Initialize(&mergeInst,0);
+
+
+
+
+        	        	XVip_maskmerge_EnableAutoRestart(&mergeInst);
+        	        	XVip_maskmerge_Start(&mergeInst);
 
 
 

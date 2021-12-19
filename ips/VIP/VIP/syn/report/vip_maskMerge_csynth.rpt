@@ -1,0 +1,210 @@
+
+
+================================================================
+== Vivado HLS Report for 'vip_maskMerge'
+================================================================
+* Date:           Sat Nov  6 09:15:23 2021
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        VIP
+* Solution:       VIP
+* Product family: kintex7
+* Target device:  xc7k325t-ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     4.936|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +---------+---------+---------+---------+----------+
+    |      Latency      |      Interval     | Pipeline |
+    |   min   |   max   |   min   |   max   |   Type   |
+    +---------+---------+---------+---------+----------+
+    |  2080081|  2777761|  2080082|  2777762| dataflow |
+    +---------+---------+---------+---------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------+----------------------+---------+---------+---------+---------+---------+
+        |                         |                      |      Latency      |      Interval     | Pipeline|
+        |         Instance        |        Module        |   min   |   max   |   min   |   max   |   Type  |
+        +-------------------------+----------------------+---------+---------+---------+---------+---------+
+        |Loop_loop_height_pro_U0  |Loop_loop_height_pro  |  2080081|  2777761|  2080081|  2777761|   none  |
+        |AXIvideo2Mat_U0          |AXIvideo2Mat          |  2079003|  2079003|  2079003|  2079003|   none  |
+        |Mat2AXIvideo_U0          |Mat2AXIvideo          |  2077921|  2077921|  2077921|  2077921|   none  |
+        +-------------------------+----------------------+---------+---------+---------+---------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       0|      32|    -|
+|FIFO             |        0|      -|      30|     120|    -|
+|Instance         |        3|      -|     988|    2490|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|      36|    -|
+|Register         |        -|      -|       6|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |        3|      0|    1024|    2678|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |      890|    840|  407600|  203800|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |    ~0   |      0|   ~0   |       1|    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------+------------------------------+---------+-------+-----+------+-----+
+    |            Instance            |            Module            | BRAM_18K| DSP48E|  FF |  LUT | URAM|
+    +--------------------------------+------------------------------+---------+-------+-----+------+-----+
+    |AXIvideo2Mat_U0                 |AXIvideo2Mat                  |        0|      0|  263|   450|    0|
+    |Loop_loop_height_pro_U0         |Loop_loop_height_pro          |        3|      0|  568|  1651|    0|
+    |Mat2AXIvideo_U0                 |Mat2AXIvideo                  |        0|      0|  121|   349|    0|
+    |vip_maskMerge_AXILiteS_s_axi_U  |vip_maskMerge_AXILiteS_s_axi  |        0|      0|   36|    40|    0|
+    +--------------------------------+------------------------------+---------+-------+-----+------+-----+
+    |Total                           |                              |        3|      0|  988|  2490|    0|
+    +--------------------------------+------------------------------+---------+-------+-----+------+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +-------------------------+---------+---+----+-----+------+-----+---------+
+    |           Name          | BRAM_18K| FF| LUT| URAM| Depth| Bits| Size:D*B|
+    +-------------------------+---------+---+----+-----+------+-----+---------+
+    |imagSrc_data_stream_1_U  |        0|  5|   0|    -|     2|    8|       16|
+    |imagSrc_data_stream_2_U  |        0|  5|   0|    -|     2|    8|       16|
+    |imagSrc_data_stream_s_U  |        0|  5|   0|    -|     2|    8|       16|
+    |imag_1_data_stream_0_U   |        0|  5|   0|    -|     2|    8|       16|
+    |imag_1_data_stream_1_U   |        0|  5|   0|    -|     2|    8|       16|
+    |imag_1_data_stream_2_U   |        0|  5|   0|    -|     2|    8|       16|
+    +-------------------------+---------+---+----+-----+------+-----+---------+
+    |Total                    |        0| 30|   0|    0|    12|   48|       96|
+    +-------------------------+---------+---+----+-----+------+-----+---------+
+
+    * Expression: 
+    +------------------------------------------+----------+-------+---+----+------------+------------+
+    |               Variable Name              | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------------------------+----------+-------+---+----+------------+------------+
+    |AXIvideo2Mat_U0_ap_ready_count            |     +    |      0|  0|  10|           2|           1|
+    |Loop_loop_height_pro_U0_ap_ready_count    |     +    |      0|  0|  10|           2|           1|
+    |AXIvideo2Mat_U0_ap_start                  |    and   |      0|  0|   2|           1|           1|
+    |Loop_loop_height_pro_U0_ap_start          |    and   |      0|  0|   2|           1|           1|
+    |ap_idle                                   |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_ready                             |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_AXIvideo2Mat_U0_ap_ready          |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_Loop_loop_height_pro_U0_ap_ready  |    or    |      0|  0|   2|           1|           1|
+    +------------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                     |          |      0|  0|  32|          10|           8|
+    +------------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------------------+----+-----------+-----+-----------+
+    |                     Name                     | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------------------+----+-----------+-----+-----------+
+    |AXIvideo2Mat_U0_ap_ready_count                |   9|          2|    2|          4|
+    |Loop_loop_height_pro_U0_ap_ready_count        |   9|          2|    2|          4|
+    |ap_sync_reg_AXIvideo2Mat_U0_ap_ready          |   9|          2|    1|          2|
+    |ap_sync_reg_Loop_loop_height_pro_U0_ap_ready  |   9|          2|    1|          2|
+    +----------------------------------------------+----+-----------+-----+-----------+
+    |Total                                         |  36|          8|    6|         12|
+    +----------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------+---+----+-----+-----------+
+    |                     Name                     | FF| LUT| Bits| Const Bits|
+    +----------------------------------------------+---+----+-----+-----------+
+    |AXIvideo2Mat_U0_ap_ready_count                |  2|   0|    2|          0|
+    |Loop_loop_height_pro_U0_ap_ready_count        |  2|   0|    2|          0|
+    |ap_sync_reg_AXIvideo2Mat_U0_ap_ready          |  1|   0|    1|          0|
+    |ap_sync_reg_Loop_loop_height_pro_U0_ap_ready  |  1|   0|    1|          0|
+    +----------------------------------------------+---+----+-----+-----------+
+    |Total                                         |  6|   0|    6|          0|
+    +----------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+-------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++------------------------+-----+-----+------------+-------------------+--------------+
+|s_axi_AXILiteS_AWVALID  |  in |    1|    s_axi   |      AXILiteS     |  return void |
+|s_axi_AXILiteS_AWREADY  | out |    1|    s_axi   |      AXILiteS     |  return void |
+|s_axi_AXILiteS_AWADDR   |  in |    4|    s_axi   |      AXILiteS     |  return void |
+|s_axi_AXILiteS_WVALID   |  in |    1|    s_axi   |      AXILiteS     |  return void |
+|s_axi_AXILiteS_WREADY   | out |    1|    s_axi   |      AXILiteS     |  return void |
+|s_axi_AXILiteS_WDATA    |  in |   32|    s_axi   |      AXILiteS     |  return void |
+|s_axi_AXILiteS_WSTRB    |  in |    4|    s_axi   |      AXILiteS     |  return void |
+|s_axi_AXILiteS_ARVALID  |  in |    1|    s_axi   |      AXILiteS     |  return void |
+|s_axi_AXILiteS_ARREADY  | out |    1|    s_axi   |      AXILiteS     |  return void |
+|s_axi_AXILiteS_ARADDR   |  in |    4|    s_axi   |      AXILiteS     |  return void |
+|s_axi_AXILiteS_RVALID   | out |    1|    s_axi   |      AXILiteS     |  return void |
+|s_axi_AXILiteS_RREADY   |  in |    1|    s_axi   |      AXILiteS     |  return void |
+|s_axi_AXILiteS_RDATA    | out |   32|    s_axi   |      AXILiteS     |  return void |
+|s_axi_AXILiteS_RRESP    | out |    2|    s_axi   |      AXILiteS     |  return void |
+|s_axi_AXILiteS_BVALID   | out |    1|    s_axi   |      AXILiteS     |  return void |
+|s_axi_AXILiteS_BREADY   |  in |    1|    s_axi   |      AXILiteS     |  return void |
+|s_axi_AXILiteS_BRESP    | out |    2|    s_axi   |      AXILiteS     |  return void |
+|ap_clk                  |  in |    1| ap_ctrl_hs |   vip_maskMerge   | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_hs |   vip_maskMerge   | return value |
+|interrupt               | out |    1| ap_ctrl_hs |   vip_maskMerge   | return value |
+|src_axi0_TDATA          |  in |   24|    axis    | src_axi0_V_data_V |    pointer   |
+|src_axi0_TKEEP          |  in |    3|    axis    | src_axi0_V_keep_V |    pointer   |
+|src_axi0_TSTRB          |  in |    3|    axis    | src_axi0_V_strb_V |    pointer   |
+|src_axi0_TUSER          |  in |    1|    axis    | src_axi0_V_user_V |    pointer   |
+|src_axi0_TLAST          |  in |    1|    axis    | src_axi0_V_last_V |    pointer   |
+|src_axi0_TID            |  in |    1|    axis    |  src_axi0_V_id_V  |    pointer   |
+|src_axi0_TDEST          |  in |    1|    axis    | src_axi0_V_dest_V |    pointer   |
+|src_axi0_TVALID         |  in |    1|    axis    | src_axi0_V_dest_V |    pointer   |
+|src_axi0_TREADY         | out |    1|    axis    | src_axi0_V_dest_V |    pointer   |
+|src_axi1_TDATA          |  in |   24|    axis    | src_axi1_V_data_V |    pointer   |
+|src_axi1_TKEEP          |  in |    3|    axis    | src_axi1_V_keep_V |    pointer   |
+|src_axi1_TSTRB          |  in |    3|    axis    | src_axi1_V_strb_V |    pointer   |
+|src_axi1_TUSER          |  in |    1|    axis    | src_axi1_V_user_V |    pointer   |
+|src_axi1_TLAST          |  in |    1|    axis    | src_axi1_V_last_V |    pointer   |
+|src_axi1_TID            |  in |    1|    axis    |  src_axi1_V_id_V  |    pointer   |
+|src_axi1_TDEST          |  in |    1|    axis    | src_axi1_V_dest_V |    pointer   |
+|src_axi1_TVALID         |  in |    1|    axis    | src_axi1_V_dest_V |    pointer   |
+|src_axi1_TREADY         | out |    1|    axis    | src_axi1_V_dest_V |    pointer   |
+|mask2_Addr_A            | out |   32|    bram    |       mask2       |     array    |
+|mask2_EN_A              | out |    1|    bram    |       mask2       |     array    |
+|mask2_Din_A             | out |   32|    bram    |       mask2       |     array    |
+|mask2_Dout_A            |  in |   32|    bram    |       mask2       |     array    |
+|mask2_WEN_A             | out |    4|    bram    |       mask2       |     array    |
+|mask2_Clk_A             | out |    1|    bram    |       mask2       |     array    |
+|mask2_Rst_A             | out |    1|    bram    |       mask2       |     array    |
+|dst_axi_TDATA           | out |   24|    axis    |  dst_axi_V_data_V |    pointer   |
+|dst_axi_TKEEP           | out |    3|    axis    |  dst_axi_V_keep_V |    pointer   |
+|dst_axi_TSTRB           | out |    3|    axis    |  dst_axi_V_strb_V |    pointer   |
+|dst_axi_TUSER           | out |    1|    axis    |  dst_axi_V_user_V |    pointer   |
+|dst_axi_TLAST           | out |    1|    axis    |  dst_axi_V_last_V |    pointer   |
+|dst_axi_TID             | out |    1|    axis    |   dst_axi_V_id_V  |    pointer   |
+|dst_axi_TDEST           | out |    1|    axis    |  dst_axi_V_dest_V |    pointer   |
+|dst_axi_TVALID          | out |    1|    axis    |  dst_axi_V_dest_V |    pointer   |
+|dst_axi_TREADY          |  in |    1|    axis    |  dst_axi_V_dest_V |    pointer   |
++------------------------+-----+-----+------------+-------------------+--------------+
+

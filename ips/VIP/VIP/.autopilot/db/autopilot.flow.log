@@ -1,0 +1,1833 @@
+INFO-FLOW: Workspace G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP opened at Sat Nov 06 09:14:37 +0800 2021
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     config_clock -quiet -name default -uncertainty 1.25 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/dsp48e1.hlp 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.122 sec.
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.167 sec.
+Command     ap_source done; 0.168 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7_fpv6 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7_fpv6.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7k325t-ffg900-2 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data single -quiet 
+Command       ap_part_info done; 0.425 sec.
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute       add_library xilinx/kintex7/kintex7:xc7k325t:-ffg900:-2 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7k325t 
+Command         license_isbetapart done; error code: 1; 
+Execute         ap_part_info -data single -name xc7k325t-ffg900-2 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data resources 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 50950} {LUT 203800} {FF 407600} {DSP48E 840} {BRAM 890} {URAM 0} 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute         config_chip_info -quiet -speed medium 
+Execute       add_library xilinx/kintex7/kintex7_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7k325t-ffg900-2'
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.551 sec.
+Execute     ap_part_info -data single -name xc7k325t-ffg900-2 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data resources 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 50950} {LUT 203800} {FF 407600} {DSP48E 840} {BRAM 890} {URAM 0} 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute     config_chip_info -quiet -speed medium 
+Execute     config_sdx -target=none 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' config_export -vivado_optimization_level=2 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+Execute       config_export -vivado_optimization_level=2 
+Execute         get_config_export -vivado_impl_strategy 
+Execute         get_config_export -vivado_phys_opt 
+Execute       get_config_compile -pipeline_loops 
+Execute       get_config_compile -name_max_length 
+Execute       get_config_schedule -enable_dsp_full_reg 
+Execute       get_config_rtl -register_reset_num 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_interface -m_axi_addr64 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+Execute       set_clock_uncertainty default 
+Execute     config_export -display_name=VideoMerger 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Execute     config_export -vendor=zqp 
+Execute     config_export -vivado_optimization_level=2 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Command   open_solution done; 0.792 sec.
+Execute   set_part xc7k325t-ffg900-2 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data single -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute     add_library xilinx/kintex7/kintex7:xc7k325t:-ffg900:-2 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7k325t 
+Command       license_isbetapart done; error code: 1; 
+Execute       ap_part_info -data single -name xc7k325t-ffg900-2 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data resources 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute       config_chip_info -quiet -resource {SLICE 50950} {LUT 203800} {FF 407600} {DSP48E 840} {BRAM 890} {URAM 0} 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute       config_chip_info -quiet -speed medium 
+Execute     add_library xilinx/kintex7/kintex7_fpv6 
+Execute       get_default_platform 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute     get_default_platform 
+Command   set_part done; 0.103 sec.
+Execute   create_clock -period 10 -name default 
+Execute   config_sdx -target none 
+Execute     send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' config_export -vivado_optimization_level=2 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+Execute     config_export -vivado_optimization_level=2 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Execute     get_config_compile -pipeline_loops 
+Execute     get_config_compile -name_max_length 
+Execute     get_config_schedule -enable_dsp_full_reg 
+Execute     get_config_rtl -register_reset_num 
+Execute     get_config_rtl -module_auto_prefix 
+Execute     get_config_interface -m_axi_addr64 
+Execute     send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+Execute     set_clock_uncertainty default 
+Execute   config_export -display_name VideoMerger -format ip_catalog -rtl verilog -vendor zqp -vivado_optimization_level 2 
+Execute     get_config_export -vivado_impl_strategy 
+Execute     get_config_export -vivado_phys_opt 
+Execute   set_clock_uncertainty 12.5% 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'VIP/vip.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling VIP/vip.cpp as C++
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute       is_encrypted VIP/vip.cpp 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "G:/Xilinx/Vivado/2019.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "VIP/vip.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "G:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "G:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.pp.0.cpp" 
+INFO-FLOW: exec G:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain G:/Xilinx/Vivado/2019.1/msys -hls -fno-exceptions -D__llvm__ -E VIP/vip.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I G:/Xilinx/Vivado/2019.1/common/technology/autopilot -I G:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.pp.0.cpp
+Command       clang done; 1.523 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec G:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 2.157 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "G:/Xilinx/Vivado/2019.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "G:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "G:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.pp.0.cpp"  -o "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/useless.bc"  
+INFO-FLOW: exec G:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain G:/Xilinx/Vivado/2019.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I G:/Xilinx/Vivado/2019.1/common/technology/autopilot -I G:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.pp.0.cpp -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/useless.bc
+WARNING: [HLS 200-40] In file included from VIP/vip.cpp:1:
+VIP/vip.cpp:51:110: warning: 'typename' occurs outside of a template [-Wc++11-extensions]
+              hls::Scalar<(((((((0) & ((1 << 11) - 1)) + (((3)-1) << 11))) & ((512 - 1) << 11)) >> 11) + 1), typename Type<(((((0) & ((1 << 11) - 1)) + (((3)-1) << 11))) & ((1 << 11) - 1))>::name> s;
+                                                                                                             ^~~~~~~~
+VIP/vip.cpp:147:110: warning: 'typename' occurs outside of a template [-Wc++11-extensions]
+              hls::Scalar<(((((((0) & ((1 << 11) - 1)) + (((3)-1) << 11))) & ((512 - 1) << 11)) >> 11) + 1), typename Type<(((((0) & ((1 << 11) - 1)) + (((3)-1) << 11))) & ((1 << 11) - 1))>::name> s;
+                                                                                                             ^~~~~~~~
+VIP/vip.cpp:317:107: warning: 'typename' occurs outside of a template [-Wc++11-extensions]
+           hls::Scalar<(((((((0) & ((1 << 11) - 1)) + (((3)-1) << 11))) & ((512 - 1) << 11)) >> 11) + 1), typename Type<(((((0) & ((1 << 11) - 1)) + (((3)-1) << 11))) & ((1 << 11) - 1))>::name> s;
+                                                                                                          ^~~~~~~~
+VIP/vip.cpp:318:107: warning: 'typename' occurs outside of a template [-Wc++11-extensions]
+           hls::Scalar<(((((((0) & ((1 << 11) - 1)) + (((3)-1) << 11))) & ((512 - 1) << 11)) >> 11) + 1), typename Type<(((((0) & ((1 << 11) - 1)) + (((3)-1) << 11))) & ((1 << 11) - 1))>::name> ms;
+                                                                                                          ^~~~~~~~
+VIP/vip.cpp:417:110: warning: 'typename' occurs outside of a template [-Wc++11-extensions]
+              hls::Scalar<(((((((0) & ((1 << 11) - 1)) + (((3)-1) << 11))) & ((512 - 1) << 11)) >> 11) + 1), typename Type<(((((0) & ((1 << 11) - 1)) + (((3)-1) << 11))) & ((1 << 11) - 1))>::name> s;
+                                                                                                             ^~~~~~~~
+VIP/vip.cpp:545:110: warning: 'typename' occurs outside of a template [-Wc++11-extensions]
+              hls::Scalar<(((((((0) & ((1 << 11) - 1)) + (((3)-1) << 11))) & ((512 - 1) << 11)) >> 11) + 1), typename Type<(((((0) & ((1 << 11) - 1)) + (((3)-1) << 11))) & ((1 << 11) - 1))>::name> s;
+                                                                                                             ^~~~~~~~
+6 warnings generated.
+Command       clang done; 5.242 sec.
+INFO-FLOW: Done: GCC PP time: 8.9 seconds per iteration
+Execute       source G:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source G:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source G:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.pp.0.cpp std=gnu++98 -directive=G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec G:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/.systemc_flag -quiet -fix-errors G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 2.095 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.pp.0.cpp std=gnu++98 -directive=G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/all.directive.json 
+INFO-FLOW: exec G:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/all.directive.json -quiet -fix-errors G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 2.095 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr G:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/xilinx-dataflow-lawyer.vip.pp.0.cpp.diag.yml G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/xilinx-dataflow-lawyer.vip.pp.0.cpp.out.log 2> G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/xilinx-dataflow-lawyer.vip.pp.0.cpp.err.log 
+Command       ap_eval done; 1.213 sec.
+Execute       source G:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute         source G:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+WARNING: [HLS 214-114] Only function calls and local variable declarations are allowed in a dataflow region: VIP/vip.cpp:42:15
+WARNING: [HLS 214-114] Only function calls and local variable declarations are allowed in a dataflow region: VIP/vip.cpp:139:15
+WARNING: [HLS 214-114] Only function calls and local variable declarations are allowed in a dataflow region: VIP/vip.cpp:277:2
+WARNING: [HLS 214-114] Only function calls and local variable declarations are allowed in a dataflow region: VIP/vip.cpp:410:15
+Execute       send_msg_by_id WARNING @200-471@%s%s 4 VIP/vip.cpp 
+WARNING: [HLS 200-471] Dataflow form checks found 4 issue(s) in file VIP/vip.cpp
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr G:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/tidy-3.1.vip.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/tidy-3.1.vip.pp.0.cpp.out.log 2> G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/tidy-3.1.vip.pp.0.cpp.err.log 
+Command         ap_eval done; 3.652 sec.
+Execute         ap_eval exec -ignorestderr G:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/xilinx-legacy-rewriter.vip.pp.0.cpp.out.log 2> G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/xilinx-legacy-rewriter.vip.pp.0.cpp.err.log 
+Command         ap_eval done; 1.34 sec.
+Command       tidy_31 done; 5.016 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 8.4 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec G:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 3.811 sec.
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain G:/Xilinx/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "G:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "G:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.bc" 
+INFO-FLOW: exec G:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain G:/Xilinx/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I G:/Xilinx/Vivado/2019.1/common/technology/autopilot -I G:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.bc
+Command       clang done; 5.675 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip.g.bc -hls-opt -except-internalize vip_maskMerge -LG:/Xilinx/Vivado/2019.1/win64/lib -lhlsm -lhlsmc++ -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/a.g 
+Command       llvm-ld done; 1.856 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:33 . Memory (MB): peak = 175.344 ; gain = 79.586
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:33 . Memory (MB): peak = 175.344 ; gain = 79.586
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/a.pp.bc -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 0.307 sec.
+Execute         llvm-ld G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/a.pp.0.bc -disable-opt -LG:/Xilinx/Vivado/2019.1/win64/lib -lfloatconversion -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/a.g.0 
+Command         llvm-ld done; 1.274 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top vip_maskMerge -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/a.g.0.bc -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<480, 640, 4096>::init' into 'hls::Mat<480, 640, 4096>::Mat.1' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:642).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<1080, 1920, 4096>::init' into 'hls::Mat<1080, 1920, 4096>::Mat.1' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:642).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<24, unsigned char>.1' into 'hls::AXIGetBitFields<24, unsigned char>' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_axi_io.h:71).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<24, unsigned char>' into 'hls::AXIvideo2Mat<24, 1080, 1920, 4096>' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:92).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<24, unsigned char>' into 'hls::AXIvideo2Mat2<24, 480, 640, 4096>' (VIP/vip.cpp:238).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<1080, 1920, 4096>::write' into 'hls::Mat<1080, 1920, 4096>::operator<<' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:717).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<1080, 1920, 4096>::operator<<' into 'hls::AXIvideo2Mat<24, 1080, 1920, 4096>' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:94).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<1080, 1920, 4096>::operator<<' into 'vip_maskMerge' (VIP/vip.cpp:339).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<1080, 1920, 4096>::operator<<' into 'vip_maskMerge' (VIP/vip.cpp:336).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<480, 640, 4096>::write' into 'hls::Mat<480, 640, 4096>::operator<<' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:717).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<480, 640, 4096>::operator<<' into 'hls::AXIvideo2Mat2<24, 480, 640, 4096>' (VIP/vip.cpp:240).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<1080, 1920, 4096>::read' into 'hls::Mat<1080, 1920, 4096>::operator>>' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:711).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<1080, 1920, 4096>::operator>>' into 'vip_maskMerge' (VIP/vip.cpp:329).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<1080, 1920, 4096>::operator>>' into 'hls::Mat2AXIvideo<24, 1080, 1920, 4096>' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:140).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<480, 640, 4096>::read' into 'hls::Mat<480, 640, 4096>::operator>>' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:711).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<480, 640, 4096>::operator>>' into 'vip_maskMerge' (VIP/vip.cpp:332).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<24, unsigned char>.1' into 'hls::AXISetBitFields<24, unsigned char>' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_axi_io.h:100).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<24, unsigned char>' into 'hls::Mat2AXIvideo<24, 1080, 1920, 4096>' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:143).
+Command         transform done; 0.687 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:35 . Memory (MB): peak = 190.230 ; gain = 94.473
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/a.g.1.bc -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/a.g.2.prechk.bc -f 
+Command         transform done; 0.571 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/a.g.2.prechk.bc -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/a.g.2.bc -f -phase syn-check 
+WARNING: [SYNCHK 200-23] G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_axi_io.h:78: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+Command         transform done; 0.296 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:36 . Memory (MB): peak = 230.316 ; gain = 134.559
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/a.g.1.bc to G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/a.o.1.bc -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/a.o.1.tmp.bc -f 
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'imagSrc.data_stream.V' (VIP/vip.cpp:293).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'imag0_0.data_stream.V' (VIP/vip.cpp:292).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'imag_1.data_stream.V' (VIP/vip.cpp:296).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'imag_1.data_stream.V.1' (VIP/vip.cpp:296).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:126) in function 'hls::Mat2AXIvideo<24, 1080, 1920, 4096>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:73) in function 'hls::AXIvideo2Mat<24, 1080, 1920, 4096>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (VIP/vip.cpp:219) in function 'hls::AXIvideo2Mat2<24, 480, 640, 4096>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (VIP/vip.cpp:324) in function 'vip_maskMerge' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:677) in function 'hls::Mat2AXIvideo<24, 1080, 1920, 4096>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'loop_channels' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:142) in function 'hls::Mat2AXIvideo<24, 1080, 1920, 4096>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'loop_channels' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:91) in function 'hls::AXIvideo2Mat<24, 1080, 1920, 4096>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.2' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:701) in function 'hls::AXIvideo2Mat<24, 1080, 1920, 4096>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'loop_channels' (VIP/vip.cpp:237) in function 'hls::AXIvideo2Mat2<24, 480, 640, 4096>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.2' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:701) in function 'hls::AXIvideo2Mat2<24, 480, 640, 4096>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:677) in function 'vip_maskMerge' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:677) in function 'vip_maskMerge' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.3' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:701) in function 'vip_maskMerge' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.4' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:701) in function 'vip_maskMerge' completely with a factor of 3.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign.3' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign.2' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'imag_1.data_stream.V' (VIP/vip.cpp:296) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'imagSrc.data_stream.V' (VIP/vip.cpp:293) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'imag0_0.data_stream.V' (VIP/vip.cpp:292) .
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:115) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (VIP/vip.cpp:199) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 's.val' (VIP/vip.cpp:317) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'ms.val' (VIP/vip.cpp:318) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val.1' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'imag_1.data_stream.V' (VIP/vip.cpp:296) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'imagSrc.data_stream.V' (VIP/vip.cpp:293) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'imag0_0.data_stream.V' (VIP/vip.cpp:292) in dimension 1 completely.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1920 for loop 'loop_width' in function 'hls::Mat2AXIvideo<24, 1080, 1920, 4096>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1080 for loop 'loop_height' in function 'hls::Mat2AXIvideo<24, 1080, 1920, 4096>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1920 for loop 'loop_width' in function 'hls::AXIvideo2Mat<24, 1080, 1920, 4096>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 1080 for loop 'loop_height' in function 'hls::AXIvideo2Mat<24, 1080, 1920, 4096>'.
+INFO: [XFORM 203-721] Changing loop 'Loop_loop_height_proc' (VIP/vip.cpp:320) to a process function for dataflow in function 'vip_maskMerge'.
+INFO: [XFORM 203-712] Applying dataflow to function 'vip_maskMerge', detected/extracted 4 process function(s): 
+	 'Block_._crit_edge121_proc44'
+	 'hls::AXIvideo2Mat<24, 1080, 1920, 4096>'
+	 'Loop_loop_height_proc45'
+	 'hls::Mat2AXIvideo<24, 1080, 1920, 4096>'.
+Command         transform done; 2.004 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/a.o.1.tmp.bc -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command         transform done; 0.801 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:39 . Memory (MB): peak = 295.270 ; gain = 199.512
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/a.o.2.bc -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [XFORM 203-603] Evaluating the output(s) of a call to function 'Block_._crit_edge121_proc44' in function 'vip_maskMerge' and propagating its result(s) since all actual argument(s) to the function are constants.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 640 for loop 'loop_width' in function 'hls::AXIvideo2Mat2<24, 480, 640, 4096>'.
+WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo<24, 1080, 1920, 4096>' to 'Mat2AXIvideo' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:78:50)
+WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat<24, 1080, 1920, 4096>' to 'AXIvideo2Mat' (G:/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_io.h:49:9)
+WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat2<24, 480, 640, 4096>' to 'AXIvideo2Mat2' (VIP/vip.cpp:49:9)
+WARNING: [XFORM 203-631] Renaming function 'Loop_loop_height_proc45' to 'Loop_loop_height_pro' (VIP/vip.cpp:292:57)
+Command         transform done; 1.455 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:40 . Memory (MB): peak = 335.094 ; gain = 239.336
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 7.528 sec.
+Command     elaborate done; 38.93 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'vip_maskMerge' ...
+Execute       ap_set_top_model vip_maskMerge 
+Execute       get_model_list vip_maskMerge -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model vip_maskMerge 
+Execute       preproc_iomode -model Mat2AXIvideo 
+Execute       preproc_iomode -model Loop_loop_height_pro 
+Execute       preproc_iomode -model AXIvideo2Mat2 
+Execute       preproc_iomode -model AXIvideo2Mat 
+Execute       get_model_list vip_maskMerge -filter all-wo-channel 
+INFO-FLOW: Model list for configure: AXIvideo2Mat AXIvideo2Mat2 Loop_loop_height_pro Mat2AXIvideo vip_maskMerge
+INFO-FLOW: Configuring Module : AXIvideo2Mat ...
+Execute       set_default_model AXIvideo2Mat 
+Execute       apply_spec_resource_limit AXIvideo2Mat 
+INFO-FLOW: Configuring Module : AXIvideo2Mat2 ...
+Execute       set_default_model AXIvideo2Mat2 
+Execute       apply_spec_resource_limit AXIvideo2Mat2 
+INFO-FLOW: Configuring Module : Loop_loop_height_pro ...
+Execute       set_default_model Loop_loop_height_pro 
+Execute       apply_spec_resource_limit Loop_loop_height_pro 
+INFO-FLOW: Configuring Module : Mat2AXIvideo ...
+Execute       set_default_model Mat2AXIvideo 
+Execute       apply_spec_resource_limit Mat2AXIvideo 
+INFO-FLOW: Configuring Module : vip_maskMerge ...
+Execute       set_default_model vip_maskMerge 
+Execute       apply_spec_resource_limit vip_maskMerge 
+INFO-FLOW: Model list for preprocess: AXIvideo2Mat AXIvideo2Mat2 Loop_loop_height_pro Mat2AXIvideo vip_maskMerge
+INFO-FLOW: Preprocessing Module: AXIvideo2Mat ...
+Execute       set_default_model AXIvideo2Mat 
+Execute       cdfg_preprocess -model AXIvideo2Mat 
+Execute       rtl_gen_preprocess AXIvideo2Mat 
+INFO-FLOW: Preprocessing Module: AXIvideo2Mat2 ...
+Execute       set_default_model AXIvideo2Mat2 
+Execute       cdfg_preprocess -model AXIvideo2Mat2 
+Execute       rtl_gen_preprocess AXIvideo2Mat2 
+INFO-FLOW: Preprocessing Module: Loop_loop_height_pro ...
+Execute       set_default_model Loop_loop_height_pro 
+Execute       cdfg_preprocess -model Loop_loop_height_pro 
+Execute       rtl_gen_preprocess Loop_loop_height_pro 
+INFO-FLOW: Preprocessing Module: Mat2AXIvideo ...
+Execute       set_default_model Mat2AXIvideo 
+Execute       cdfg_preprocess -model Mat2AXIvideo 
+Execute       rtl_gen_preprocess Mat2AXIvideo 
+INFO-FLOW: Preprocessing Module: vip_maskMerge ...
+Execute       set_default_model vip_maskMerge 
+Execute       cdfg_preprocess -model vip_maskMerge 
+Execute       rtl_gen_preprocess vip_maskMerge 
+INFO-FLOW: Model list for synthesis: AXIvideo2Mat AXIvideo2Mat2 Loop_loop_height_pro Mat2AXIvideo vip_maskMerge
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2Mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model AXIvideo2Mat 
+Execute       schedule -model AXIvideo2Mat 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_start'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.322 sec.
+INFO: [HLS 200-111]  Elapsed time: 40.793 seconds; current allocated memory: 277.938 MB.
+Execute       syn_report -verbosereport -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat.verbose.sched.rpt 
+INFO: [HLS 200-434] Only 3 loops out of a total 4 loops have been pipelined in this design.
+Execute       db_write -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat.sched.adb -f 
+INFO-FLOW: Finish scheduling AXIvideo2Mat.
+Execute       set_default_model AXIvideo2Mat 
+Execute       bind -model AXIvideo2Mat 
+BIND OPTION: model=AXIvideo2Mat
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 278.206 MB.
+Execute       syn_report -verbosereport -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat.verbose.bind.rpt 
+Command       syn_report done; 0.183 sec.
+Execute       db_write -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat.bind.adb -f 
+INFO-FLOW: Finish binding AXIvideo2Mat.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2Mat2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model AXIvideo2Mat2 
+Execute       schedule -model AXIvideo2Mat2 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_start'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.287 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.624 seconds; current allocated memory: 278.444 MB.
+Execute       syn_report -verbosereport -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat2.verbose.sched.rpt 
+Execute       db_write -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat2.sched.adb -f 
+INFO-FLOW: Finish scheduling AXIvideo2Mat2.
+Execute       set_default_model AXIvideo2Mat2 
+Execute       bind -model AXIvideo2Mat2 
+BIND OPTION: model=AXIvideo2Mat2
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.199 seconds; current allocated memory: 278.691 MB.
+Execute       syn_report -verbosereport -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat2.verbose.bind.rpt 
+Execute       db_write -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat2.bind.adb -f 
+INFO-FLOW: Finish binding AXIvideo2Mat2.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_loop_height_pro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Loop_loop_height_pro 
+Execute       schedule -model Loop_loop_height_pro 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.396 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.555 seconds; current allocated memory: 278.946 MB.
+Execute       syn_report -verbosereport -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Loop_loop_height_pro.verbose.sched.rpt 
+Execute       db_write -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Loop_loop_height_pro.sched.adb -f 
+INFO-FLOW: Finish scheduling Loop_loop_height_pro.
+Execute       set_default_model Loop_loop_height_pro 
+Execute       bind -model Loop_loop_height_pro 
+BIND OPTION: model=Loop_loop_height_pro
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.228 seconds; current allocated memory: 279.304 MB.
+Execute       syn_report -verbosereport -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Loop_loop_height_pro.verbose.bind.rpt 
+Execute       db_write -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Loop_loop_height_pro.bind.adb -f 
+INFO-FLOW: Finish binding Loop_loop_height_pro.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Mat2AXIvideo 
+Execute       schedule -model Mat2AXIvideo 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.164 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 279.449 MB.
+Execute       syn_report -verbosereport -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Mat2AXIvideo.verbose.sched.rpt 
+Execute       db_write -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Mat2AXIvideo.sched.adb -f 
+INFO-FLOW: Finish scheduling Mat2AXIvideo.
+Execute       set_default_model Mat2AXIvideo 
+Execute       bind -model Mat2AXIvideo 
+BIND OPTION: model=Mat2AXIvideo
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.194 seconds; current allocated memory: 279.618 MB.
+Execute       syn_report -verbosereport -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Mat2AXIvideo.verbose.bind.rpt 
+Execute       db_write -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Mat2AXIvideo.bind.adb -f 
+INFO-FLOW: Finish binding Mat2AXIvideo.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'vip_maskMerge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model vip_maskMerge 
+Execute       schedule -model vip_maskMerge 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 279.738 MB.
+Execute       syn_report -verbosereport -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.verbose.sched.rpt 
+Execute       db_write -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.sched.adb -f 
+INFO-FLOW: Finish scheduling vip_maskMerge.
+Execute       set_default_model vip_maskMerge 
+Execute       bind -model vip_maskMerge 
+BIND OPTION: model=vip_maskMerge
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.221 seconds; current allocated memory: 280.016 MB.
+Execute       syn_report -verbosereport -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.verbose.bind.rpt 
+Execute       db_write -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.bind.adb -f 
+INFO-FLOW: Finish binding vip_maskMerge.
+Execute       get_model_list vip_maskMerge -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess AXIvideo2Mat 
+Execute       rtl_gen_preprocess AXIvideo2Mat2 
+Execute       rtl_gen_preprocess Loop_loop_height_pro 
+Execute       rtl_gen_preprocess Mat2AXIvideo 
+Execute       rtl_gen_preprocess vip_maskMerge 
+INFO-FLOW: Model list for RTL generation: AXIvideo2Mat AXIvideo2Mat2 Loop_loop_height_pro Mat2AXIvideo vip_maskMerge
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2Mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model AXIvideo2Mat -vendor xilinx -mg_file G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2Mat'.
+INFO: [HLS 200-111]  Elapsed time: 0.275 seconds; current allocated memory: 280.857 MB.
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/systemc/AXIvideo2Mat -synmodules AXIvideo2Mat AXIvideo2Mat2 Loop_loop_height_pro Mat2AXIvideo vip_maskMerge 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -f -lang vhdl -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/vhdl/AXIvideo2Mat 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -f -lang vlog -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/verilog/AXIvideo2Mat 
+Execute       syn_report -csynth -model AXIvideo2Mat -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/report/AXIvideo2Mat_csynth.rpt 
+Execute       syn_report -rtlxml -model AXIvideo2Mat -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/report/AXIvideo2Mat_csynth.xml 
+Execute       syn_report -verbosereport -model AXIvideo2Mat -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat.verbose.rpt 
+Execute       db_write -model AXIvideo2Mat -f -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat.adb 
+Execute       gen_tb_info AXIvideo2Mat -p G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2Mat2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model AXIvideo2Mat2 -vendor xilinx -mg_file G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat2.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2Mat2'.
+INFO: [HLS 200-111]  Elapsed time: 0.471 seconds; current allocated memory: 281.735 MB.
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute       gen_rtl AXIvideo2Mat2 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/systemc/AXIvideo2Mat2 -synmodules AXIvideo2Mat AXIvideo2Mat2 Loop_loop_height_pro Mat2AXIvideo vip_maskMerge 
+Execute       gen_rtl AXIvideo2Mat2 -style xilinx -f -lang vhdl -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/vhdl/AXIvideo2Mat2 
+Execute       gen_rtl AXIvideo2Mat2 -style xilinx -f -lang vlog -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/verilog/AXIvideo2Mat2 
+Execute       syn_report -csynth -model AXIvideo2Mat2 -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/report/AXIvideo2Mat2_csynth.rpt 
+Execute       syn_report -rtlxml -model AXIvideo2Mat2 -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/report/AXIvideo2Mat2_csynth.xml 
+Execute       syn_report -verbosereport -model AXIvideo2Mat2 -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat2.verbose.rpt 
+Execute       db_write -model AXIvideo2Mat2 -f -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat2.adb 
+Execute       gen_tb_info AXIvideo2Mat2 -p G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat2 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_loop_height_pro' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Loop_loop_height_pro -vendor xilinx -mg_file G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Loop_loop_height_pro.compgen.tcl 
+WARNING: [RTGEN 206-101] Setting dangling out port 'Loop_loop_height_pro/mask2_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Loop_loop_height_pro/mask2_Din_A' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_loop_height_pro'.
+INFO: [HLS 200-111]  Elapsed time: 0.451 seconds; current allocated memory: 282.855 MB.
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Loop_loop_height_pro -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/systemc/Loop_loop_height_pro -synmodules AXIvideo2Mat AXIvideo2Mat2 Loop_loop_height_pro Mat2AXIvideo vip_maskMerge 
+Execute       gen_rtl Loop_loop_height_pro -style xilinx -f -lang vhdl -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/vhdl/Loop_loop_height_pro 
+Execute       gen_rtl Loop_loop_height_pro -style xilinx -f -lang vlog -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/verilog/Loop_loop_height_pro 
+Execute       syn_report -csynth -model Loop_loop_height_pro -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/report/Loop_loop_height_pro_csynth.rpt 
+Execute       syn_report -rtlxml -model Loop_loop_height_pro -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/report/Loop_loop_height_pro_csynth.xml 
+Execute       syn_report -verbosereport -model Loop_loop_height_pro -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Loop_loop_height_pro.verbose.rpt 
+Command       syn_report done; 0.139 sec.
+Execute       db_write -model Loop_loop_height_pro -f -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Loop_loop_height_pro.adb 
+Command       db_write done; 0.104 sec.
+Execute       gen_tb_info Loop_loop_height_pro -p G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Loop_loop_height_pro 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Mat2AXIvideo -vendor xilinx -mg_file G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Mat2AXIvideo'.
+INFO: [HLS 200-111]  Elapsed time: 0.712 seconds; current allocated memory: 283.711 MB.
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/systemc/Mat2AXIvideo -synmodules AXIvideo2Mat AXIvideo2Mat2 Loop_loop_height_pro Mat2AXIvideo vip_maskMerge 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -f -lang vhdl -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/vhdl/Mat2AXIvideo 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -f -lang vlog -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/verilog/Mat2AXIvideo 
+Execute       syn_report -csynth -model Mat2AXIvideo -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/report/Mat2AXIvideo_csynth.rpt 
+Execute       syn_report -rtlxml -model Mat2AXIvideo -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/report/Mat2AXIvideo_csynth.xml 
+Execute       syn_report -verbosereport -model Mat2AXIvideo -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Mat2AXIvideo.verbose.rpt 
+Command       syn_report done; 0.135 sec.
+Execute       db_write -model Mat2AXIvideo -f -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Mat2AXIvideo.adb 
+Execute       gen_tb_info Mat2AXIvideo -p G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Mat2AXIvideo 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'vip_maskMerge' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model vip_maskMerge -vendor xilinx -mg_file G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/src_axi0_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/src_axi0_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/src_axi0_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/src_axi0_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/src_axi0_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/src_axi0_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/src_axi0_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/src_axi1_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/src_axi1_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/src_axi1_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/src_axi1_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/src_axi1_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/src_axi1_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/src_axi1_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/mask2' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/dst_axi_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/dst_axi_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/dst_axi_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/dst_axi_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/dst_axi_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/dst_axi_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vip_maskMerge/dst_axi_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'vip_maskMerge' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'start_for_Mat2AXIvideo_U0' to 'start_for_Mat2AXIbkb' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'vip_maskMerge'.
+Command       create_rtl_model done; 0.342 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.851 seconds; current allocated memory: 284.385 MB.
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute       gen_rtl vip_maskMerge -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/systemc/vip_maskMerge -synmodules AXIvideo2Mat AXIvideo2Mat2 Loop_loop_height_pro Mat2AXIvideo vip_maskMerge 
+Execute       gen_rtl vip_maskMerge -istop -style xilinx -f -lang vhdl -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/vhdl/vip_maskMerge 
+Execute       gen_rtl vip_maskMerge -istop -style xilinx -f -lang vlog -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/verilog/vip_maskMerge 
+Execute       syn_report -csynth -model vip_maskMerge -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/report/vip_maskMerge_csynth.rpt 
+Execute       syn_report -rtlxml -model vip_maskMerge -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/syn/report/vip_maskMerge_csynth.xml 
+Execute       syn_report -verbosereport -model vip_maskMerge -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.verbose.rpt 
+Execute       db_write -model vip_maskMerge -f -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.adb 
+Execute       gen_tb_info vip_maskMerge -p G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge 
+Execute       export_constraint_db -f -tool general -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.constraint.tcl 
+Execute       syn_report -designview -model vip_maskMerge -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.design.xml 
+Command       syn_report done; 0.187 sec.
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model vip_maskMerge -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model vip_maskMerge -o G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks vip_maskMerge 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain vip_maskMerge 
+INFO-FLOW: Model list for RTL component generation: AXIvideo2Mat AXIvideo2Mat2 Loop_loop_height_pro Mat2AXIvideo vip_maskMerge
+INFO-FLOW: Handling components in module [AXIvideo2Mat] ... 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+INFO-FLOW: Handling components in module [AXIvideo2Mat2] ... 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat2.compgen.tcl 
+INFO-FLOW: Handling components in module [Loop_loop_height_pro] ... 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Loop_loop_height_pro.compgen.tcl 
+INFO-FLOW: Found component fifo_w8_d1920_A.
+INFO-FLOW: Append model fifo_w8_d1920_A
+INFO-FLOW: Found component fifo_w8_d1920_A.
+INFO-FLOW: Append model fifo_w8_d1920_A
+INFO-FLOW: Found component fifo_w8_d1920_A.
+INFO-FLOW: Append model fifo_w8_d1920_A
+INFO-FLOW: Handling components in module [Mat2AXIvideo] ... 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+INFO-FLOW: Handling components in module [vip_maskMerge] ... 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.compgen.tcl 
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component start_for_Mat2AXIbkb.
+INFO-FLOW: Append model start_for_Mat2AXIbkb
+INFO-FLOW: Found component vip_maskMerge_AXILiteS_s_axi.
+INFO-FLOW: Append model vip_maskMerge_AXILiteS_s_axi
+INFO-FLOW: Append model AXIvideo2Mat
+INFO-FLOW: Append model AXIvideo2Mat2
+INFO-FLOW: Append model Loop_loop_height_pro
+INFO-FLOW: Append model Mat2AXIvideo
+INFO-FLOW: Append model vip_maskMerge
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: fifo_w8_d1920_A fifo_w8_d1920_A fifo_w8_d1920_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A start_for_Mat2AXIbkb vip_maskMerge_AXILiteS_s_axi AXIvideo2Mat AXIvideo2Mat2 Loop_loop_height_pro Mat2AXIvideo vip_maskMerge
+INFO-FLOW: To file: write model fifo_w8_d1920_A
+INFO-FLOW: To file: write model fifo_w8_d1920_A
+INFO-FLOW: To file: write model fifo_w8_d1920_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model start_for_Mat2AXIbkb
+INFO-FLOW: To file: write model vip_maskMerge_AXILiteS_s_axi
+INFO-FLOW: To file: write model AXIvideo2Mat
+INFO-FLOW: To file: write model AXIvideo2Mat2
+INFO-FLOW: To file: write model Loop_loop_height_pro
+INFO-FLOW: To file: write model Mat2AXIvideo
+INFO-FLOW: To file: write model vip_maskMerge
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.146 sec.
+Command       ap_source done; 0.146 sec.
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7_fpv6.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat2.compgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Loop_loop_height_pro.compgen.tcl 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'imag0_0_data_stream_s_U(fifo_w8_d1920_A)' using Block RAMs.
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'imag0_0_data_stream_1_U(fifo_w8_d1920_A)' using Block RAMs.
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'imag0_0_data_stream_2_U(fifo_w8_d1920_A)' using Block RAMs.
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.compgen.tcl 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'imagSrc_data_stream_s_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'imagSrc_data_stream_1_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'imagSrc_data_stream_2_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'imag_1_data_stream_0_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'imag_1_data_stream_1_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'imag_1_data_stream_2_U(fifo_w8_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Mat2AXIbkb_U(start_for_Mat2AXIbkb)' using Shift Registers.
+Execute         source ./AXILiteS.slave.tcl 
+Execute         is_m_axi_addr64 
+Command       ap_source done; 0.277 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.139 sec.
+Command       ap_source done; 0.14 sec.
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7_fpv6.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=vip_maskMerge xml_exists=0
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat2.compgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Loop_loop_height_pro.compgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat2.compgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Loop_loop_height_pro.compgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.compgen.tcl 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat2.compgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Loop_loop_height_pro.compgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.compgen.tcl 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.constraint.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=42
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=22
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=16 #gSsdmPorts=42
+Execute       source G:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -xo 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.compgen.dataonly.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.compgen.dataonly.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.compgen.dataonly.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.constraint.tcl 
+Execute       sc_get_clocks vip_maskMerge 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat.tbgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat2.tbgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Loop_loop_height_pro.tbgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Mat2AXIvideo.tbgen.tcl 
+Execute       source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:12 ; elapsed = 00:00:49 . Memory (MB): peak = 357.113 ; gain = 261.355
+INFO: [VHDL 208-304] Generating VHDL RTL for vip_maskMerge.
+INFO: [VLOG 209-307] Generating Verilog RTL for vip_maskMerge.
+Command     autosyn done; 8.891 sec.
+Command   csynth_design done; 47.83 sec.
+Command ap_source done; 48.782 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP opened at Sat Nov 06 09:16:01 +0800 2021
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     config_clock -quiet -name default -uncertainty 1.25 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/dsp48e1.hlp 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.104 sec.
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.154 sec.
+Command     ap_source done; 0.155 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7_fpv6 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7_fpv6.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7k325t-ffg900-2 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data single -quiet 
+Command       ap_part_info done; 0.441 sec.
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute       add_library xilinx/kintex7/kintex7:xc7k325t:-ffg900:-2 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7k325t 
+Command         license_isbetapart done; error code: 1; 
+Execute         ap_part_info -data single -name xc7k325t-ffg900-2 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data resources 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 50950} {LUT 203800} {FF 407600} {DSP48E 840} {BRAM 890} {URAM 0} 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute         config_chip_info -quiet -speed medium 
+Execute       add_library xilinx/kintex7/kintex7_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7k325t-ffg900-2'
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.571 sec.
+Execute     ap_part_info -data single -name xc7k325t-ffg900-2 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data resources 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 50950} {LUT 203800} {FF 407600} {DSP48E 840} {BRAM 890} {URAM 0} 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute     config_chip_info -quiet -speed medium 
+Execute     config_sdx -target=none 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' config_export -vivado_optimization_level=2 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+Execute       config_export -vivado_optimization_level=2 
+Execute         get_config_export -vivado_impl_strategy 
+Execute         get_config_export -vivado_phys_opt 
+Execute       get_config_compile -pipeline_loops 
+Execute       get_config_compile -name_max_length 
+Execute       get_config_schedule -enable_dsp_full_reg 
+Execute       get_config_rtl -register_reset_num 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_interface -m_axi_addr64 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+Execute       set_clock_uncertainty default 
+Execute     config_export -display_name=VideoMerger 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Execute     config_export -vendor=zqp 
+Execute     config_export -vivado_optimization_level=2 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Command   open_solution done; 0.838 sec.
+Execute   csim_design -quiet 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/testvip.cpp 
+Execute     is_xip G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/testvip.cpp 
+Execute     is_encrypted G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/vip.h 
+Execute     is_xip G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/vip.h 
+Execute     is_encrypted G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/vip.cpp 
+Execute     is_xip G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/vip.cpp 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 42.89 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 67.313 sec.
+Command ap_source done; 68.172 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP opened at Sat Nov 06 09:17:18 +0800 2021
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     config_clock -quiet -name default -uncertainty 1.25 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/dsp48e1.hlp 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.129 sec.
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.22 sec.
+Command     ap_source done; 0.22 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7_fpv6 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7_fpv6.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7k325t-ffg900-2 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data single -quiet 
+Command       ap_part_info done; 0.474 sec.
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute       add_library xilinx/kintex7/kintex7:xc7k325t:-ffg900:-2 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7k325t 
+Command         license_isbetapart done; error code: 1; 
+Execute         ap_part_info -data single -name xc7k325t-ffg900-2 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data resources 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 50950} {LUT 203800} {FF 407600} {DSP48E 840} {BRAM 890} {URAM 0} 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute         config_chip_info -quiet -speed medium 
+Execute       add_library xilinx/kintex7/kintex7_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7k325t-ffg900-2'
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.626 sec.
+Execute     ap_part_info -data single -name xc7k325t-ffg900-2 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data resources 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 50950} {LUT 203800} {FF 407600} {DSP48E 840} {BRAM 890} {URAM 0} 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute     config_chip_info -quiet -speed medium 
+Execute     config_sdx -target=none 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' config_export -vivado_optimization_level=2 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+Execute       config_export -vivado_optimization_level=2 
+Execute         get_config_export -vivado_impl_strategy 
+Execute         get_config_export -vivado_phys_opt 
+Execute       get_config_compile -pipeline_loops 
+Execute       get_config_compile -name_max_length 
+Execute       get_config_schedule -enable_dsp_full_reg 
+Execute       get_config_rtl -register_reset_num 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_interface -m_axi_addr64 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+Execute       set_clock_uncertainty default 
+Execute     config_export -display_name=VideoMerger 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Execute     config_export -vendor=zqp 
+Execute     config_export -vivado_optimization_level=2 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Command   open_solution done; 0.935 sec.
+Execute   cosim_design -trace_level all -tool xsim 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.152 sec.
+Command     ap_source done; 0.153 sec.
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7_fpv6.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     is_encrypted G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/testvip.cpp 
+Execute     is_encrypted G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/vip.h 
+Execute     is_encrypted G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/vip.cpp 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+INFO-FLOW: TB processing: G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/testvip.cpp G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/./sim/autowrap/testbench/testvip.cpp_pre.cpp
+Execute     tidy_31 xilinx-tb-xfmat G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/./sim/autowrap/testbench/testvip.cpp_pre.cpp std=c++11 
+INFO-FLOW: exec G:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/./sim/autowrap/testbench/testvip.cpp_pre.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 7.097 sec.
+Execute     tidy_31 xilinx-tb31-process G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/./sim/autowrap/testbench/testvip.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec G:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb31-process -quiet -fix-errors G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/./sim/autowrap/testbench/testvip.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 8.974 sec.
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+INFO-FLOW: TB processing: G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/vip.cpp G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/./sim/autowrap/testbench/vip.cpp_pre.cpp
+Execute     tidy_31 xilinx-tb-xfmat G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/./sim/autowrap/testbench/vip.cpp_pre.cpp std=c++11 
+INFO-FLOW: exec G:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/./sim/autowrap/testbench/vip.cpp_pre.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 5.371 sec.
+Execute     tidy_31 xilinx-tb31-process G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/./sim/autowrap/testbench/vip.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec G:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb31-process -quiet -fix-errors G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/./sim/autowrap/testbench/vip.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 5.388 sec.
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 181.158 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     send_msg_by_id WARNING @200-616@ 
+WARNING: [HLS 200-616] This design uses AXI slave interface in dataflow mode, which can result in simulation dead-lock and/or mismatching results (due to AXI slave FIFO sizing).
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     send_msg_by_id WARNING @200-616@ 
+WARNING: [HLS 200-616] This design uses AXI slave interface in dataflow mode, which can result in simulation dead-lock and/or mismatching results (due to AXI slave FIFO sizing).
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 1406.32 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+Command   cosim_design done; 1680.77 sec.
+Command ap_source done; 1681.71 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP opened at Sat Nov 06 09:46:58 +0800 2021
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     config_clock -quiet -name default -uncertainty 1.25 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/dsp48e1.hlp 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.123 sec.
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.285 sec.
+Command     ap_source done; 0.285 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7_fpv6 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7_fpv6.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7k325t-ffg900-2 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data single -quiet 
+Command       ap_part_info done; 0.521 sec.
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute       add_library xilinx/kintex7/kintex7:xc7k325t:-ffg900:-2 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7k325t 
+Command         license_isbetapart done; error code: 1; 
+Execute         ap_part_info -data single -name xc7k325t-ffg900-2 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data resources 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 50950} {LUT 203800} {FF 407600} {DSP48E 840} {BRAM 890} {URAM 0} 
+Execute         ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute         config_chip_info -quiet -speed medium 
+Execute       add_library xilinx/kintex7/kintex7_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7k325t-ffg900-2'
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.669 sec.
+Execute     ap_part_info -data single -name xc7k325t-ffg900-2 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data resources 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 50950} {LUT 203800} {FF 407600} {DSP48E 840} {BRAM 890} {URAM 0} 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info 
+Execute     config_chip_info -quiet -speed medium 
+Execute     config_sdx -target=none 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' config_export -vivado_optimization_level=2 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+Execute       config_export -vivado_optimization_level=2 
+Execute         get_config_export -vivado_impl_strategy 
+Execute         get_config_export -vivado_phys_opt 
+Execute       get_config_compile -pipeline_loops 
+Execute       get_config_compile -name_max_length 
+Execute       get_config_schedule -enable_dsp_full_reg 
+Execute       get_config_rtl -register_reset_num 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_interface -m_axi_addr64 
+Execute       send_msg_by_id INFO @200-435@%s%s 'config_sdx -target' set_clock_uncertainty default 
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+Execute       set_clock_uncertainty default 
+Execute     config_export -display_name=VideoMerger 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Execute     config_export -vendor=zqp 
+Execute     config_export -vivado_optimization_level=2 
+Execute       get_config_export -vivado_impl_strategy 
+Execute       get_config_export -vivado_phys_opt 
+Command   open_solution done; 1.148 sec.
+Execute   export_design -flow impl -rtl verilog -format ip_catalog -vendor zqp -display_name VideoMerger 
+Execute     get_config_export -acc 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -kernel_drc 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sdaccel 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -display_name=VideoMerger -format=ip_catalog -rtl=verilog -vendor=zqp 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -flow impl -rtl verilog -vendor zqp -display_name VideoMerger
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_sdx -target 
+Execute     get_config_rtl -module_auto_prefix 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl verilog -sdx-target none
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Command     ap_source done; 0.103 sec.
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.142 sec.
+Command     ap_source done; 0.142 sec.
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7_fpv6.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.142 sec.
+Command     ap_source done; 0.142 sec.
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7_fpv6.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=vip_maskMerge xml_exists=1
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat2.compgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Loop_loop_height_pro.compgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat2.compgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Loop_loop_height_pro.compgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.compgen.tcl 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute       ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat2.compgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Loop_loop_height_pro.compgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.compgen.tcl 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.constraint.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=42
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=22
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=0 g_has_adaptors=false generate_bd_files=1 #modelList=16 #gSsdmPorts=42
+Execute     source G:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source G:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Execute     source G:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source G:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute       source G:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -xo 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.compgen.dataonly.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.compgen.dataonly.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.compgen.dataonly.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.constraint.tcl 
+Execute     sc_get_clocks vip_maskMerge 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     get_config_debug -directory 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat2.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Loop_loop_height_pro.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Mat2AXIvideo.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -profile 
+Execute     get_config_rtl -kernel_profile 
+Execute     get_config_rtl -stall_sig_gen 
+Execute     get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       copying IP vlog from G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/impl/verilog
+INFO-FLOW: DBG:CMD:       copying IP vhdl from G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/impl/vhdl
+INFO-FLOW: DBG:CMD:       copy ip_driver_dir 1_0 G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/driver
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=42
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.compgen.dataonly.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.compgen.dataonly.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=vip_maskMerge
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=vip_maskMerge
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.rtl_wrap.cfg.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_bd_script
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.constraint.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       copy-tb-files G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/impl/.verilog/sim_tbs
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.144 sec.
+Command     ap_source done; 0.144 sec.
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7_fpv6.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+INFO-FLOW: DBG:CMD:     exec G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/impl/ip/pack.bat
+INFO-FLOW: DBG:CMD:   auto_impl: eval: -tool vivado -flow impl -rtl verilog
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.149 sec.
+Command     ap_source done; 0.149 sec.
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7_fpv6.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -rtl vlog -tool Vivado -impltomg_flag
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.14 sec.
+Command     ap_source done; 0.141 sec.
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7_fpv6.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/verilog
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/AXIvideo2Mat2.compgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Loop_loop_height_pro.compgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.constraint.tcl 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/vip_maskMerge.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       copy-tb-files G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/impl/verilog/sim_tbs
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.105 sec.
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.15 sec.
+Command     ap_source done; 0.15 sec.
+Execute     source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintex7/kintex7_fpv6.gen 
+Execute       source G:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     get_config_export -vivado_report_level 
+Execute     get_config_export -vivado_ip_cache 
+Execute     get_config_export -vivado_enable_slr_assignment 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data names -quiet 
+Execute     ap_part_info -name xc7k325t-ffg900-2 -data info -quiet 
+Execute     get_config_export -vivado_bd_cell_properties 
+Execute     get_config_export -vivado_synth_design_args 
+Execute     source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_synth_strategy 
+Execute     get_config_export -vivado_synth_run_properties 
+Execute     get_config_export -vivado_impl_run_properties 
+Execute     get_config_export -vivado_enable_pblock 
+Execute     get_config_export -vivado_impl_strategy 
+Execute     get_config_export -vivado_phys_opt 
+INFO-FLOW: DBG:CMD: auto_impl: vlog exec G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/impl/verilog/impl.bat
+Command   export_design done; 281.301 sec.
+Command ap_source done; 282.486 sec.
+Execute cleanup_all 

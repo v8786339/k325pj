@@ -1,0 +1,7 @@
+Running: xsim.dir/vip_maskMerge/xsimk.exe -simmode gui -wdb vip_maskMerge.wdb -simrunnum 0 -socket 1373
+Design successfully loaded
+Design Loading Memory Usage: 47140 KB (Peak: 47140 KB)
+Design Loading CPU Usage: 171 ms
+Simulation completed
+Simulation Memory Usage: 1251944 KB (Peak: 1251944 KB)
+Simulation CPU Usage: 1209864 ms

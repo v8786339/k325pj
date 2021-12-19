@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="example.cpp" path="G:\BaiduNetdiskDownload\memblaze\k325pj_finalok\axi_stream_no_side_channel_data\example.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="example_test.cpp" path="G:\BaiduNetdiskDownload\memblaze\k325pj_finalok\axi_stream_no_side_channel_data\example_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

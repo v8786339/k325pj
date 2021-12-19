@@ -3,21 +3,23 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="G:/BaiduNetdiskDownload/memblaze/k325pj_finalok_before_addCam/k325pj/project_1.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+      <db_ref path="G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
          <top_modules>
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="179222fs"></ZoomEndTime>
+      <ZoomStartTime time="83867fs"></ZoomStartTime>
+      <ZoomEndTime time="264668fs"></ZoomEndTime>
       <Cursor1Time time="114000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="217"></NameColumnWidth>
-      <ValueColumnWidth column_width="106"></ValueColumnWidth>
+      <ValueColumnWidth column_width="110"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="10" />
+   <wave_markers>
+   </wave_markers>
    <wvobject fp_name="design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[23:0]</obj_property>

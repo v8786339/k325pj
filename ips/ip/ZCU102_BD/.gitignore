@@ -1,0 +1,12 @@
+#IGNORE EVERYTHING
+*
+
+#Unignore Directories (Needed to unignore files in Subdirectories)
+!*/
+
+#WHITELIST
+!*.gitignore
+!GPU_BD/*.bd
+!GPU_BD/*.bxml
+!GPU_BD/hdl/**
+!GPU_BD/ui/**

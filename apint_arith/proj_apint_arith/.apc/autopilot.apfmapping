@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="apint_arith.c" path="G:\BaiduNetdiskDownload\memblaze\k325pj_finalok\apint_arith\apint_arith.c"/>
+  </source>
+  <testbench>
+    <originFiles name="result.golden.dat" path="G:\BaiduNetdiskDownload\memblaze\k325pj_finalok\apint_arith\result.golden.dat"/>
+    <originFiles name="apint_arith_test.c" path="G:\BaiduNetdiskDownload\memblaze\k325pj_finalok\apint_arith\apint_arith_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

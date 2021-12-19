@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="vip_maskMerge.wdb" id="1">
+         <top_modules>
+            <top_module name="apatb_vip_maskMerge_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+   </zoom_setting>
+   <column_width_setting>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="group1" type="group">
+      <obj_property name="label">Design Top Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group2" type="group">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group3" type="group">
+            <obj_property name="label">dst_axi(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/dst_axi_TREADY" type="logic">
+               <obj_property name="ElementShortName">dst_axi_TREADY</obj_property>
+               <obj_property name="ObjectShortName">dst_axi_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/dst_axi_TVALID" type="logic">
+               <obj_property name="ElementShortName">dst_axi_TVALID</obj_property>
+               <obj_property name="ObjectShortName">dst_axi_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/dst_axi_TDEST" type="array">
+               <obj_property name="ElementShortName">dst_axi_TDEST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">dst_axi_TDEST[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/dst_axi_TID" type="array">
+               <obj_property name="ElementShortName">dst_axi_TID[0:0]</obj_property>
+               <obj_property name="ObjectShortName">dst_axi_TID[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/dst_axi_TLAST" type="array">
+               <obj_property name="ElementShortName">dst_axi_TLAST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">dst_axi_TLAST[0:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/dst_axi_TUSER" type="array">
+               <obj_property name="ElementShortName">dst_axi_TUSER[0:0]</obj_property>
+               <obj_property name="ObjectShortName">dst_axi_TUSER[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/dst_axi_TSTRB" type="array">
+               <obj_property name="ElementShortName">dst_axi_TSTRB[2:0]</obj_property>
+               <obj_property name="ObjectShortName">dst_axi_TSTRB[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/dst_axi_TKEEP" type="array">
+               <obj_property name="ElementShortName">dst_axi_TKEEP[2:0]</obj_property>
+               <obj_property name="ObjectShortName">dst_axi_TKEEP[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/dst_axi_TDATA" type="array">
+               <obj_property name="ElementShortName">dst_axi_TDATA[23:0]</obj_property>
+               <obj_property name="ObjectShortName">dst_axi_TDATA[23:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group13" type="group">
+            <obj_property name="label">return(axi_slave)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/interrupt" type="logic">
+               <obj_property name="ElementShortName">interrupt</obj_property>
+               <obj_property name="ObjectShortName">interrupt</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/s_axi_AXILiteS_BRESP" type="array">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_BRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_BRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/s_axi_AXILiteS_BREADY" type="logic">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_BREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_BREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/s_axi_AXILiteS_BVALID" type="logic">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_BVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_BVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/s_axi_AXILiteS_RRESP" type="array">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_RRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_RRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/s_axi_AXILiteS_RDATA" type="array">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_RDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_RDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/s_axi_AXILiteS_RREADY" type="logic">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_RREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_RREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/s_axi_AXILiteS_RVALID" type="logic">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_RVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_RVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/s_axi_AXILiteS_ARREADY" type="logic">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_ARREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_ARREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/s_axi_AXILiteS_ARVALID" type="logic">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_ARVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_ARVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/s_axi_AXILiteS_ARADDR" type="array">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_ARADDR[3:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_ARADDR[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/s_axi_AXILiteS_WSTRB" type="array">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_WSTRB[3:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_WSTRB[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/s_axi_AXILiteS_WDATA" type="array">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_WDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_WDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/s_axi_AXILiteS_WREADY" type="logic">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_WREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_WREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/s_axi_AXILiteS_WVALID" type="logic">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_WVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_WVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/s_axi_AXILiteS_AWREADY" type="logic">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_AWREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_AWREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/s_axi_AXILiteS_AWVALID" type="logic">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_AWVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_AWVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/s_axi_AXILiteS_AWADDR" type="array">
+               <obj_property name="ElementShortName">s_axi_AXILiteS_AWADDR[3:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_AXILiteS_AWADDR[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group32" type="group">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group33" type="group">
+            <obj_property name="label">mask2(bram)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/mask2_Rst_A" type="logic">
+               <obj_property name="ElementShortName">mask2_Rst_A</obj_property>
+               <obj_property name="ObjectShortName">mask2_Rst_A</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/mask2_Clk_A" type="logic">
+               <obj_property name="ElementShortName">mask2_Clk_A</obj_property>
+               <obj_property name="ObjectShortName">mask2_Clk_A</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/mask2_WEN_A" type="array">
+               <obj_property name="ElementShortName">mask2_WEN_A[3:0]</obj_property>
+               <obj_property name="ObjectShortName">mask2_WEN_A[3:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/mask2_Dout_A" type="array">
+               <obj_property name="ElementShortName">mask2_Dout_A[31:0]</obj_property>
+               <obj_property name="ObjectShortName">mask2_Dout_A[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/mask2_Din_A" type="array">
+               <obj_property name="ElementShortName">mask2_Din_A[31:0]</obj_property>
+               <obj_property name="ObjectShortName">mask2_Din_A[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/mask2_EN_A" type="logic">
+               <obj_property name="ElementShortName">mask2_EN_A</obj_property>
+               <obj_property name="ObjectShortName">mask2_EN_A</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/mask2_Addr_A" type="array">
+               <obj_property name="ElementShortName">mask2_Addr_A[31:0]</obj_property>
+               <obj_property name="ObjectShortName">mask2_Addr_A[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group41" type="group">
+            <obj_property name="label">src_axi1(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/src_axi1_TREADY" type="logic">
+               <obj_property name="ElementShortName">src_axi1_TREADY</obj_property>
+               <obj_property name="ObjectShortName">src_axi1_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/src_axi1_TVALID" type="logic">
+               <obj_property name="ElementShortName">src_axi1_TVALID</obj_property>
+               <obj_property name="ObjectShortName">src_axi1_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/src_axi1_TDEST" type="array">
+               <obj_property name="ElementShortName">src_axi1_TDEST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi1_TDEST[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/src_axi1_TID" type="array">
+               <obj_property name="ElementShortName">src_axi1_TID[0:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi1_TID[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/src_axi1_TLAST" type="array">
+               <obj_property name="ElementShortName">src_axi1_TLAST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi1_TLAST[0:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/src_axi1_TUSER" type="array">
+               <obj_property name="ElementShortName">src_axi1_TUSER[0:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi1_TUSER[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/src_axi1_TSTRB" type="array">
+               <obj_property name="ElementShortName">src_axi1_TSTRB[2:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi1_TSTRB[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/src_axi1_TKEEP" type="array">
+               <obj_property name="ElementShortName">src_axi1_TKEEP[2:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi1_TKEEP[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/src_axi1_TDATA" type="array">
+               <obj_property name="ElementShortName">src_axi1_TDATA[23:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi1_TDATA[23:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group51" type="group">
+            <obj_property name="label">src_axi0(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/src_axi0_TREADY" type="logic">
+               <obj_property name="ElementShortName">src_axi0_TREADY</obj_property>
+               <obj_property name="ObjectShortName">src_axi0_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/src_axi0_TVALID" type="logic">
+               <obj_property name="ElementShortName">src_axi0_TVALID</obj_property>
+               <obj_property name="ObjectShortName">src_axi0_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/src_axi0_TDEST" type="array">
+               <obj_property name="ElementShortName">src_axi0_TDEST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi0_TDEST[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/src_axi0_TID" type="array">
+               <obj_property name="ElementShortName">src_axi0_TID[0:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi0_TID[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/src_axi0_TLAST" type="array">
+               <obj_property name="ElementShortName">src_axi0_TLAST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi0_TLAST[0:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/src_axi0_TUSER" type="array">
+               <obj_property name="ElementShortName">src_axi0_TUSER[0:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi0_TUSER[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/src_axi0_TSTRB" type="array">
+               <obj_property name="ElementShortName">src_axi0_TSTRB[2:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi0_TSTRB[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/src_axi0_TKEEP" type="array">
+               <obj_property name="ElementShortName">src_axi0_TKEEP[2:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi0_TKEEP[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/src_axi0_TDATA" type="array">
+               <obj_property name="ElementShortName">src_axi0_TDATA[23:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi0_TDATA[23:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group61" type="group">
+         <obj_property name="label">Block-level IO Handshake(internal)</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/ap_done" type="logic">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/ap_idle" type="logic">
+            <obj_property name="ElementShortName">ap_idle</obj_property>
+            <obj_property name="ObjectShortName">ap_idle</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/ap_ready" type="logic">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/ap_start" type="logic">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group66" type="group">
+         <obj_property name="label">Reset</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/ap_rst_n" type="logic">
+            <obj_property name="ElementShortName">ap_rst_n</obj_property>
+            <obj_property name="ObjectShortName">ap_rst_n</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group68" type="group">
+         <obj_property name="label">Clock</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_vip_maskMerge_top/AESL_inst_vip_maskMerge/ap_clk" type="logic">
+            <obj_property name="ElementShortName">ap_clk</obj_property>
+            <obj_property name="ObjectShortName">ap_clk</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group70" type="group">
+      <obj_property name="label">Test Bench Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group71" type="group">
+         <obj_property name="label">Internal Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group72" type="group">
+            <obj_property name="label">Simulation Status</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AUTOTB_TRANSACTION_NUM" type="array">
+               <obj_property name="ElementShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="ObjectShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/ready_cnt" type="array">
+               <obj_property name="ElementShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/done_cnt" type="array">
+               <obj_property name="ElementShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group73" type="group">
+            <obj_property name="label">Port Depth</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_src_axi0_V_data_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_src_axi0_V_data_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_src_axi0_V_data_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_src_axi0_V_keep_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_src_axi0_V_keep_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_src_axi0_V_keep_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_src_axi0_V_strb_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_src_axi0_V_strb_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_src_axi0_V_strb_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_src_axi0_V_user_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_src_axi0_V_user_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_src_axi0_V_user_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_src_axi0_V_last_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_src_axi0_V_last_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_src_axi0_V_last_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_src_axi0_V_id_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_src_axi0_V_id_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_src_axi0_V_id_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_src_axi0_V_dest_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_src_axi0_V_dest_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_src_axi0_V_dest_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_src_axi1_V_data_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_src_axi1_V_data_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_src_axi1_V_data_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_src_axi1_V_keep_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_src_axi1_V_keep_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_src_axi1_V_keep_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_src_axi1_V_strb_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_src_axi1_V_strb_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_src_axi1_V_strb_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_src_axi1_V_user_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_src_axi1_V_user_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_src_axi1_V_user_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_src_axi1_V_last_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_src_axi1_V_last_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_src_axi1_V_last_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_src_axi1_V_id_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_src_axi1_V_id_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_src_axi1_V_id_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_src_axi1_V_dest_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_src_axi1_V_dest_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_src_axi1_V_dest_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_mask2" type="array">
+               <obj_property name="ElementShortName">LENGTH_mask2[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_mask2[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_dst_axi_V_data_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_dst_axi_V_data_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_dst_axi_V_data_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_dst_axi_V_keep_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_dst_axi_V_keep_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_dst_axi_V_keep_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_dst_axi_V_strb_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_dst_axi_V_strb_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_dst_axi_V_strb_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_dst_axi_V_user_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_dst_axi_V_user_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_dst_axi_V_user_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_dst_axi_V_last_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_dst_axi_V_last_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_dst_axi_V_last_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_dst_axi_V_id_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_dst_axi_V_id_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_dst_axi_V_id_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/LENGTH_dst_axi_V_dest_V" type="array">
+               <obj_property name="ElementShortName">LENGTH_dst_axi_V_dest_V[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_dst_axi_V_dest_V[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group99" type="group">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group100" type="group">
+            <obj_property name="label">dst_axi(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/dst_axi_TREADY" type="logic">
+               <obj_property name="ElementShortName">dst_axi_TREADY</obj_property>
+               <obj_property name="ObjectShortName">dst_axi_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/dst_axi_TVALID" type="logic">
+               <obj_property name="ElementShortName">dst_axi_TVALID</obj_property>
+               <obj_property name="ObjectShortName">dst_axi_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/dst_axi_TDEST" type="array">
+               <obj_property name="ElementShortName">dst_axi_TDEST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">dst_axi_TDEST[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/dst_axi_TID" type="array">
+               <obj_property name="ElementShortName">dst_axi_TID[0:0]</obj_property>
+               <obj_property name="ObjectShortName">dst_axi_TID[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/dst_axi_TLAST" type="array">
+               <obj_property name="ElementShortName">dst_axi_TLAST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">dst_axi_TLAST[0:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/dst_axi_TUSER" type="array">
+               <obj_property name="ElementShortName">dst_axi_TUSER[0:0]</obj_property>
+               <obj_property name="ObjectShortName">dst_axi_TUSER[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/dst_axi_TSTRB" type="array">
+               <obj_property name="ElementShortName">dst_axi_TSTRB[2:0]</obj_property>
+               <obj_property name="ObjectShortName">dst_axi_TSTRB[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/dst_axi_TKEEP" type="array">
+               <obj_property name="ElementShortName">dst_axi_TKEEP[2:0]</obj_property>
+               <obj_property name="ObjectShortName">dst_axi_TKEEP[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/dst_axi_TDATA" type="array">
+               <obj_property name="ElementShortName">dst_axi_TDATA[23:0]</obj_property>
+               <obj_property name="ObjectShortName">dst_axi_TDATA[23:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group110" type="group">
+            <obj_property name="label">return(axi_slave)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AXILiteS_INTERRUPT" type="logic">
+               <obj_property name="ElementShortName">AXILiteS_INTERRUPT</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_INTERRUPT</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AXILiteS_BRESP" type="array">
+               <obj_property name="ElementShortName">AXILiteS_BRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_BRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AXILiteS_BREADY" type="logic">
+               <obj_property name="ElementShortName">AXILiteS_BREADY</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_BREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AXILiteS_BVALID" type="logic">
+               <obj_property name="ElementShortName">AXILiteS_BVALID</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_BVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AXILiteS_RRESP" type="array">
+               <obj_property name="ElementShortName">AXILiteS_RRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_RRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AXILiteS_RDATA" type="array">
+               <obj_property name="ElementShortName">AXILiteS_RDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_RDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AXILiteS_RREADY" type="logic">
+               <obj_property name="ElementShortName">AXILiteS_RREADY</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_RREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AXILiteS_RVALID" type="logic">
+               <obj_property name="ElementShortName">AXILiteS_RVALID</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_RVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AXILiteS_ARREADY" type="logic">
+               <obj_property name="ElementShortName">AXILiteS_ARREADY</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_ARREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AXILiteS_ARVALID" type="logic">
+               <obj_property name="ElementShortName">AXILiteS_ARVALID</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_ARVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AXILiteS_ARADDR" type="array">
+               <obj_property name="ElementShortName">AXILiteS_ARADDR[3:0]</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_ARADDR[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AXILiteS_WSTRB" type="array">
+               <obj_property name="ElementShortName">AXILiteS_WSTRB[3:0]</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_WSTRB[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AXILiteS_WDATA" type="array">
+               <obj_property name="ElementShortName">AXILiteS_WDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_WDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AXILiteS_WREADY" type="logic">
+               <obj_property name="ElementShortName">AXILiteS_WREADY</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_WREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AXILiteS_WVALID" type="logic">
+               <obj_property name="ElementShortName">AXILiteS_WVALID</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_WVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AXILiteS_AWREADY" type="logic">
+               <obj_property name="ElementShortName">AXILiteS_AWREADY</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_AWREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AXILiteS_AWVALID" type="logic">
+               <obj_property name="ElementShortName">AXILiteS_AWVALID</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_AWVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/AXILiteS_AWADDR" type="array">
+               <obj_property name="ElementShortName">AXILiteS_AWADDR[3:0]</obj_property>
+               <obj_property name="ObjectShortName">AXILiteS_AWADDR[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group129" type="group">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group130" type="group">
+            <obj_property name="label">mask2(bram)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/mask2_RST_A" type="logic">
+               <obj_property name="ElementShortName">mask2_RST_A</obj_property>
+               <obj_property name="ObjectShortName">mask2_RST_A</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/mask2_CLK_A" type="logic">
+               <obj_property name="ElementShortName">mask2_CLK_A</obj_property>
+               <obj_property name="ObjectShortName">mask2_CLK_A</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/mask2_WEN_A" type="array">
+               <obj_property name="ElementShortName">mask2_WEN_A[3:0]</obj_property>
+               <obj_property name="ObjectShortName">mask2_WEN_A[3:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/mask2_DOUT_A" type="array">
+               <obj_property name="ElementShortName">mask2_DOUT_A[31:0]</obj_property>
+               <obj_property name="ObjectShortName">mask2_DOUT_A[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/mask2_DIN_A" type="array">
+               <obj_property name="ElementShortName">mask2_DIN_A[31:0]</obj_property>
+               <obj_property name="ObjectShortName">mask2_DIN_A[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/mask2_EN_A" type="logic">
+               <obj_property name="ElementShortName">mask2_EN_A</obj_property>
+               <obj_property name="ObjectShortName">mask2_EN_A</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/mask2_ADDR_A" type="array">
+               <obj_property name="ElementShortName">mask2_ADDR_A[31:0]</obj_property>
+               <obj_property name="ObjectShortName">mask2_ADDR_A[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group138" type="group">
+            <obj_property name="label">src_axi1(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/src_axi1_TREADY" type="logic">
+               <obj_property name="ElementShortName">src_axi1_TREADY</obj_property>
+               <obj_property name="ObjectShortName">src_axi1_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/src_axi1_TVALID" type="logic">
+               <obj_property name="ElementShortName">src_axi1_TVALID</obj_property>
+               <obj_property name="ObjectShortName">src_axi1_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/src_axi1_TDEST" type="array">
+               <obj_property name="ElementShortName">src_axi1_TDEST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi1_TDEST[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/src_axi1_TID" type="array">
+               <obj_property name="ElementShortName">src_axi1_TID[0:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi1_TID[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/src_axi1_TLAST" type="array">
+               <obj_property name="ElementShortName">src_axi1_TLAST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi1_TLAST[0:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/src_axi1_TUSER" type="array">
+               <obj_property name="ElementShortName">src_axi1_TUSER[0:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi1_TUSER[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/src_axi1_TSTRB" type="array">
+               <obj_property name="ElementShortName">src_axi1_TSTRB[2:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi1_TSTRB[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/src_axi1_TKEEP" type="array">
+               <obj_property name="ElementShortName">src_axi1_TKEEP[2:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi1_TKEEP[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/src_axi1_TDATA" type="array">
+               <obj_property name="ElementShortName">src_axi1_TDATA[23:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi1_TDATA[23:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group148" type="group">
+            <obj_property name="label">src_axi0(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/src_axi0_TREADY" type="logic">
+               <obj_property name="ElementShortName">src_axi0_TREADY</obj_property>
+               <obj_property name="ObjectShortName">src_axi0_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/src_axi0_TVALID" type="logic">
+               <obj_property name="ElementShortName">src_axi0_TVALID</obj_property>
+               <obj_property name="ObjectShortName">src_axi0_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/src_axi0_TDEST" type="array">
+               <obj_property name="ElementShortName">src_axi0_TDEST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi0_TDEST[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/src_axi0_TID" type="array">
+               <obj_property name="ElementShortName">src_axi0_TID[0:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi0_TID[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/src_axi0_TLAST" type="array">
+               <obj_property name="ElementShortName">src_axi0_TLAST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi0_TLAST[0:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/src_axi0_TUSER" type="array">
+               <obj_property name="ElementShortName">src_axi0_TUSER[0:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi0_TUSER[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/src_axi0_TSTRB" type="array">
+               <obj_property name="ElementShortName">src_axi0_TSTRB[2:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi0_TSTRB[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/src_axi0_TKEEP" type="array">
+               <obj_property name="ElementShortName">src_axi0_TKEEP[2:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi0_TKEEP[2:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_vip_maskMerge_top/src_axi0_TDATA" type="array">
+               <obj_property name="ElementShortName">src_axi0_TDATA[23:0]</obj_property>
+               <obj_property name="ObjectShortName">src_axi0_TDATA[23:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

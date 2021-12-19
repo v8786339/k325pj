@@ -1,0 +1,8 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="11" filename="array_RAM.c" linenumber="97" name="icmp_ln97" contextFuncName="array_RAM" moduleName="array_RAM" rtlName="icmp_ln97_fu_79_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="9" fileDirectory="G:\BaiduNetdiskDownload\memblaze\k325pj_finalok\ips\memoryCreator\array_RAM"><\/item>
+<item  id="13" filename="array_RAM.c" linenumber="97" name="i" contextFuncName="array_RAM" moduleName="array_RAM" rtlName="i_fu_85_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="12" fileDirectory="G:\BaiduNetdiskDownload\memblaze\k325pj_finalok\ips\memoryCreator\array_RAM"><\/item>
+<item  id="17" filename="array_RAM.c" linenumber="98" name="zext_ln98" contextFuncName="array_RAM" moduleName="array_RAM" rtlName="zext_ln98_fu_91_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="G:\BaiduNetdiskDownload\memblaze\k325pj_finalok\ips\memoryCreator\array_RAM"><\/item>
+<item  id="20" filename="array_RAM.c" linenumber="98" name="sext_ln98" contextFuncName="array_RAM" moduleName="array_RAM" rtlName="sext_ln98_fu_96_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="G:\BaiduNetdiskDownload\memblaze\k325pj_finalok\ips\memoryCreator\array_RAM"><\/item>
+<\/annotationInfo>
+</annotationInfo>

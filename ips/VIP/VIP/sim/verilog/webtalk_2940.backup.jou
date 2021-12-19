@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Nov  6 09:23:09 2021
+# Process ID: 2940
+# Current directory: G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog
+# Command line: wbtcv.exe -mode batch -source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/xsim.dir/vip_maskMerge/webtalk/xsim_webtalk.tcl -notrace
+# Log file: G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/webtalk.log
+# Journal file: G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog\webtalk.jou
+#-----------------------------------------------------------
+source G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/xsim.dir/vip_maskMerge/webtalk/xsim_webtalk.tcl -notrace

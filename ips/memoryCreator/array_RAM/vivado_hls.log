@@ -1,0 +1,30 @@
+INFO: [HLS 200-10] Running 'G:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'dereck' on host 'zqp-pc' (Windows NT_amd64 version 6.1) on Sat Nov 06 13:47:26 +0800 2021
+INFO: [HLS 200-10] In directory 'G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/memoryCreator/array_RAM'
+Sourcing Tcl script 'G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/memoryCreator/array_RAM/proj_array_RAM/solution1/csim.tcl'
+INFO: [HLS 200-10] Opening project 'G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/memoryCreator/array_RAM/proj_array_RAM'.
+INFO: [HLS 200-10] Opening solution 'G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/memoryCreator/array_RAM/proj_array_RAM/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7k325t-ffg900-2'
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../array_RAM_test.c in debug mode
+INFO: [HLS 200-10] Running 'G:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'dereck' on host 'zqp-pc' (Windows NT_amd64 version 6.1) on Sat Nov 06 13:47:30 +0800 2021
+INFO: [HLS 200-10] In directory 'G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/memoryCreator/array_RAM/proj_array_RAM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../array_RAM.c in debug mode
+INFO: [HLS 200-10] Running 'G:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'dereck' on host 'zqp-pc' (Windows NT_amd64 version 6.1) on Sat Nov 06 13:47:36 +0800 2021
+INFO: [HLS 200-10] In directory 'G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/memoryCreator/array_RAM/proj_array_RAM/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Generating csim.exe
+Test passed !
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************

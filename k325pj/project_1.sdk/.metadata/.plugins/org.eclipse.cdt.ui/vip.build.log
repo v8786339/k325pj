@@ -1,6 +1,21 @@
-08:06:36 **** Incremental Build of configuration Debug for project vip ****
+08:12:07 **** Auto Build of configuration Debug for project vip ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: vip.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "vip.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: vip.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size vip.elf  |tee "vip.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  97060	   1684	   3184	 101928	  18e28	vip.elf
+Finished building: vip.elf.size
+ 
 
-08:06:37 Build Finished (took 670ms)
+08:12:08 Build Finished (took 627ms)
 

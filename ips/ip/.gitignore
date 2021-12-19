@@ -1,0 +1,10 @@
+#Ignore Checkpoint Files
+*.dcp
+
+#Ignore Complete IP Directories
+
+#Unignore Directories (Needed to unignore files in Subdirectories)
+!*/
+
+#Unignore .XCI Files (Only in First subdirectory)
+!/*.xci

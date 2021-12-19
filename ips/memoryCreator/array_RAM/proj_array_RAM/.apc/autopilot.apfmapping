@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="array_RAM.c" path="G:\BaiduNetdiskDownload\memblaze\k325pj_finalok\ips\memoryCreator\array_RAM\array_RAM.c"/>
+  </source>
+  <testbench>
+    <originFiles name="result.golden.dat" path="G:\BaiduNetdiskDownload\memblaze\k325pj_finalok\ips\memoryCreator\array_RAM\result.golden.dat"/>
+    <originFiles name="array_RAM_test.c" path="G:\BaiduNetdiskDownload\memblaze\k325pj_finalok\ips\memoryCreator\array_RAM\array_RAM_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

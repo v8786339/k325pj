@@ -1,0 +1,290 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'Loop_loop_height_pro'" level="0">
+<item name = "Date">Sat Nov  6 09:15:22 2021
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">VIP</item>
+<item name = "Solution">VIP</item>
+<item name = "Product family">kintex7</item>
+<item name = "Target device">xc7k325t-ffg900-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 4.936, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">2080081, 2777761, 2080081, 2777761, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_AXIvideo2Mat2_fu_273">AXIvideo2Mat2, 645, 646, 645, 646, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- loop_height">2080080, 2777760, 1926 ~ 2572, -, -, 1080, no</column>
+<column name=" + loop_width">1922, 1922, 4, 1, 1, 1920, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 499, -</column>
+<column name="FIFO">3, -, 165, 354, -</column>
+<column name="Instance">-, -, 166, 364, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 434, -</column>
+<column name="Register">-, -, 237, -, -</column>
+<specialColumn name="Available">890, 840, 407600, 203800, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="grp_AXIvideo2Mat2_fu_273">AXIvideo2Mat2, 0, 0, 166, 364, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="imag0_0_data_stream_1_fifo_U">1, 55, 0, -, 1920, 8, 15360</column>
+<column name="imag0_0_data_stream_2_fifo_U">1, 55, 0, -, 1920, 8, 15360</column>
+<column name="imag0_0_data_stream_s_fifo_U">1, 55, 0, -, 1920, 8, 15360</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln324_fu_361_p2">+, 0, 0, 28, 21, 1</column>
+<column name="i_V_fu_303_p2">+, 0, 0, 18, 11, 1</column>
+<column name="j_V_fu_336_p2">+, 0, 0, 18, 11, 1</column>
+<column name="k_fu_324_p2">+, 0, 0, 28, 21, 11</column>
+<column name="and_ln330_fu_384_p2">and, 0, 0, 32, 32, 32</column>
+<column name="and_ln334_fu_402_p2">and, 0, 0, 32, 32, 32</column>
+<column name="ap_block_state3_on_subcall_done">and, 0, 0, 2, 1, 1</column>
+<column name="src_axi0_V_data_V_0_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="src_axi0_V_data_V_0_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="src_axi0_V_dest_V_0_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="src_axi0_V_dest_V_0_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="src_axi0_V_id_V_0_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="src_axi0_V_id_V_0_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="src_axi0_V_keep_V_0_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="src_axi0_V_keep_V_0_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="src_axi0_V_last_V_0_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="src_axi0_V_last_V_0_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="src_axi0_V_strb_V_0_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="src_axi0_V_strb_V_0_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="src_axi0_V_user_V_0_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="src_axi0_V_user_V_0_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln330_fu_390_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="icmp_ln334_fu_408_p2">icmp, 0, 0, 18, 32, 1</column>
+<column name="icmp_ln887_1_fu_309_p2">icmp, 0, 0, 13, 11, 9</column>
+<column name="icmp_ln887_2_fu_330_p2">icmp, 0, 0, 13, 11, 9</column>
+<column name="icmp_ln887_fu_297_p2">icmp, 0, 0, 13, 11, 11</column>
+<column name="src_axi0_V_data_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="src_axi0_V_dest_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="src_axi0_V_id_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="src_axi0_V_keep_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="src_axi0_V_last_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="src_axi0_V_strb_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="src_axi0_V_user_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="ap_block_pp0_stage0_01001">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state6_pp0_stage0_iter2">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state7_pp0_stage0_iter3">or, 0, 0, 2, 1, 1</column>
+<column name="shl_ln330_fu_378_p2">shl, 0, 0, 85, 2, 32</column>
+<column name="shl_ln334_fu_396_p2">shl, 0, 0, 85, 2, 32</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">xor, 0, 0, 2, 2, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">25, 6, 1, 6</column>
+<column name="ap_done">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter3">9, 2, 1, 2</column>
+<column name="imag0_0_data_stream_1_write">9, 2, 1, 2</column>
+<column name="imag0_0_data_stream_2_write">9, 2, 1, 2</column>
+<column name="imag0_0_data_stream_s_write">9, 2, 1, 2</column>
+<column name="imagSrc_data_stream_0_V_blk_n">9, 2, 1, 2</column>
+<column name="imagSrc_data_stream_1_V_blk_n">9, 2, 1, 2</column>
+<column name="imagSrc_data_stream_2_V_blk_n">9, 2, 1, 2</column>
+<column name="imag_1_data_stream_0_V_blk_n">9, 2, 1, 2</column>
+<column name="imag_1_data_stream_0_V_din">13, 3, 8, 24</column>
+<column name="imag_1_data_stream_1_V_blk_n">9, 2, 1, 2</column>
+<column name="imag_1_data_stream_1_V_din">13, 3, 8, 24</column>
+<column name="imag_1_data_stream_2_V_blk_n">9, 2, 1, 2</column>
+<column name="imag_1_data_stream_2_V_din">13, 3, 8, 24</column>
+<column name="k_0_reg_240">9, 2, 21, 42</column>
+<column name="op2_assign_reg_263">9, 2, 21, 42</column>
+<column name="real_start">9, 2, 1, 2</column>
+<column name="src_axi0_V_data_V_0_ack_out">9, 2, 1, 2</column>
+<column name="src_axi0_V_data_V_0_data_out">9, 2, 24, 48</column>
+<column name="src_axi0_V_data_V_0_state">13, 3, 2, 6</column>
+<column name="src_axi0_V_dest_V_0_ack_out">9, 2, 1, 2</column>
+<column name="src_axi0_V_dest_V_0_data_out">9, 2, 1, 2</column>
+<column name="src_axi0_V_dest_V_0_state">13, 3, 2, 6</column>
+<column name="src_axi0_V_id_V_0_ack_out">9, 2, 1, 2</column>
+<column name="src_axi0_V_id_V_0_data_out">9, 2, 1, 2</column>
+<column name="src_axi0_V_id_V_0_state">13, 3, 2, 6</column>
+<column name="src_axi0_V_keep_V_0_ack_out">9, 2, 1, 2</column>
+<column name="src_axi0_V_keep_V_0_data_out">9, 2, 3, 6</column>
+<column name="src_axi0_V_keep_V_0_state">13, 3, 2, 6</column>
+<column name="src_axi0_V_last_V_0_ack_out">9, 2, 1, 2</column>
+<column name="src_axi0_V_last_V_0_data_out">9, 2, 1, 2</column>
+<column name="src_axi0_V_last_V_0_state">13, 3, 2, 6</column>
+<column name="src_axi0_V_strb_V_0_ack_out">9, 2, 1, 2</column>
+<column name="src_axi0_V_strb_V_0_data_out">9, 2, 3, 6</column>
+<column name="src_axi0_V_strb_V_0_state">13, 3, 2, 6</column>
+<column name="src_axi0_V_user_V_0_ack_out">9, 2, 1, 2</column>
+<column name="src_axi0_V_user_V_0_data_out">9, 2, 1, 2</column>
+<column name="src_axi0_V_user_V_0_state">13, 3, 2, 6</column>
+<column name="t_V_1_reg_252">9, 2, 11, 22</column>
+<column name="t_V_reg_228">9, 2, 11, 22</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">5, 0, 5, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
+<column name="grp_AXIvideo2Mat2_fu_273_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_V_reg_486">11, 0, 11, 0</column>
+<column name="icmp_ln330_reg_529">1, 0, 1, 0</column>
+<column name="icmp_ln334_reg_533">1, 0, 1, 0</column>
+<column name="icmp_ln334_reg_533_pp0_iter2_reg">1, 0, 1, 0</column>
+<column name="icmp_ln887_1_reg_491">1, 0, 1, 0</column>
+<column name="k_0_reg_240">21, 0, 21, 0</column>
+<column name="k_reg_500">21, 0, 21, 0</column>
+<column name="op2_assign_reg_263">21, 0, 21, 0</column>
+<column name="sof_1_fu_130">1, 0, 1, 0</column>
+<column name="src_axi0_V_data_V_0_payload_A">24, 0, 24, 0</column>
+<column name="src_axi0_V_data_V_0_payload_B">24, 0, 24, 0</column>
+<column name="src_axi0_V_data_V_0_sel_rd">1, 0, 1, 0</column>
+<column name="src_axi0_V_data_V_0_sel_wr">1, 0, 1, 0</column>
+<column name="src_axi0_V_data_V_0_state">2, 0, 2, 0</column>
+<column name="src_axi0_V_dest_V_0_payload_A">1, 0, 1, 0</column>
+<column name="src_axi0_V_dest_V_0_payload_B">1, 0, 1, 0</column>
+<column name="src_axi0_V_dest_V_0_sel_rd">1, 0, 1, 0</column>
+<column name="src_axi0_V_dest_V_0_sel_wr">1, 0, 1, 0</column>
+<column name="src_axi0_V_dest_V_0_state">2, 0, 2, 0</column>
+<column name="src_axi0_V_id_V_0_payload_A">1, 0, 1, 0</column>
+<column name="src_axi0_V_id_V_0_payload_B">1, 0, 1, 0</column>
+<column name="src_axi0_V_id_V_0_sel_rd">1, 0, 1, 0</column>
+<column name="src_axi0_V_id_V_0_sel_wr">1, 0, 1, 0</column>
+<column name="src_axi0_V_id_V_0_state">2, 0, 2, 0</column>
+<column name="src_axi0_V_keep_V_0_payload_A">3, 0, 3, 0</column>
+<column name="src_axi0_V_keep_V_0_payload_B">3, 0, 3, 0</column>
+<column name="src_axi0_V_keep_V_0_sel_rd">1, 0, 1, 0</column>
+<column name="src_axi0_V_keep_V_0_sel_wr">1, 0, 1, 0</column>
+<column name="src_axi0_V_keep_V_0_state">2, 0, 2, 0</column>
+<column name="src_axi0_V_last_V_0_payload_A">1, 0, 1, 0</column>
+<column name="src_axi0_V_last_V_0_payload_B">1, 0, 1, 0</column>
+<column name="src_axi0_V_last_V_0_sel_rd">1, 0, 1, 0</column>
+<column name="src_axi0_V_last_V_0_sel_wr">1, 0, 1, 0</column>
+<column name="src_axi0_V_last_V_0_state">2, 0, 2, 0</column>
+<column name="src_axi0_V_strb_V_0_payload_A">3, 0, 3, 0</column>
+<column name="src_axi0_V_strb_V_0_payload_B">3, 0, 3, 0</column>
+<column name="src_axi0_V_strb_V_0_sel_rd">1, 0, 1, 0</column>
+<column name="src_axi0_V_strb_V_0_sel_wr">1, 0, 1, 0</column>
+<column name="src_axi0_V_strb_V_0_state">2, 0, 2, 0</column>
+<column name="src_axi0_V_user_V_0_payload_A">1, 0, 1, 0</column>
+<column name="src_axi0_V_user_V_0_payload_B">1, 0, 1, 0</column>
+<column name="src_axi0_V_user_V_0_sel_rd">1, 0, 1, 0</column>
+<column name="src_axi0_V_user_V_0_sel_wr">1, 0, 1, 0</column>
+<column name="src_axi0_V_user_V_0_state">2, 0, 2, 0</column>
+<column name="start_once_reg">1, 0, 1, 0</column>
+<column name="t_V_1_reg_252">11, 0, 11, 0</column>
+<column name="t_V_reg_228">11, 0, 11, 0</column>
+<column name="tmp_10_fu_142">8, 0, 8, 0</column>
+<column name="tmp_9_fu_138">8, 0, 8, 0</column>
+<column name="tmp_fu_134">8, 0, 8, 0</column>
+<column name="trunc_ln330_reg_519">4, 0, 4, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, Loop_loop_height_pro, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, Loop_loop_height_pro, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, Loop_loop_height_pro, return value</column>
+<column name="start_full_n">in, 1, ap_ctrl_hs, Loop_loop_height_pro, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, Loop_loop_height_pro, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, Loop_loop_height_pro, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, Loop_loop_height_pro, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, Loop_loop_height_pro, return value</column>
+<column name="start_out">out, 1, ap_ctrl_hs, Loop_loop_height_pro, return value</column>
+<column name="start_write">out, 1, ap_ctrl_hs, Loop_loop_height_pro, return value</column>
+<column name="imag_1_data_stream_0_V_din">out, 8, ap_fifo, imag_1_data_stream_0_V, pointer</column>
+<column name="imag_1_data_stream_0_V_full_n">in, 1, ap_fifo, imag_1_data_stream_0_V, pointer</column>
+<column name="imag_1_data_stream_0_V_write">out, 1, ap_fifo, imag_1_data_stream_0_V, pointer</column>
+<column name="imag_1_data_stream_1_V_din">out, 8, ap_fifo, imag_1_data_stream_1_V, pointer</column>
+<column name="imag_1_data_stream_1_V_full_n">in, 1, ap_fifo, imag_1_data_stream_1_V, pointer</column>
+<column name="imag_1_data_stream_1_V_write">out, 1, ap_fifo, imag_1_data_stream_1_V, pointer</column>
+<column name="imag_1_data_stream_2_V_din">out, 8, ap_fifo, imag_1_data_stream_2_V, pointer</column>
+<column name="imag_1_data_stream_2_V_full_n">in, 1, ap_fifo, imag_1_data_stream_2_V, pointer</column>
+<column name="imag_1_data_stream_2_V_write">out, 1, ap_fifo, imag_1_data_stream_2_V, pointer</column>
+<column name="imagSrc_data_stream_0_V_dout">in, 8, ap_fifo, imagSrc_data_stream_0_V, pointer</column>
+<column name="imagSrc_data_stream_0_V_empty_n">in, 1, ap_fifo, imagSrc_data_stream_0_V, pointer</column>
+<column name="imagSrc_data_stream_0_V_read">out, 1, ap_fifo, imagSrc_data_stream_0_V, pointer</column>
+<column name="imagSrc_data_stream_1_V_dout">in, 8, ap_fifo, imagSrc_data_stream_1_V, pointer</column>
+<column name="imagSrc_data_stream_1_V_empty_n">in, 1, ap_fifo, imagSrc_data_stream_1_V, pointer</column>
+<column name="imagSrc_data_stream_1_V_read">out, 1, ap_fifo, imagSrc_data_stream_1_V, pointer</column>
+<column name="imagSrc_data_stream_2_V_dout">in, 8, ap_fifo, imagSrc_data_stream_2_V, pointer</column>
+<column name="imagSrc_data_stream_2_V_empty_n">in, 1, ap_fifo, imagSrc_data_stream_2_V, pointer</column>
+<column name="imagSrc_data_stream_2_V_read">out, 1, ap_fifo, imagSrc_data_stream_2_V, pointer</column>
+<column name="mask2_Addr_A">out, 32, bram, mask2, array</column>
+<column name="mask2_EN_A">out, 1, bram, mask2, array</column>
+<column name="mask2_WEN_A">out, 4, bram, mask2, array</column>
+<column name="mask2_Din_A">out, 32, bram, mask2, array</column>
+<column name="mask2_Dout_A">in, 32, bram, mask2, array</column>
+<column name="src_axi0_TDATA">in, 24, axis, src_axi0_V_data_V, pointer</column>
+<column name="src_axi0_TVALID">in, 1, axis, src_axi0_V_dest_V, pointer</column>
+<column name="src_axi0_TREADY">out, 1, axis, src_axi0_V_dest_V, pointer</column>
+<column name="src_axi0_TDEST">in, 1, axis, src_axi0_V_dest_V, pointer</column>
+<column name="src_axi0_TKEEP">in, 3, axis, src_axi0_V_keep_V, pointer</column>
+<column name="src_axi0_TSTRB">in, 3, axis, src_axi0_V_strb_V, pointer</column>
+<column name="src_axi0_TUSER">in, 1, axis, src_axi0_V_user_V, pointer</column>
+<column name="src_axi0_TLAST">in, 1, axis, src_axi0_V_last_V, pointer</column>
+<column name="src_axi0_TID">in, 1, axis, src_axi0_V_id_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

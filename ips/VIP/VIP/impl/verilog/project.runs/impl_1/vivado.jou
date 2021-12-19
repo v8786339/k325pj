@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Nov  6 09:50:03 2021
+# Process ID: 7780
+# Current directory: G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/impl/verilog/project.runs/impl_1
+# Command line: vivado.exe -log bd_0_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source bd_0_wrapper.tcl -notrace
+# Log file: G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/impl/verilog/project.runs/impl_1/bd_0_wrapper.vdi
+# Journal file: G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/impl/verilog/project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source bd_0_wrapper.tcl -notrace

@@ -1,0 +1,48 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'vip_maskMerge'" level="0">
+<item name = "Date">Sat Nov  6 09:15:20 2021
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">VIP</item>
+<item name = "Solution">VIP</item>
+<item name = "Product family">kintex7</item>
+<item name = "Target device">xc7k325t-ffg900-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 4.936, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">2080081, 2777761, 2080082, 2777762, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_Loop_loop_height_pro_fu_128">Loop_loop_height_pro, 2080081, 2777761, 2080081, 2777761, none</column>
+<column name="grp_AXIvideo2Mat_fu_154">AXIvideo2Mat, 2079003, 2079003, 2079003, 2079003, none</column>
+<column name="grp_Mat2AXIvideo_fu_175">Mat2AXIvideo, 2077921, 2077921, 2077921, 2077921, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

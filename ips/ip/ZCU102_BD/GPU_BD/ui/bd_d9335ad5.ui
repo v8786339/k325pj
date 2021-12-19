@@ -1,0 +1,111 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port UART -pg 1 -y -20 -defaultsOSRD
+preplace port snes_data -pg 1 -y 230 -defaultsOSRD
+preplace port sw_reset -pg 1 -y 180 -defaultsOSRD
+preplace port GPIO_PB5 -pg 1 -y 310 -defaultsOSRD
+preplace port GPIO_DP8 -pg 1 -y 460 -defaultsOSRD
+preplace port vga_out -pg 1 -y -50 -defaultsOSRD
+preplace port C0_DDR4 -pg 1 -y -690 -defaultsOSRD
+preplace port user_si570_sysclk -pg 1 -y -640 -defaultsOSRD
+preplace port snes_latch -pg 1 -y 240 -defaultsOSRD
+preplace port snes_clk -pg 1 -y 260 -defaultsOSRD
+preplace port GPIO_LED8 -pg 1 -y 480 -defaultsOSRD
+preplace port reset -pg 1 -y 20 -defaultsOSRD
+preplace inst snes_0 -pg 1 -lvl 5 -y 240 -defaultsOSRD
+preplace inst global_OR_Interconnect_reset -pg 1 -lvl 2 -y 550 -defaultsOSRD
+preplace inst AXI_GPIO_1 -pg 1 -lvl 9 -y 320 -defaultsOSRD
+preplace inst AXI -pg 1 -lvl 8 -y -250 -defaultsOSRD
+preplace inst get_AXI -pg 1 -lvl 1 -y -90 -defaultsOSRD
+preplace inst Nyuzi_UART -pg 1 -lvl 7 -y -80 -defaultsOSRD
+preplace inst AXI_GPIO_2 -pg 1 -lvl 9 -y 470 -defaultsOSRD
+preplace inst BOOTROM -pg 1 -lvl 9 -y -220 -defaultsOSRD
+preplace inst NYUZI_reset -pg 1 -lvl 3 -y -330 -defaultsOSRD
+preplace inst get_VGA -pg 1 -lvl 1 -y 380 -defaultsOSRD
+preplace inst global_OR_ddr4_reset -pg 1 -lvl 2 -y -550 -defaultsOSRD
+preplace inst global_OR_VGA_reset -pg 1 -lvl 2 -y 370 -defaultsOSRD
+preplace inst VGA_reset -pg 1 -lvl 3 -y 390 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 6 -y -370 -defaultsOSRD
+preplace inst global_OR_AXI_reset -pg 1 -lvl 2 -y -100 -defaultsOSRD
+preplace inst SYSTEM_reset -pg 1 -lvl 3 -y 220 -defaultsOSRD
+preplace inst Interconnect_reset -pg 1 -lvl 3 -y 570 -defaultsOSRD
+preplace inst get_NYUZI -pg 1 -lvl 1 -y -340 -defaultsOSRD
+preplace inst global_OR_NYUZI_reset -pg 1 -lvl 2 -y -350 -defaultsOSRD
+preplace inst VGA_Controller -pg 1 -lvl 7 -y -210 -defaultsOSRD
+preplace inst DDR4_Controller -pg 1 -lvl 9 -y -610 -defaultsOSRD
+preplace inst AXI_LITE_reset -pg 1 -lvl 3 -y -160 -defaultsOSRD
+preplace inst DDR4_reset -pg 1 -lvl 3 -y -530 -defaultsOSRD
+preplace inst NYUZI -pg 1 -lvl 4 -y -240 -defaultsOSRD
+preplace inst get_Interconnect -pg 1 -lvl 1 -y 560 -defaultsOSRD
+preplace inst AXI_NO_RESET -pg 1 -lvl 8 -y 300 -defaultsOSRD
+preplace inst get_DDR4 -pg 1 -lvl 1 -y -540 -defaultsOSRD
+preplace inst SYSTEM_AXI_reset -pg 1 -lvl 3 -y 20 -defaultsOSRD
+preplace inst AXI_LITE -pg 1 -lvl 5 -y -160 -defaultsOSRD
+preplace inst AXI_GPIO_0 -pg 1 -lvl 9 -y 190 -defaultsOSRD
+preplace inst ZYNQ -pg 1 -lvl 7 -y -410 -defaultsOSRD
+preplace netloc GPIO_1_GPIO 1 9 1 N
+preplace netloc NYUZI_M00_AXI 1 4 4 1370J -300 1740 -290 N -290 2670
+preplace netloc snes_data_0_1 1 0 5 -70J 130 NJ 130 NJ 130 NJ 130 1390J
+preplace netloc sw_reset_OR_global_reset1_Res1 1 2 1 N
+preplace netloc M01_ARESETN_2 1 3 6 960 -10 1410J -10 N -10 2000 -10 2720 -30 3040
+preplace netloc NYUZI_reset_peripheral_reset 1 3 1 970
+preplace netloc DDR4_reset_peripheral_reset 1 3 6 980J -580 NJ -580 NJ -580 NJ -580 NJ -580 N
+preplace netloc DDR4_Controller_addn_ui_clkout1 1 2 8 570 -420 980 -390 1420J -320 1770J -300 NJ -300 2750J -480 NJ -480 3450
+preplace netloc Nyuzi_UART_UART 1 7 3 2660J -20 NJ -20 NJ
+preplace netloc AXI_NO_RESET_M02_AXI 1 8 1 3050
+preplace netloc VGA_Controller_M00_AXI 1 7 1 2690
+preplace netloc get_NYUZI_Dout 1 1 1 N
+preplace netloc DDR4_Controller_addn_ui_clkout2 1 2 8 580 -70 N -70 1420 40 1780 -80 2000 -320 2730 -10 3080 -150 3470
+preplace netloc get_NYUZI1_Dout1 1 1 1 N
+preplace netloc VGA_reset_peripheral_aresetn 1 3 4 1020 70 NJ 70 1770J -190 NJ
+preplace netloc DDR4_Controller_addn_ui_clkout3 1 2 8 590 120 980J -20 1380 -20 1750J -210 2010J -280 2700J -50 NJ -50 3460
+preplace netloc snes_0_snes_clk 1 5 5 1790J 110 NJ 110 NJ 110 NJ 110 3470J
+preplace netloc get_NYUZI1_Dout 1 1 1 N
+preplace netloc VGA_Controller_vga_out 1 7 3 2670J -40 NJ -40 3480J
+preplace netloc user_si570_sysclk_1 1 0 9 NJ -640 NJ -640 NJ -640 NJ -640 NJ -640 NJ -640 NJ -640 NJ -640 N
+preplace netloc AXI_NO_RESET_M03_AXI 1 4 5 1440 80 1790J 70 NJ 70 NJ 70 3040
+preplace netloc NYUZI_AXI_LITE 1 4 1 N
+preplace netloc AXI_GPIO_2_gpio_io_o 1 0 10 -60 110 NJ 110 NJ 110 1010J 90 NJ 90 NJ 90 NJ 90 NJ 90 NJ 90 3450
+preplace netloc ARESETN_1 1 3 2 970J -130 1370
+preplace netloc DDR4_Controller_c0_ddr4_ui_clk 1 2 8 570 -440 990 -510 N -510 N -510 N -510 2740 -470 NJ -470 3480
+preplace netloc GPIO_2_GPIO 1 9 1 N
+preplace netloc global_OR_Interconnect_reset_Res 1 2 1 N
+preplace netloc VGA_reset_interconnect_aresetn 1 3 5 1000 30 1400J 30 NJ 30 NJ 30 2750J
+preplace netloc DDR4_reset_interconnect_aresetn 1 3 5 980J -500 NJ -500 N -500 N -500 2720
+preplace netloc xlconcat_0_dout 1 6 1 1990
+preplace netloc Interconnect_reset_interconnect_aresetn 1 3 5 990 -350 NJ -350 1780J -310 NJ -310 NJ
+preplace netloc Nyuzi_UART_interrupt 1 3 5 1000 10 N 10 N 10 N 10 2640
+preplace netloc get_Interconnect_Dout 1 1 1 N
+preplace netloc VGA_Controller_interrupt 1 3 5 1020 20 NJ 20 N 20 N 20 2650
+preplace netloc GPIO_0_GPIO 1 9 1 N
+preplace netloc axi_interconnect_0_M00_AXI 1 8 1 3090
+preplace netloc AXI_M00_AXI 1 8 1 3080
+preplace netloc AXI_GPIO_1_ip2intc_irpt 1 5 5 1790 60 NJ 60 NJ 60 NJ 60 3460
+preplace netloc snes_0_snes_latch 1 5 5 1780J 100 NJ 100 NJ 100 NJ 100 3480J
+preplace netloc GPIO_1_GPIO2 1 9 1 N
+preplace netloc AXI_LITE_M01_AXI 1 5 2 N -150 2010
+preplace netloc snes_0_btn_change 1 5 1 1760
+preplace netloc NYUZI_reset_OR_global_reset_Res 1 2 1 N
+preplace netloc ddr4_0_C0_DDR4 1 9 1 N
+preplace netloc AXI_NO_RESET_M01_AXI 1 8 1 3070
+preplace netloc AXI_M01_AXI 1 8 1 N
+preplace netloc sw_reset_OR_global_reset1_Res 1 2 1 N
+preplace netloc sw_reset_OR_global_reset_Res 1 2 1 570
+preplace netloc reset_1 1 0 3 N 20 230 200 N
+preplace netloc DDR4_reset_peripheral_aresetn 1 3 6 960J -600 NJ -600 NJ -600 NJ -600 NJ -600 NJ
+preplace netloc ZYNQ_M_AXI_HPM1_FPD 1 7 1 2680
+preplace netloc AXI_LITE_M00_AXI 1 5 2 1740 -230 N
+preplace netloc ZYNQ_M_AXI_HPM0_FPD 1 7 1 2730
+preplace netloc get_VGA1_Dout 1 1 1 N
+preplace netloc M01_ARESETN_1 1 3 6 N 240 1430J 130 N 130 N 130 2750 120 3060
+preplace netloc NYUZI_reset_interconnect_aresetn 1 3 5 960J -370 1390J 0 N 0 N 0 2710
+levelinfo -pg 1 -90 130 420 780 1210 1600 1890 2330 2900 3270 3500 -top -1380 -bot 820
+",
+}
+{
+   da_axi4_cnt: "2",
+   da_board_cnt: "3",
+   da_zynq_ultra_ps_e_cnt: "1",
+}

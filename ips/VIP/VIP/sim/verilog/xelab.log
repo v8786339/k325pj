@@ -1,0 +1,84 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "G:/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: G:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_vip_maskMerge_top glbl -prj vip_maskMerge.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile G:/Xilinx/Vivado/2019.1/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s vip_maskMerge -debug wave 
+Multi-threading is on. Using 6 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/AESL_autobram_mask2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_mask2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/AESL_axi_slave_AXILiteS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_AXILiteS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/AESL_axi_s_dst_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_dst_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/AESL_axi_s_src_axi0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_src_axi0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/AESL_axi_s_src_axi1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_src_axi1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/AXIvideo2Mat.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXIvideo2Mat
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/AXIvideo2Mat2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AXIvideo2Mat2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/fifo_w8_d1920_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w8_d1920_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/fifo_w8_d2_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_w8_d2_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w8_d2_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/Loop_loop_height_pro.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_loop_height_pro
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/Mat2AXIvideo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mat2AXIvideo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/start_for_Mat2AXIbkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module start_for_Mat2AXIbkb_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_Mat2AXIbkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/vip_maskMerge.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_vip_maskMerge_top
+INFO: [VRFC 10-2458] undeclared symbol brammask2_Rst_A, assumed default net type wire [G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/vip_maskMerge.autotb.v:378]
+INFO: [VRFC 10-2458] undeclared symbol brammask2_Rst_B, assumed default net type wire [G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/vip_maskMerge.autotb.v:385]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/vip_maskMerge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vip_maskMerge
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/ips/VIP/VIP/sim/verilog/vip_maskMerge_AXILiteS_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vip_maskMerge_AXILiteS_s_axi
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.vip_maskMerge_AXILiteS_s_axi
+Compiling module xil_defaultlib.AXIvideo2Mat
+Compiling module xil_defaultlib.AXIvideo2Mat2
+Compiling module xil_defaultlib.fifo_w8_d1920_A
+Compiling module xil_defaultlib.Loop_loop_height_pro
+Compiling module xil_defaultlib.Mat2AXIvideo
+Compiling module xil_defaultlib.fifo_w8_d2_A_shiftReg
+Compiling module xil_defaultlib.fifo_w8_d2_A
+Compiling module xil_defaultlib.start_for_Mat2AXIbkb_shiftReg
+Compiling module xil_defaultlib.start_for_Mat2AXIbkb
+Compiling module xil_defaultlib.vip_maskMerge
+Compiling module xil_defaultlib.AESL_autobram_mask2
+Compiling module xil_defaultlib.fifo(DEPTH=307200,WIDTH=24)
+Compiling module xil_defaultlib.fifo(DEPTH=307200,WIDTH=3)
+Compiling module xil_defaultlib.fifo(DEPTH=307200,WIDTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_src_axi0
+Compiling module xil_defaultlib.fifo(DEPTH=2073600,WIDTH=24)
+Compiling module xil_defaultlib.fifo(DEPTH=2073600,WIDTH=3)
+Compiling module xil_defaultlib.fifo(DEPTH=2073600,WIDTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_src_axi1
+Compiling module xil_defaultlib.AESL_axi_s_dst_axi
+Compiling module xil_defaultlib.AESL_axi_slave_AXILiteS
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.apatb_vip_maskMerge_top
+Compiling module work.glbl
+Built simulation snapshot vip_maskMerge

@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER snes
+	OPTION supported_peripherals = (snes);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = snes;
+END DRIVER

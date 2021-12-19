@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:abstractionDefinition xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>user.org</spirit:vendor>
+  <spirit:library>interface</spirit:library>
+  <spirit:name>io_bus_interface_rtl</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busType spirit:vendor="user.org" spirit:library="interface" spirit:name="io_bus_interface" spirit:version="1.0"/>
+  <spirit:ports>
+    <spirit:port>
+      <spirit:logicalName>write_en</spirit:logicalName>
+      <spirit:wire>
+        <spirit:onMaster/>
+        <spirit:onSlave>
+          <spirit:direction>in</spirit:direction>
+        </spirit:onSlave>
+      </spirit:wire>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>read_en</spirit:logicalName>
+      <spirit:wire>
+        <spirit:onMaster/>
+        <spirit:onSlave>
+          <spirit:direction>in</spirit:direction>
+        </spirit:onSlave>
+      </spirit:wire>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>address</spirit:logicalName>
+      <spirit:wire>
+        <spirit:onMaster/>
+        <spirit:onSlave>
+          <spirit:direction>in</spirit:direction>
+        </spirit:onSlave>
+      </spirit:wire>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>write_data</spirit:logicalName>
+      <spirit:wire>
+        <spirit:onMaster/>
+        <spirit:onSlave>
+          <spirit:direction>in</spirit:direction>
+        </spirit:onSlave>
+      </spirit:wire>
+    </spirit:port>
+    <spirit:port>
+      <spirit:logicalName>read_data</spirit:logicalName>
+      <spirit:wire>
+        <spirit:onMaster>
+          <spirit:direction>in</spirit:direction>
+        </spirit:onMaster>
+        <spirit:onSlave/>
+      </spirit:wire>
+    </spirit:port>
+  </spirit:ports>
+  <spirit:description>io_bus_interface v1.0</spirit:description>
+</spirit:abstractionDefinition>

@@ -1,0 +1,5 @@
+   Build using "G:/Xilinx/Vivado/2019.1/msys64/mingw64/bin/g++"
+   Compiling testvip.cpp_pre.cpp.tb.cpp
+   Compiling vip.cpp_pre.cpp.tb.cpp
+   Compiling apatb_vip_maskMerge.cpp
+   Generating cosim.tv.exe

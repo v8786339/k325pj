@@ -1,6 +1,616 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sat Nov  6 09:54:26 2021
+| Host         : zqp-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vip_maskMerge_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_vip_maskMerge_0_0 (zqp:hls:vip_maskMerge:1.0) from (Rev. 2110312240) to (Rev. 2111060947)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_vip_maskMerge_0_0'.
+
+
+-Upgrade has added interface 'mask2_PORTA' (xilinx.com:interface:bram:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_vip_maskMerge_0_0'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_AXILiteS_ARADDR' width 4 differs from original width 20
+
+-Upgraded port 's_axi_AXILiteS_AWADDR' width 4 differs from original width 20
+
+-Upgrade has added port 'mask2_Addr_A'
+
+-Upgrade has added port 'mask2_Clk_A'
+
+-Upgrade has added port 'mask2_Din_A'
+
+-Upgrade has added port 'mask2_Dout_A'
+
+-Upgrade has added port 'mask2_EN_A'
+
+-Upgrade has added port 'mask2_Rst_A'
+
+-Upgrade has added port 'mask2_WEN_A'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Oct 31 22:48:29 2021
+| Host         : zqp-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vip_maskMerge_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_vip_maskMerge_0_0 (zqp:hls:vip_maskMerge:1.0) from (Rev. 2110311242) to (Rev. 2110312240)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_vip_maskMerge_0_0'.
+
+
+-Upgrade has removed interface 'm_axi_gmem'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_vip_maskMerge_0_0'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_AXILiteS_ARADDR' width 20 differs from original width 21
+
+-Upgraded port 's_axi_AXILiteS_AWADDR' width 20 differs from original width 21
+
+-Upgrade has removed port 'm_axi_gmem_ARADDR'
+
+-Upgrade has removed port 'm_axi_gmem_ARBURST'
+
+-Upgrade has removed port 'm_axi_gmem_ARCACHE'
+
+-Upgrade has removed port 'm_axi_gmem_ARLEN'
+
+-Upgrade has removed port 'm_axi_gmem_ARLOCK'
+
+-Upgrade has removed port 'm_axi_gmem_ARPROT'
+
+-Upgrade has removed port 'm_axi_gmem_ARQOS'
+
+-Upgrade has removed port 'm_axi_gmem_ARREADY'
+
+-Upgrade has removed port 'm_axi_gmem_ARREGION'
+
+-Upgrade has removed port 'm_axi_gmem_ARSIZE'
+
+-Upgrade has removed port 'm_axi_gmem_ARVALID'
+
+-Upgrade has removed port 'm_axi_gmem_AWADDR'
+
+-Upgrade has removed port 'm_axi_gmem_AWBURST'
+
+-Upgrade has removed port 'm_axi_gmem_AWCACHE'
+
+-Upgrade has removed port 'm_axi_gmem_AWLEN'
+
+-Upgrade has removed port 'm_axi_gmem_AWLOCK'
+
+-Upgrade has removed port 'm_axi_gmem_AWPROT'
+
+-Upgrade has removed port 'm_axi_gmem_AWQOS'
+
+-Upgrade has removed port 'm_axi_gmem_AWREADY'
+
+-Upgrade has removed port 'm_axi_gmem_AWREGION'
+
+-Upgrade has removed port 'm_axi_gmem_AWSIZE'
+
+-Upgrade has removed port 'm_axi_gmem_AWVALID'
+
+-Upgrade has removed port 'm_axi_gmem_BREADY'
+
+-Upgrade has removed port 'm_axi_gmem_BRESP'
+
+-Upgrade has removed port 'm_axi_gmem_BVALID'
+
+-Upgrade has removed port 'm_axi_gmem_RDATA'
+
+-Upgrade has removed port 'm_axi_gmem_RLAST'
+
+-Upgrade has removed port 'm_axi_gmem_RREADY'
+
+-Upgrade has removed port 'm_axi_gmem_RRESP'
+
+-Upgrade has removed port 'm_axi_gmem_RVALID'
+
+-Upgrade has removed port 'm_axi_gmem_WDATA'
+
+-Upgrade has removed port 'm_axi_gmem_WLAST'
+
+-Upgrade has removed port 'm_axi_gmem_WREADY'
+
+-Upgrade has removed port 'm_axi_gmem_WSTRB'
+
+-Upgrade has removed port 'm_axi_gmem_WVALID'
+
+
+4. Customization warnings
+-------------------------
+
+Parameter 'C_M_AXI_GMEM_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'design_1_vip_maskMerge_0_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_GMEM_ID_WIDTH' is no longer present on the upgraded IP 'design_1_vip_maskMerge_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_DATA_WIDTH' is no longer present on the upgraded IP 'design_1_vip_maskMerge_0_0', and cannot be set to '32'
+
+Parameter 'C_M_AXI_GMEM_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'design_1_vip_maskMerge_0_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_GMEM_AWUSER_WIDTH' is no longer present on the upgraded IP 'design_1_vip_maskMerge_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_WUSER_WIDTH' is no longer present on the upgraded IP 'design_1_vip_maskMerge_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_BUSER_WIDTH' is no longer present on the upgraded IP 'design_1_vip_maskMerge_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_ARUSER_WIDTH' is no longer present on the upgraded IP 'design_1_vip_maskMerge_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_RUSER_WIDTH' is no longer present on the upgraded IP 'design_1_vip_maskMerge_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_GMEM_USER_VALUE' is no longer present on the upgraded IP 'design_1_vip_maskMerge_0_0', and cannot be set to '0x00000000'
+
+Parameter 'C_M_AXI_GMEM_PROT_VALUE' is no longer present on the upgraded IP 'design_1_vip_maskMerge_0_0', and cannot be set to '"000"'
+
+Parameter 'C_M_AXI_GMEM_CACHE_VALUE' is no longer present on the upgraded IP 'design_1_vip_maskMerge_0_0', and cannot be set to '"0011"'
+
+
+5. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv zqp:hls:vip_maskMerge:1.0 -user_name design_1_vip_maskMerge_0_0
+set_property -dict "\
+  CONFIG.Component_Name {design_1_vip_maskMerge_0_0} \
+  CONFIG.II {x} \
+  CONFIG.ap_clk.ASSOCIATED_BUSIF {s_axi_AXILiteS:m_axi_gmem:src_axi0:src_axi1:dst_axi} \
+  CONFIG.ap_clk.ASSOCIATED_RESET {ap_rst_n} \
+  CONFIG.ap_clk.CLK_DOMAIN {/clk_wiz_1_clk_out1} \
+  CONFIG.ap_clk.FREQ_HZ {200000000} \
+  CONFIG.ap_clk.INSERT_VIP {0} \
+  CONFIG.ap_clk.PHASE {0.0} \
+  CONFIG.ap_rst_n.INSERT_VIP {0} \
+  CONFIG.ap_rst_n.POLARITY {ACTIVE_LOW} \
+  CONFIG.clk_period {10} \
+  CONFIG.combinational {0} \
+  CONFIG.dst_axi.CLK_DOMAIN {/clk_wiz_1_clk_out1} \
+  CONFIG.dst_axi.FREQ_HZ {200000000} \
+  CONFIG.dst_axi.HAS_TKEEP {1} \
+  CONFIG.dst_axi.HAS_TLAST {1} \
+  CONFIG.dst_axi.HAS_TREADY {1} \
+  CONFIG.dst_axi.HAS_TSTRB {1} \
+  CONFIG.dst_axi.INSERT_VIP {0} \
+  CONFIG.dst_axi.LAYERED_METADATA {} \
+  CONFIG.dst_axi.PHASE {0.0} \
+  CONFIG.dst_axi.TDATA_NUM_BYTES {3} \
+  CONFIG.dst_axi.TDEST_WIDTH {1} \
+  CONFIG.dst_axi.TID_WIDTH {1} \
+  CONFIG.dst_axi.TUSER_WIDTH {1} \
+  CONFIG.interrupt.PortWidth {1} \
+  CONFIG.interrupt.SENSITIVITY {LEVEL_HIGH} \
+  CONFIG.latency {2088723} \
+  CONFIG.machine {64} \
+  CONFIG.s_axi_AXILiteS.ADDR_WIDTH {21} \
+  CONFIG.s_axi_AXILiteS.ARUSER_WIDTH {0} \
+  CONFIG.s_axi_AXILiteS.AWUSER_WIDTH {0} \
+  CONFIG.s_axi_AXILiteS.BUSER_WIDTH {0} \
+  CONFIG.s_axi_AXILiteS.CLK_DOMAIN {/clk_wiz_1_clk_out1} \
+  CONFIG.s_axi_AXILiteS.DATA_WIDTH {32} \
+  CONFIG.s_axi_AXILiteS.FREQ_HZ {200000000} \
+  CONFIG.s_axi_AXILiteS.HAS_BRESP {1} \
+  CONFIG.s_axi_AXILiteS.HAS_BURST {0} \
+  CONFIG.s_axi_AXILiteS.HAS_CACHE {0} \
+  CONFIG.s_axi_AXILiteS.HAS_LOCK {0} \
+  CONFIG.s_axi_AXILiteS.HAS_PROT {0} \
+  CONFIG.s_axi_AXILiteS.HAS_QOS {0} \
+  CONFIG.s_axi_AXILiteS.HAS_REGION {0} \
+  CONFIG.s_axi_AXILiteS.HAS_RRESP {1} \
+  CONFIG.s_axi_AXILiteS.HAS_WSTRB {1} \
+  CONFIG.s_axi_AXILiteS.ID_WIDTH {0} \
+  CONFIG.s_axi_AXILiteS.INSERT_VIP {0} \
+  CONFIG.s_axi_AXILiteS.MAX_BURST_LENGTH {1} \
+  CONFIG.s_axi_AXILiteS.NUM_READ_OUTSTANDING {32} \
+  CONFIG.s_axi_AXILiteS.NUM_READ_THREADS {1} \
+  CONFIG.s_axi_AXILiteS.NUM_WRITE_OUTSTANDING {16} \
+  CONFIG.s_axi_AXILiteS.NUM_WRITE_THREADS {1} \
+  CONFIG.s_axi_AXILiteS.PHASE {0.0} \
+  CONFIG.s_axi_AXILiteS.PROTOCOL {AXI4LITE} \
+  CONFIG.s_axi_AXILiteS.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.s_axi_AXILiteS.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_AXILiteS.RUSER_WIDTH {0} \
+  CONFIG.s_axi_AXILiteS.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.s_axi_AXILiteS.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.s_axi_AXILiteS.WUSER_WIDTH {0} \
+  CONFIG.src_axi0.CLK_DOMAIN {/clk_wiz_1_clk_out1} \
+  CONFIG.src_axi0.FREQ_HZ {200000000} \
+  CONFIG.src_axi0.HAS_TKEEP {1} \
+  CONFIG.src_axi0.HAS_TLAST {1} \
+  CONFIG.src_axi0.HAS_TREADY {1} \
+  CONFIG.src_axi0.HAS_TSTRB {1} \
+  CONFIG.src_axi0.INSERT_VIP {0} \
+  CONFIG.src_axi0.LAYERED_METADATA {undef} \
+  CONFIG.src_axi0.PHASE {0.0} \
+  CONFIG.src_axi0.TDATA_NUM_BYTES {3} \
+  CONFIG.src_axi0.TDEST_WIDTH {1} \
+  CONFIG.src_axi0.TID_WIDTH {1} \
+  CONFIG.src_axi0.TUSER_WIDTH {1} \
+  CONFIG.src_axi1.CLK_DOMAIN {/clk_wiz_1_clk_out1} \
+  CONFIG.src_axi1.FREQ_HZ {200000000} \
+  CONFIG.src_axi1.HAS_TKEEP {1} \
+  CONFIG.src_axi1.HAS_TLAST {1} \
+  CONFIG.src_axi1.HAS_TREADY {1} \
+  CONFIG.src_axi1.HAS_TSTRB {1} \
+  CONFIG.src_axi1.INSERT_VIP {0} \
+  CONFIG.src_axi1.LAYERED_METADATA {undef} \
+  CONFIG.src_axi1.PHASE {0.0} \
+  CONFIG.src_axi1.TDATA_NUM_BYTES {3} \
+  CONFIG.src_axi1.TDEST_WIDTH {1} \
+  CONFIG.src_axi1.TID_WIDTH {1} \
+  CONFIG.src_axi1.TUSER_WIDTH {1} " [get_ips design_1_vip_maskMerge_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Oct 31 12:50:07 2021
+| Host         : zqp-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vip_maskMerge_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_vip_maskMerge_0_0 (zqp:hls:vip_maskMerge:1.0) from (Rev. 2110311100) to (Rev. 2110311242)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_vip_maskMerge_0_0'.
+
+
+-Upgrade has removed interface 'mask1_address0'
+
+-Upgrade has removed interface 'mask1_address1'
+
+-Upgrade has removed interface 'mask1_d0'
+
+-Upgrade has removed interface 'mask1_d1'
+
+-Upgrade has removed interface 'mask1_q0'
+
+-Upgrade has removed interface 'mask1_q1'
+
+-Upgrade has added interface 'm_axi_gmem' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_vip_maskMerge_0_0'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_AXILiteS_ARADDR' width 21 differs from original width 20
+
+-Upgraded port 's_axi_AXILiteS_AWADDR' width 21 differs from original width 20
+
+-Upgrade has removed port 'mask1_address0'
+
+-Upgrade has removed port 'mask1_address1'
+
+-Upgrade has removed port 'mask1_ce0'
+
+-Upgrade has removed port 'mask1_ce1'
+
+-Upgrade has removed port 'mask1_d0'
+
+-Upgrade has removed port 'mask1_d1'
+
+-Upgrade has removed port 'mask1_q0'
+
+-Upgrade has removed port 'mask1_q1'
+
+-Upgrade has removed port 'mask1_we0'
+
+-Upgrade has removed port 'mask1_we1'
+
+-Upgrade has added port 'm_axi_gmem_ARADDR'
+
+-Upgrade has added port 'm_axi_gmem_ARBURST'
+
+-Upgrade has added port 'm_axi_gmem_ARCACHE'
+
+-Upgrade has added port 'm_axi_gmem_ARLEN'
+
+-Upgrade has added port 'm_axi_gmem_ARLOCK'
+
+-Upgrade has added port 'm_axi_gmem_ARPROT'
+
+-Upgrade has added port 'm_axi_gmem_ARQOS'
+
+-Upgrade has added port 'm_axi_gmem_ARREADY'
+
+-Upgrade has added port 'm_axi_gmem_ARREGION'
+
+-Upgrade has added port 'm_axi_gmem_ARSIZE'
+
+-Upgrade has added port 'm_axi_gmem_ARVALID'
+
+-Upgrade has added port 'm_axi_gmem_AWADDR'
+
+-Upgrade has added port 'm_axi_gmem_AWBURST'
+
+-Upgrade has added port 'm_axi_gmem_AWCACHE'
+
+-Upgrade has added port 'm_axi_gmem_AWLEN'
+
+-Upgrade has added port 'm_axi_gmem_AWLOCK'
+
+-Upgrade has added port 'm_axi_gmem_AWPROT'
+
+-Upgrade has added port 'm_axi_gmem_AWQOS'
+
+-Upgrade has added port 'm_axi_gmem_AWREADY'
+
+-Upgrade has added port 'm_axi_gmem_AWREGION'
+
+-Upgrade has added port 'm_axi_gmem_AWSIZE'
+
+-Upgrade has added port 'm_axi_gmem_AWVALID'
+
+-Upgrade has added port 'm_axi_gmem_BREADY'
+
+-Upgrade has added port 'm_axi_gmem_BRESP'
+
+-Upgrade has added port 'm_axi_gmem_BVALID'
+
+-Upgrade has added port 'm_axi_gmem_RDATA'
+
+-Upgrade has added port 'm_axi_gmem_RLAST'
+
+-Upgrade has added port 'm_axi_gmem_RREADY'
+
+-Upgrade has added port 'm_axi_gmem_RRESP'
+
+-Upgrade has added port 'm_axi_gmem_RVALID'
+
+-Upgrade has added port 'm_axi_gmem_WDATA'
+
+-Upgrade has added port 'm_axi_gmem_WLAST'
+
+-Upgrade has added port 'm_axi_gmem_WREADY'
+
+-Upgrade has added port 'm_axi_gmem_WSTRB'
+
+-Upgrade has added port 'm_axi_gmem_WVALID'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Oct 31 11:08:42 2021
+| Host         : zqp-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vip_maskMerge_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_vip_maskMerge_0_0 (zqp:hls:vip_maskMerge:1.0) from (Rev. 2110310627) to (Rev. 2110311100)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_vip_maskMerge_0_0'.
+
+
+-Upgrade has removed interface 'mask_address0'
+
+-Upgrade has removed interface 'mask_address1'
+
+-Upgrade has removed interface 'mask_d0'
+
+-Upgrade has removed interface 'mask_d1'
+
+-Upgrade has removed interface 'mask_q0'
+
+-Upgrade has removed interface 'mask_q1'
+
+-Upgrade has added interface 'mask1_address0' (xilinx.com:signal:data:1.0)
+
+-Upgrade has added interface 'mask1_address1' (xilinx.com:signal:data:1.0)
+
+-Upgrade has added interface 'mask1_d0' (xilinx.com:signal:data:1.0)
+
+-Upgrade has added interface 'mask1_d1' (xilinx.com:signal:data:1.0)
+
+-Upgrade has added interface 'mask1_q0' (xilinx.com:signal:data:1.0)
+
+-Upgrade has added interface 'mask1_q1' (xilinx.com:signal:data:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_vip_maskMerge_0_0'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_AXILiteS_ARADDR' width 20 differs from original width 4
+
+-Upgraded port 's_axi_AXILiteS_AWADDR' width 20 differs from original width 4
+
+-Upgrade has removed port 'mask_address0'
+
+-Upgrade has removed port 'mask_address1'
+
+-Upgrade has removed port 'mask_ce0'
+
+-Upgrade has removed port 'mask_ce1'
+
+-Upgrade has removed port 'mask_d0'
+
+-Upgrade has removed port 'mask_d1'
+
+-Upgrade has removed port 'mask_q0'
+
+-Upgrade has removed port 'mask_q1'
+
+-Upgrade has removed port 'mask_we0'
+
+-Upgrade has removed port 'mask_we1'
+
+-Upgrade has added port 'mask1_address0'
+
+-Upgrade has added port 'mask1_address1'
+
+-Upgrade has added port 'mask1_ce0'
+
+-Upgrade has added port 'mask1_ce1'
+
+-Upgrade has added port 'mask1_d0'
+
+-Upgrade has added port 'mask1_d1'
+
+-Upgrade has added port 'mask1_q0'
+
+-Upgrade has added port 'mask1_q1'
+
+-Upgrade has added port 'mask1_we0'
+
+-Upgrade has added port 'mask1_we1'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Oct 31 07:35:17 2021
+| Host         : zqp-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vip_maskMerge_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_vip_maskMerge_0_0 (zqp:hls:vip_maskMerge:1.0 (Rev. 2110310627)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Oct 31 06:33:25 2021
+| Host         : zqp-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_vip_maskMerge_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_vip_maskMerge_0_0 (zqp:hls:vip_maskMerge:1.0) from (Rev. 2110300857) to (Rev. 2110310627)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_vip_maskMerge_0_0'. These changes may impact your design.
+
+
+-Upgraded port 'mask_address0' width 17 differs from original width 19
+
+-Upgraded port 'mask_address1' width 17 differs from original width 19
+
+-Upgraded port 'mask_d0' width 32 differs from original width 8
+
+-Upgraded port 'mask_d1' width 32 differs from original width 8
+
+-Upgraded port 'mask_q0' width 32 differs from original width 8
+
+-Upgraded port 'mask_q1' width 32 differs from original width 8
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
 | Date         : Fri Feb 12 19:48:20 2021
 | Host         : dereck running 64-bit Service Pack 1  (build 7601)
 | Command      : upgrade_ip
