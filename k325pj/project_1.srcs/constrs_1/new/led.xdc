@@ -1,0 +1,331 @@
+#set_property PACKAGE_PIN D27 [get_ports clk_in_p]
+#set_property IOSTANDARD LVCMOS15 [get_ports clk_in_p]
+
+set_property BITSTREAM.CONFIG.SPI_BUSWIDTH 4 [current_design]
+set_property CONFIG_MODE SPIx4 [current_design]
+set_property BITSTREAM.CONFIG.CONFIGRATE 50 [current_design]
+
+set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]
+set_property BITSTREAM.CONFIG.UNUSEDPIN Pullup [current_design]
+set_property CFGBVS VCCO [current_design]
+set_property CONFIG_VOLTAGE 3.3 [current_design]
+
+##################################pcie###########################
+set_property PACKAGE_PIN U8 [get_ports {diff_clock_rtl_0_clk_p[0]}]
+set_property PACKAGE_PIN U7 [get_ports {diff_clock_rtl_0_clk_n[0]}]
+set_property PACKAGE_PIN V22 [get_ports reset_rtl_0]
+
+set_property PULLUP true [get_ports reset_rtl_0]
+###############################################################################
+set_false_path -from [get_ports reset_rtl_0]
+
+set_property IOSTANDARD LVTTL [get_ports reset_rtl_0]
+create_clock -period 10.000 -name sys_clk [get_ports {diff_clock_rtl_0_clk_p[0]}]
+######################led######################
+
+#set_property PACKAGE_PIN R24 [get_ports {led[0]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {led[0]}]
+
+#set_property PACKAGE_PIN T20 [get_ports {led[1]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {led[1]}]
+
+#set_property PACKAGE_PIN T21 [get_ports {led[2]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {led[2]}]
+
+set_property PACKAGE_PIN R24 [get_ports user_lnk_up]
+set_property IOSTANDARD LVCMOS33 [get_ports user_lnk_up]
+set_property PACKAGE_PIN T20 [get_ports msi_enable]
+set_property IOSTANDARD LVCMOS33 [get_ports msi_enable]
+set_property PACKAGE_PIN T21 [get_ports init_ddr]
+set_property IOSTANDARD LVCMOS33 [get_ports init_ddr]
+
+############## clock define##########################
+create_clock -period 20.000 [get_ports clk_in_p]
+set_property IOSTANDARD LVCMOS33 [get_ports clk_in_p]
+set_property PACKAGE_PIN D27 [get_ports clk_in_p]
+
+#######################UART####################################
+set_property PACKAGE_PIN F28 [get_ports UART_0_txd]
+set_property IOSTANDARD LVCMOS33 [get_ports UART_0_txd]
+
+set_property PACKAGE_PIN G29 [get_ports UART_0_rxd]
+set_property IOSTANDARD LVCMOS33 [get_ports UART_0_rxd]
+
+###############################cmos##############################
+set_property -dict {PACKAGE_PIN H20 IOSTANDARD LVCMOS33} [get_ports cmos_pclk_i_0]
+#------------------------------------------------------------------------------------------------
+set_property -dict {PACKAGE_PIN B23 IOSTANDARD LVCMOS33} [get_ports cmos_vsync_i_0]
+set_property -dict {PACKAGE_PIN A23 IOSTANDARD LVCMOS33} [get_ports cmos_href_i_0]
+set_property -dict {PACKAGE_PIN H25 IOSTANDARD LVCMOS33} [get_ports cmos_reset_0[0]]
+set_property -dict {PACKAGE_PIN H24 IOSTANDARD LVCMOS33} [get_ports cmos_pwdn_0[0]]
+set_property -dict {PACKAGE_PIN A27 IOSTANDARD LVCMOS33} [get_ports cmos_xclk_o_0]
+#------------------------------------------------------------------------------------------------
+set_property -dict {PACKAGE_PIN E25 IOSTANDARD LVCMOS33} [get_ports {cmos_data_i_0[0]}]
+set_property -dict {PACKAGE_PIN A25 IOSTANDARD LVCMOS33} [get_ports {cmos_data_i_0[1]}]
+set_property -dict {PACKAGE_PIN E24 IOSTANDARD LVCMOS33} [get_ports {cmos_data_i_0[2]}]
+set_property -dict {PACKAGE_PIN E29 IOSTANDARD LVCMOS33} [get_ports {cmos_data_i_0[3]}]
+set_property -dict {PACKAGE_PIN A26 IOSTANDARD LVCMOS33} [get_ports {cmos_data_i_0[4]}]
+set_property -dict {PACKAGE_PIN F25 IOSTANDARD LVCMOS33} [get_ports {cmos_data_i_0[5]}]
+set_property -dict {PACKAGE_PIN C29 IOSTANDARD LVCMOS33} [get_ports {cmos_data_i_0[6]}]
+set_property -dict {PACKAGE_PIN B29 IOSTANDARD LVCMOS33} [get_ports {cmos_data_i_0[7]}]
+
+
+
+set_property -dict { PACKAGE_PIN H30 IOSTANDARD LVCMOS33} [get_ports iic_rtl_1_scl_io]
+set_property -dict { PACKAGE_PIN B27 IOSTANDARD LVCMOS33} [get_ports iic_rtl_1_sda_io]
+
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets cmos_pclk_i_0_IBUF]
+
+#####################HDMI_IN #######################################
+set_property PACKAGE_PIN K20 [get_ports iic_rtl_0_scl_io]
+set_property PACKAGE_PIN H19 [get_ports iic_rtl_0_sda_io]
+set_property PACKAGE_PIN F21 [get_ports TMDS_1_clk_p]
+set_property PACKAGE_PIN L17 [get_ports {TMDS_1_data_p[0]}]
+set_property PACKAGE_PIN F20 [get_ports {TMDS_1_data_p[1]}]
+set_property PACKAGE_PIN D21 [get_ports {TMDS_1_data_p[2]}]
+
+set_property IOSTANDARD LVCMOS33 [get_ports iic_rtl_0_scl_io]
+set_property IOSTANDARD LVCMOS33 [get_ports iic_rtl_0_sda_io]
+
+set_property IOSTANDARD TMDS_33 [get_ports TMDS_1_clk_n]
+set_property IOSTANDARD TMDS_33 [get_ports TMDS_1_clk_p]
+
+set_property IOSTANDARD TMDS_33 [get_ports {TMDS_1_data_n[0]}]
+set_property IOSTANDARD TMDS_33 [get_ports {TMDS_1_data_p[0]}]
+
+set_property IOSTANDARD TMDS_33 [get_ports {TMDS_1_data_n[1]}]
+set_property IOSTANDARD TMDS_33 [get_ports {TMDS_1_data_p[1]}]
+
+set_property IOSTANDARD TMDS_33 [get_ports {TMDS_1_data_n[2]}]
+set_property IOSTANDARD TMDS_33 [get_ports {TMDS_1_data_p[2]}]
+
+############## HDMIOUT define#########################
+set_property PACKAGE_PIN F26 [get_ports TMDS_0_clk_p]
+set_property PACKAGE_PIN H26 [get_ports {TMDS_0_data_p[0]}]
+set_property PACKAGE_PIN D26 [get_ports {TMDS_0_data_p[1]}]
+set_property PACKAGE_PIN E28 [get_ports {TMDS_0_data_p[2]}]
+
+set_property IOSTANDARD TMDS_33 [get_ports TMDS_0_clk_p]
+set_property IOSTANDARD TMDS_33 [get_ports TMDS_0_clk_n]
+
+set_property IOSTANDARD TMDS_33 [get_ports {TMDS_0_data_n[0]}]
+set_property IOSTANDARD TMDS_33 [get_ports {TMDS_0_data_p[0]}]
+
+set_property IOSTANDARD TMDS_33 [get_ports {TMDS_0_data_n[1]}]
+set_property IOSTANDARD TMDS_33 [get_ports {TMDS_0_data_p[1]}]
+
+set_property IOSTANDARD TMDS_33 [get_ports {TMDS_0_data_n[2]}]
+set_property IOSTANDARD TMDS_33 [get_ports {TMDS_0_data_p[2]}]
+
+#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets dvi2rgb_m0/TMDS_ClockingX/CLK_IN_hdmi_clk]
+
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[3]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[9]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[11]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[15]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[19]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[23]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[0]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[4]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[7]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[12]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[16]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[20]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[1]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[5]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[8]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[13]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[17]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[21]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[2]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[6]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[10]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[14]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[18]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_vid_in_axi4s_0_video_out_TDATA[22]}]
+set_property MARK_DEBUG true [get_nets design_1_i/v_vid_in_axi4s_0_video_out_TLAST]
+set_property MARK_DEBUG true [get_nets design_1_i/v_vid_in_axi4s_0_video_out_TUSER]
+set_property MARK_DEBUG true [get_nets design_1_i/v_vid_in_axi4s_0_video_out_TVALID]
+set_property MARK_DEBUG true [get_nets design_1_i/v_vid_in_axi4s_0_video_out_TREADY]
+
+
+
+
+
+
+
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[6]}]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[1]}]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[2]}]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[3]}]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[5]}]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[7]}]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[8]}]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[21]}]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[9]}]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[15]}]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[18]}]
+set_property MARK_DEBUG false [get_nets design_1_i/dvi2rgb_0_vid_pHSync]
+set_property MARK_DEBUG false [get_nets design_1_i/dvi2rgb_0_vid_pVDE]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[0]}]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[10]}]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[12]}]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[13]}]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[22]}]
+set_property MARK_DEBUG false [get_nets design_1_i/dvi2rgb_0_aPixelClkLckd]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[11]}]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[19]}]
+set_property MARK_DEBUG false [get_nets design_1_i/dvi2rgb_0_vid_pVSync]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[4]}]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[14]}]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[16]}]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[17]}]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[20]}]
+set_property MARK_DEBUG false [get_nets {design_1_i/dvi2rgb_0_vid_pData[23]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[3]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[7]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[9]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[12]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[14]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[1]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[2]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[13]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[16]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[18]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[20]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[23]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[4]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[11]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[17]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[21]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[0]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[5]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[6]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[8]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[10]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[15]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[19]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/v_axi4s_vid_out_0_vid_data[22]}]
+set_property MARK_DEBUG true [get_nets design_1_i/v_axi4s_vid_out_0_vid_hsync]
+set_property MARK_DEBUG true [get_nets design_1_i/v_axi4s_vid_out_0_vid_vsync]
+set_property MARK_DEBUG true [get_nets design_1_i/v_axi4s_vid_out_0_vtg_ce]
+set_property MARK_DEBUG true [get_nets design_1_i/v_axi4s_vid_out_0_vid_active_video]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[5]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[6]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[8]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[9]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[18]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[20]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[22]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[15]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[16]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[21]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[0]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[2]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[3]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[10]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[14]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[17]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[1]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[4]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[7]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[11]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[12]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[13]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[19]}]
+set_property MARK_DEBUG true [get_nets {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[23]}]
+set_property MARK_DEBUG true [get_nets design_1_i/axi_vdma_0_M_AXIS_MM2S_TLAST]
+set_property MARK_DEBUG true [get_nets design_1_i/axi_vdma_0_M_AXIS_MM2S_TUSER]
+set_property MARK_DEBUG true [get_nets design_1_i/axi_vdma_0_M_AXIS_MM2S_TVALID]
+set_property MARK_DEBUG true [get_nets design_1_i/dvi2rgb_0_PixelClk]
+
+connect_debug_port dbg_hub/clk [get_nets u_ila_1_clk_out1]
+
+create_debug_core u_ila_0 ila
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list design_1_i/clk_wiz_1/inst/clk_out1]]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+set_property port_width 24 [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[0]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[1]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[2]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[3]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[4]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[5]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[6]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[7]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[8]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[9]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[10]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[11]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[12]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[13]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[14]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[15]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[16]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[17]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[18]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[19]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[20]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[21]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[22]} {design_1_i/axi_vdma_0_M_AXIS_MM2S_TDATA[23]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list design_1_i/axi_vdma_0_M_AXIS_MM2S_TLAST]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+set_property port_width 1 [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list design_1_i/axi_vdma_0_M_AXIS_MM2S_TREADY]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list design_1_i/axi_vdma_0_M_AXIS_MM2S_TUSER]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list design_1_i/axi_vdma_0_M_AXIS_MM2S_TVALID]]
+create_debug_core u_ila_1 ila
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 2 [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property port_width 1 [get_debug_ports u_ila_1/clk]
+connect_debug_port u_ila_1/clk [get_nets [list design_1_i/clk_wiz_0/inst/clk_out1]]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+set_property port_width 24 [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list {design_1_i/v_axi4s_vid_out_0_vid_data[0]} {design_1_i/v_axi4s_vid_out_0_vid_data[1]} {design_1_i/v_axi4s_vid_out_0_vid_data[2]} {design_1_i/v_axi4s_vid_out_0_vid_data[3]} {design_1_i/v_axi4s_vid_out_0_vid_data[4]} {design_1_i/v_axi4s_vid_out_0_vid_data[5]} {design_1_i/v_axi4s_vid_out_0_vid_data[6]} {design_1_i/v_axi4s_vid_out_0_vid_data[7]} {design_1_i/v_axi4s_vid_out_0_vid_data[8]} {design_1_i/v_axi4s_vid_out_0_vid_data[9]} {design_1_i/v_axi4s_vid_out_0_vid_data[10]} {design_1_i/v_axi4s_vid_out_0_vid_data[11]} {design_1_i/v_axi4s_vid_out_0_vid_data[12]} {design_1_i/v_axi4s_vid_out_0_vid_data[13]} {design_1_i/v_axi4s_vid_out_0_vid_data[14]} {design_1_i/v_axi4s_vid_out_0_vid_data[15]} {design_1_i/v_axi4s_vid_out_0_vid_data[16]} {design_1_i/v_axi4s_vid_out_0_vid_data[17]} {design_1_i/v_axi4s_vid_out_0_vid_data[18]} {design_1_i/v_axi4s_vid_out_0_vid_data[19]} {design_1_i/v_axi4s_vid_out_0_vid_data[20]} {design_1_i/v_axi4s_vid_out_0_vid_data[21]} {design_1_i/v_axi4s_vid_out_0_vid_data[22]} {design_1_i/v_axi4s_vid_out_0_vid_data[23]}]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe1]
+set_property port_width 1 [get_debug_ports u_ila_1/probe1]
+connect_debug_port u_ila_1/probe1 [get_nets [list design_1_i/v_axi4s_vid_out_0_locked]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe2]
+set_property port_width 1 [get_debug_ports u_ila_1/probe2]
+connect_debug_port u_ila_1/probe2 [get_nets [list design_1_i/v_axi4s_vid_out_0_vid_active_video]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe3]
+set_property port_width 1 [get_debug_ports u_ila_1/probe3]
+connect_debug_port u_ila_1/probe3 [get_nets [list design_1_i/v_axi4s_vid_out_0_vid_hsync]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe4]
+set_property port_width 1 [get_debug_ports u_ila_1/probe4]
+connect_debug_port u_ila_1/probe4 [get_nets [list design_1_i/v_axi4s_vid_out_0_vid_vsync]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe5]
+set_property port_width 1 [get_debug_ports u_ila_1/probe5]
+connect_debug_port u_ila_1/probe5 [get_nets [list design_1_i/v_axi4s_vid_out_0_vtg_ce]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe6]
+set_property port_width 1 [get_debug_ports u_ila_1/probe6]
+connect_debug_port u_ila_1/probe6 [get_nets [list design_1_i/v_axi4s_vid_out_0/vtg_active_video]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe7]
+set_property port_width 1 [get_debug_ports u_ila_1/probe7]
+connect_debug_port u_ila_1/probe7 [get_nets [list design_1_i/v_axi4s_vid_out_0/vtg_hblank]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe8]
+set_property port_width 1 [get_debug_ports u_ila_1/probe8]
+connect_debug_port u_ila_1/probe8 [get_nets [list design_1_i/v_axi4s_vid_out_0/vtg_hsync]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe9]
+set_property port_width 1 [get_debug_ports u_ila_1/probe9]
+connect_debug_port u_ila_1/probe9 [get_nets [list design_1_i/v_axi4s_vid_out_0/vtg_vblank]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe10]
+set_property port_width 1 [get_debug_ports u_ila_1/probe10]
+connect_debug_port u_ila_1/probe10 [get_nets [list design_1_i/v_axi4s_vid_out_0/vtg_vsync]]
+set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
+set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
+set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
+connect_debug_port dbg_hub/clk [get_nets clk]

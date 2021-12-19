@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jan 16 00:27:40 2021
+# Process ID: 7036
+# Current directory: D:/BaiduNetdiskDownload/memblaze/testLED-microblaze/testLED
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6148 D:\BaiduNetdiskDownload\memblaze\testLED-microblaze\testLED\project_1.xpr
+# Log file: D:/BaiduNetdiskDownload/memblaze/testLED-microblaze/testLED/vivado.log
+# Journal file: D:/BaiduNetdiskDownload/memblaze/testLED-microblaze/testLED\vivado.jou
+#-----------------------------------------------------------
+start_gui

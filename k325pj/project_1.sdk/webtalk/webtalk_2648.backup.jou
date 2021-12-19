@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Sun Oct  3 11:34:14 2021
+# Process ID: 2648
+# Current directory: G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.sdk/webtalk/webtalk.log
+# Journal file: G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

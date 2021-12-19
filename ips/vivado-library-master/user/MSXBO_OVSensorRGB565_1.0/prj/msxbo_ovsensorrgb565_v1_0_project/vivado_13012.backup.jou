@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun May 17 15:48:07 2020
+# Process ID: 13012
+# Current directory: D:/BaiduNetdiskDownload/P10_SD_VGA_m/IP_REPO/MSXBO_OVSensorRGB565_1.0/prj/msxbo_ovsensorrgb565_v1_0_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12924 D:\BaiduNetdiskDownload\P10_SD_VGA_m\IP_REPO\MSXBO_OVSensorRGB565_1.0\prj\msxbo_ovsensorrgb565_v1_0_project\MSXBO_OVSensorRGB565_v1_0_project.xpr
+# Log file: D:/BaiduNetdiskDownload/P10_SD_VGA_m/IP_REPO/MSXBO_OVSensorRGB565_1.0/prj/msxbo_ovsensorrgb565_v1_0_project/vivado.log
+# Journal file: D:/BaiduNetdiskDownload/P10_SD_VGA_m/IP_REPO/MSXBO_OVSensorRGB565_1.0/prj/msxbo_ovsensorrgb565_v1_0_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BaiduNetdiskDownload/P10_SD_VGA_m/IP_REPO/MSXBO_OVSensorRGB565_1.0/prj/msxbo_ovsensorrgb565_v1_0_project/MSXBO_OVSensorRGB565_v1_0_project.xpr
+update_compile_order -fileset sources_1

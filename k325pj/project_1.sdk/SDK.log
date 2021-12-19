@@ -1,0 +1,203 @@
+11:15:15 INFO  : Registering command handlers for SDK TCF services
+11:15:16 INFO  : Launching XSCT server: xsct.bat -interactive G:\BaiduNetdiskDownload\memblaze\k325pj_finalok\k325pj\project_1.sdk\temp_xsdb_launch_script.tcl
+11:15:18 INFO  : XSCT server has started successfully.
+11:15:18 INFO  : Successfully done setting XSCT server connection channel  
+11:15:18 INFO  : Successfully done setting SDK workspace  
+11:15:18 INFO  : Processing command line option -hwspec G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.sdk/design_1_wrapper.hdf.
+11:31:31 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1613212519976,  Project:1633134651381
+11:31:31 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+11:31:32 INFO  : Copied contents of G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+11:31:35 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:31:38 INFO  : 
+11:31:39 INFO  : Updating hardware inferred compiler options for vip.
+11:31:39 INFO  : Clearing existing target manager status.
+11:31:39 INFO  : Closing and re-opening the MSS file of ther project standalone_bsp_0
+11:31:39 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+11:31:40 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+11:33:00 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1633134651381,  Project:1613212519976
+11:33:00 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+11:33:03 INFO  : Copied contents of G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+11:33:06 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:33:08 INFO  : 
+11:33:09 INFO  : Updating hardware inferred compiler options for vip.
+11:33:09 INFO  : Clearing existing target manager status.
+11:33:09 INFO  : Closing and re-opening the MSS file of ther project standalone_bsp_0
+11:33:09 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+11:33:10 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+07:44:00 INFO  : Launching XSCT server: xsct.bat -interactive G:\BaiduNetdiskDownload\memblaze\k325pj_finalok\k325pj\project_1.sdk\temp_xsdb_launch_script.tcl
+07:44:03 INFO  : XSCT server has started successfully.
+07:44:08 INFO  : Successfully done setting XSCT server connection channel  
+07:44:08 INFO  : Successfully done setting SDK workspace  
+07:44:18 INFO  : Registering command handlers for SDK TCF services
+07:44:18 INFO  : Processing command line option -hwspec G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.sdk/design_1_wrapper.hdf.
+07:44:18 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+07:44:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A" && level==0} -index 0' command is executed.
+07:44:31 INFO  : 'fpga -state' command is executed.
+07:44:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:44:32 INFO  : Jtag cable 'Digilent JTAG-HS1 852233121975A' is selected.
+07:44:32 INFO  : 'jtag frequency' command is executed.
+07:44:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+07:44:32 INFO  : Context for processor 'microblaze_0' is selected.
+07:44:32 INFO  : Processor reset is completed for 'microblaze_0'.
+07:44:32 INFO  : Context for processor 'microblaze_0' is selected.
+07:44:32 INFO  : The application 'G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.sdk/vip/Debug/vip.elf' is downloaded to processor 'microblaze_0'.
+07:44:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A"} -index 0
+dow G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.sdk/vip/Debug/vip.elf
+----------------End of Script----------------
+
+07:44:33 INFO  : Memory regions updated for context PA
+07:44:33 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+07:44:33 INFO  : Context for processor 'microblaze_0' is selected.
+07:44:33 INFO  : 'con' command is executed.
+07:44:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A"} -index 0
+con
+----------------End of Script----------------
+
+07:44:33 INFO  : Launch script is exported to file 'G:\BaiduNetdiskDownload\memblaze\k325pj_finalok\k325pj\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_vip.elf_on_local.tcl'
+07:45:04 INFO  : Disconnected from the channel tcfchan#1.
+07:45:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A" && level==0} -index 0' command is executed.
+07:45:05 INFO  : 'fpga -state' command is executed.
+07:45:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:45:06 INFO  : Jtag cable 'Digilent JTAG-HS1 852233121975A' is selected.
+07:45:06 INFO  : 'jtag frequency' command is executed.
+07:45:06 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+07:45:06 INFO  : Context for processor 'microblaze_0' is selected.
+07:45:06 INFO  : Processor reset is completed for 'microblaze_0'.
+07:45:06 INFO  : Context for processor 'microblaze_0' is selected.
+07:45:06 INFO  : The application 'G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.sdk/vip/Debug/vip.elf' is downloaded to processor 'microblaze_0'.
+07:45:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A"} -index 0
+dow G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.sdk/vip/Debug/vip.elf
+----------------End of Script----------------
+
+07:45:06 INFO  : Memory regions updated for context PA
+07:45:06 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+07:45:06 INFO  : Context for processor 'microblaze_0' is selected.
+07:45:06 INFO  : 'con' command is executed.
+07:45:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A"} -index 0
+con
+----------------End of Script----------------
+
+07:45:06 INFO  : Launch script is exported to file 'G:\BaiduNetdiskDownload\memblaze\k325pj_finalok\k325pj\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_vip.elf_on_local.tcl'
+07:45:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:45:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:45:51 INFO  : Disconnected from the channel tcfchan#2.
+07:45:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A" && level==0} -index 0' command is executed.
+07:45:52 INFO  : 'fpga -state' command is executed.
+07:45:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:45:52 INFO  : Jtag cable 'Digilent JTAG-HS1 852233121975A' is selected.
+07:45:52 INFO  : 'jtag frequency' command is executed.
+07:45:52 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+07:45:52 INFO  : Context for processor 'microblaze_0' is selected.
+07:45:53 INFO  : Processor reset is completed for 'microblaze_0'.
+07:45:53 INFO  : Context for processor 'microblaze_0' is selected.
+07:45:53 INFO  : The application 'G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.sdk/vip/Debug/vip.elf' is downloaded to processor 'microblaze_0'.
+07:45:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A"} -index 0
+dow G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.sdk/vip/Debug/vip.elf
+----------------End of Script----------------
+
+07:45:53 INFO  : Memory regions updated for context PA
+07:45:53 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+07:45:53 INFO  : Context for processor 'microblaze_0' is selected.
+07:45:53 INFO  : 'con' command is executed.
+07:45:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A"} -index 0
+con
+----------------End of Script----------------
+
+07:45:53 INFO  : Launch script is exported to file 'G:\BaiduNetdiskDownload\memblaze\k325pj_finalok\k325pj\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_vip.elf_on_local_(1).tcl'
+07:46:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+07:46:14 INFO  : Jtag cable 'Digilent JTAG-HS1 852233121975A' is selected.
+07:46:14 INFO  : 'jtag frequency' command is executed.
+07:46:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A" && level==0} -index 0' command is executed.
+07:46:20 INFO  : FPGA configured successfully with bitstream "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+07:46:20 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+07:46:20 INFO  : Context for processor 'microblaze_0' is selected.
+07:46:20 INFO  : System reset is completed.
+07:46:23 INFO  : 'after 3000' command is executed.
+07:46:23 INFO  : Context for processor 'microblaze_0' is selected.
+07:46:23 INFO  : The application 'G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.sdk/vip/Debug/vip.elf' is downloaded to processor 'microblaze_0'.
+07:46:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A" && level==0} -index 0
+fpga -file G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A"} -index 0
+dow G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.sdk/vip/Debug/vip.elf
+----------------End of Script----------------
+
+07:46:23 INFO  : Memory regions updated for context PA
+07:46:23 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+07:46:24 INFO  : Context for processor 'microblaze_0' is selected.
+07:46:24 INFO  : 'con' command is executed.
+07:46:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A"} -index 0
+con
+----------------End of Script----------------
+
+07:46:24 INFO  : Launch script is exported to file 'G:\BaiduNetdiskDownload\memblaze\k325pj_finalok\k325pj\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_vip.elf_on_local.tcl'
+08:05:25 INFO  : Launching XSCT server: xsct.bat -interactive G:\BaiduNetdiskDownload\memblaze\k325pj_finalok_before_addCam\k325pj\project_1.sdk\temp_xsdb_launch_script.tcl
+08:05:28 INFO  : XSCT server has started successfully.
+08:05:33 INFO  : Successfully done setting XSCT server connection channel  
+08:05:33 INFO  : Successfully done setting SDK workspace  
+08:05:43 INFO  : Registering command handlers for SDK TCF services
+08:05:43 INFO  : Processing command line option -hwspec G:/BaiduNetdiskDownload/memblaze/k325pj_finalok_before_addCam/k325pj/project_1.sdk/design_1_wrapper.hdf.
+08:05:48 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1635780564413,  Project:1633134651381
+08:05:48 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at G:/BaiduNetdiskDownload/memblaze/k325pj_finalok/k325pj/project_1.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+08:06:24 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification location will not be monitored anymore.
+08:06:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+08:06:39 INFO  : Jtag cable 'Digilent JTAG-HS1 852233121975A' is selected.
+08:06:39 INFO  : 'jtag frequency' command is executed.
+08:06:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A" && level==0} -index 0' command is executed.
+08:06:44 INFO  : FPGA configured successfully with bitstream "G:/BaiduNetdiskDownload/memblaze/k325pj_finalok_before_addCam/k325pj/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+08:06:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+08:06:45 INFO  : Context for processor 'microblaze_0' is selected.
+08:06:45 INFO  : System reset is completed.
+08:06:48 INFO  : 'after 3000' command is executed.
+08:06:48 INFO  : Context for processor 'microblaze_0' is selected.
+08:06:48 INFO  : The application 'G:/BaiduNetdiskDownload/memblaze/k325pj_finalok_before_addCam/k325pj/project_1.sdk/vip/Debug/vip.elf' is downloaded to processor 'microblaze_0'.
+08:06:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A" && level==0} -index 0
+fpga -file G:/BaiduNetdiskDownload/memblaze/k325pj_finalok_before_addCam/k325pj/project_1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A"} -index 0
+dow G:/BaiduNetdiskDownload/memblaze/k325pj_finalok_before_addCam/k325pj/project_1.sdk/vip/Debug/vip.elf
+----------------End of Script----------------
+
+08:06:49 INFO  : Memory regions updated for context PA
+08:06:49 INFO  : Memory regions updated for context MicroBlaze Debug Module at USER2
+08:06:49 INFO  : Context for processor 'microblaze_0' is selected.
+08:06:49 INFO  : 'con' command is executed.
+08:06:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-HS1 852233121975A"} -index 0
+con
+----------------End of Script----------------
+
+08:06:49 INFO  : Launch script is exported to file 'G:\BaiduNetdiskDownload\memblaze\k325pj_finalok_before_addCam\k325pj\project_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_vip.elf_on_local.tcl'
+08:07:32 INFO  : Disconnected from the channel tcfchan#1.
