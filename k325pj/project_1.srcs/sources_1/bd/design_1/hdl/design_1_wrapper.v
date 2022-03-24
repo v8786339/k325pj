@@ -1,8 +1,8 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Fri Apr  2 00:04:48 2021
-//Host        : dereck running 64-bit Service Pack 1  (build 7601)
+//Date        : Wed Mar 23 23:30:43 2022
+//Host        : DESKTOP-DFR9DAQ running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
 //Purpose     : IP block netlist
@@ -36,12 +36,8 @@ module design_1_wrapper
     UART_0_rxd,
     UART_0_txd,
     clk_in_p,
-    cmos_data_i_0,
-    cmos_href_i_0,
-    cmos_pclk_i_0,
     cmos_pwdn_0,
     cmos_reset_0,
-    cmos_vsync_i_0,
     cmos_xclk_o_0,
     diff_clock_rtl_0_clk_n,
     diff_clock_rtl_0_clk_p,
@@ -83,12 +79,8 @@ module design_1_wrapper
   input UART_0_rxd;
   output UART_0_txd;
   input clk_in_p;
-  input [7:0]cmos_data_i_0;
-  input cmos_href_i_0;
-  input cmos_pclk_i_0;
   output [0:0]cmos_pwdn_0;
   output [0:0]cmos_reset_0;
-  input cmos_vsync_i_0;
   output cmos_xclk_o_0;
   input [0:0]diff_clock_rtl_0_clk_n;
   input [0:0]diff_clock_rtl_0_clk_p;
@@ -131,12 +123,8 @@ module design_1_wrapper
   wire UART_0_rxd;
   wire UART_0_txd;
   wire clk_in_p;
-  wire [7:0]cmos_data_i_0;
-  wire cmos_href_i_0;
-  wire cmos_pclk_i_0;
   wire [0:0]cmos_pwdn_0;
   wire [0:0]cmos_reset_0;
-  wire cmos_vsync_i_0;
   wire cmos_xclk_o_0;
   wire [0:0]diff_clock_rtl_0_clk_n;
   wire [0:0]diff_clock_rtl_0_clk_p;
@@ -192,12 +180,8 @@ module design_1_wrapper
         .UART_0_rxd(UART_0_rxd),
         .UART_0_txd(UART_0_txd),
         .clk_in_p(clk_in_p),
-        .cmos_data_i_0(cmos_data_i_0),
-        .cmos_href_i_0(cmos_href_i_0),
-        .cmos_pclk_i_0(cmos_pclk_i_0),
         .cmos_pwdn_0(cmos_pwdn_0),
         .cmos_reset_0(cmos_reset_0),
-        .cmos_vsync_i_0(cmos_vsync_i_0),
         .cmos_xclk_o_0(cmos_xclk_o_0),
         .diff_clock_rtl_0_clk_n(diff_clock_rtl_0_clk_n),
         .diff_clock_rtl_0_clk_p(diff_clock_rtl_0_clk_p),

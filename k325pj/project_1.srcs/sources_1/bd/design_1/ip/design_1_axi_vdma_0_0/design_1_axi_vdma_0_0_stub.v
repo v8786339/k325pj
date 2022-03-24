@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Mon Feb 15 13:27:52 2021
-// Host        : dereck running 64-bit Service Pack 1  (build 7601)
+// Date        : Sun Mar 20 11:13:10 2022
+// Host        : DESKTOP-DFR9DAQ running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               D:/BaiduNetdiskDownload/memblaze/k325pj/k325pj/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_stub.v
+//               F:/git/nyuzi/k325pj/k325pj/project_1.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_stub.v
 // Design      : design_1_axi_vdma_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7k325tffg900-2

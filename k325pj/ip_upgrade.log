@@ -1,6 +1,27 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Mar 20 15:10:39 2022
+| Host         : DESKTOP-DFR9DAQ running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_Nyuzi_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_Nyuzi_0_0 (user.org:user:Nyuzi:1.1 (Rev. 67)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
 | Date         : Fri Feb 12 19:48:20 2021
 | Host         : dereck running 64-bit Service Pack 1  (build 7601)
 | Command      : upgrade_ip

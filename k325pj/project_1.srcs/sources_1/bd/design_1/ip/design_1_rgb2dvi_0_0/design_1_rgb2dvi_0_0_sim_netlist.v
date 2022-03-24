@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Mon Feb 15 13:23:22 2021
-// Host        : dereck running 64-bit Service Pack 1  (build 7601)
+// Date        : Sun Mar 20 11:08:41 2022
+// Host        : DESKTOP-DFR9DAQ running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               D:/BaiduNetdiskDownload/memblaze/k325pj/k325pj/project_1.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0_sim_netlist.v
+//               F:/git/nyuzi/k325pj/k325pj/project_1.srcs/sources_1/bd/design_1/ip/design_1_rgb2dvi_0_0/design_1_rgb2dvi_0_0_sim_netlist.v
 // Design      : design_1_rgb2dvi_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.

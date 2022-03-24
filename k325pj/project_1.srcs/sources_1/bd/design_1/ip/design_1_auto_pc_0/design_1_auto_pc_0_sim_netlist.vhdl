@@ -1,8 +1,8 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Tue Mar 30 23:50:02 2021
--- Host        : dereck running 64-bit Service Pack 1  (build 7601)
+-- Date        : Sun Mar 20 11:59:25 2022
+-- Host        : DESKTOP-DFR9DAQ running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top design_1_auto_pc_0 -prefix
 --               design_1_auto_pc_0_ design_1_auto_pc_0_sim_netlist.vhdl
 -- Design      : design_1_auto_pc_0
@@ -19,7 +19,7 @@ entity design_1_auto_pc_0_axi_protocol_converter_v2_1_19_axi_protocol_converter 
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
     s_axi_awid : in STD_LOGIC_VECTOR ( 0 to 0 );
-    s_axi_awaddr : in STD_LOGIC_VECTOR ( 17 downto 0 );
+    s_axi_awaddr : in STD_LOGIC_VECTOR ( 12 downto 0 );
     s_axi_awlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
     s_axi_awsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_awburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -44,7 +44,7 @@ entity design_1_auto_pc_0_axi_protocol_converter_v2_1_19_axi_protocol_converter 
     s_axi_bvalid : out STD_LOGIC;
     s_axi_bready : in STD_LOGIC;
     s_axi_arid : in STD_LOGIC_VECTOR ( 0 to 0 );
-    s_axi_araddr : in STD_LOGIC_VECTOR ( 17 downto 0 );
+    s_axi_araddr : in STD_LOGIC_VECTOR ( 12 downto 0 );
     s_axi_arlen : in STD_LOGIC_VECTOR ( 7 downto 0 );
     s_axi_arsize : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_arburst : in STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -64,7 +64,7 @@ entity design_1_auto_pc_0_axi_protocol_converter_v2_1_19_axi_protocol_converter 
     s_axi_rvalid : out STD_LOGIC;
     s_axi_rready : in STD_LOGIC;
     m_axi_awid : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axi_awaddr : out STD_LOGIC_VECTOR ( 17 downto 0 );
+    m_axi_awaddr : out STD_LOGIC_VECTOR ( 12 downto 0 );
     m_axi_awlen : out STD_LOGIC_VECTOR ( 7 downto 0 );
     m_axi_awsize : out STD_LOGIC_VECTOR ( 2 downto 0 );
     m_axi_awburst : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -89,7 +89,7 @@ entity design_1_auto_pc_0_axi_protocol_converter_v2_1_19_axi_protocol_converter 
     m_axi_bvalid : in STD_LOGIC;
     m_axi_bready : out STD_LOGIC;
     m_axi_arid : out STD_LOGIC_VECTOR ( 0 to 0 );
-    m_axi_araddr : out STD_LOGIC_VECTOR ( 17 downto 0 );
+    m_axi_araddr : out STD_LOGIC_VECTOR ( 12 downto 0 );
     m_axi_arlen : out STD_LOGIC_VECTOR ( 7 downto 0 );
     m_axi_arsize : out STD_LOGIC_VECTOR ( 2 downto 0 );
     m_axi_arburst : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -110,7 +110,7 @@ entity design_1_auto_pc_0_axi_protocol_converter_v2_1_19_axi_protocol_converter 
     m_axi_rready : out STD_LOGIC
   );
   attribute C_AXI_ADDR_WIDTH : integer;
-  attribute C_AXI_ADDR_WIDTH of design_1_auto_pc_0_axi_protocol_converter_v2_1_19_axi_protocol_converter : entity is 18;
+  attribute C_AXI_ADDR_WIDTH of design_1_auto_pc_0_axi_protocol_converter_v2_1_19_axi_protocol_converter : entity is 13;
   attribute C_AXI_ARUSER_WIDTH : integer;
   attribute C_AXI_ARUSER_WIDTH of design_1_auto_pc_0_axi_protocol_converter_v2_1_19_axi_protocol_converter : entity is 1;
   attribute C_AXI_AWUSER_WIDTH : integer;
@@ -174,10 +174,10 @@ architecture STRUCTURE of design_1_auto_pc_0_axi_protocol_converter_v2_1_19_axi_
   signal \^m_axi_rresp\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \^m_axi_rvalid\ : STD_LOGIC;
   signal \^m_axi_wready\ : STD_LOGIC;
-  signal \^s_axi_araddr\ : STD_LOGIC_VECTOR ( 17 downto 0 );
+  signal \^s_axi_araddr\ : STD_LOGIC_VECTOR ( 12 downto 0 );
   signal \^s_axi_arprot\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal \^s_axi_arvalid\ : STD_LOGIC;
-  signal \^s_axi_awaddr\ : STD_LOGIC_VECTOR ( 17 downto 0 );
+  signal \^s_axi_awaddr\ : STD_LOGIC_VECTOR ( 12 downto 0 );
   signal \^s_axi_awprot\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal \^s_axi_awvalid\ : STD_LOGIC;
   signal \^s_axi_bready\ : STD_LOGIC;
@@ -194,10 +194,10 @@ begin
   \^m_axi_rresp\(1 downto 0) <= m_axi_rresp(1 downto 0);
   \^m_axi_rvalid\ <= m_axi_rvalid;
   \^m_axi_wready\ <= m_axi_wready;
-  \^s_axi_araddr\(17 downto 0) <= s_axi_araddr(17 downto 0);
+  \^s_axi_araddr\(12 downto 0) <= s_axi_araddr(12 downto 0);
   \^s_axi_arprot\(2 downto 0) <= s_axi_arprot(2 downto 0);
   \^s_axi_arvalid\ <= s_axi_arvalid;
-  \^s_axi_awaddr\(17 downto 0) <= s_axi_awaddr(17 downto 0);
+  \^s_axi_awaddr\(12 downto 0) <= s_axi_awaddr(12 downto 0);
   \^s_axi_awprot\(2 downto 0) <= s_axi_awprot(2 downto 0);
   \^s_axi_awvalid\ <= s_axi_awvalid;
   \^s_axi_bready\ <= s_axi_bready;
@@ -205,7 +205,7 @@ begin
   \^s_axi_wdata\(31 downto 0) <= s_axi_wdata(31 downto 0);
   \^s_axi_wstrb\(3 downto 0) <= s_axi_wstrb(3 downto 0);
   \^s_axi_wvalid\ <= s_axi_wvalid;
-  m_axi_araddr(17 downto 0) <= \^s_axi_araddr\(17 downto 0);
+  m_axi_araddr(12 downto 0) <= \^s_axi_araddr\(12 downto 0);
   m_axi_arburst(1) <= \<const0>\;
   m_axi_arburst(0) <= \<const1>\;
   m_axi_arcache(3) <= \<const0>\;
@@ -236,7 +236,7 @@ begin
   m_axi_arsize(0) <= \<const0>\;
   m_axi_aruser(0) <= \<const0>\;
   m_axi_arvalid <= \^s_axi_arvalid\;
-  m_axi_awaddr(17 downto 0) <= \^s_axi_awaddr\(17 downto 0);
+  m_axi_awaddr(12 downto 0) <= \^s_axi_awaddr\(12 downto 0);
   m_axi_awburst(1) <= \<const0>\;
   m_axi_awburst(0) <= \<const1>\;
   m_axi_awcache(3) <= \<const0>\;
@@ -305,7 +305,7 @@ entity design_1_auto_pc_0 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
-    s_axi_awaddr : in STD_LOGIC_VECTOR ( 17 downto 0 );
+    s_axi_awaddr : in STD_LOGIC_VECTOR ( 12 downto 0 );
     s_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_awvalid : in STD_LOGIC;
     s_axi_awready : out STD_LOGIC;
@@ -316,7 +316,7 @@ entity design_1_auto_pc_0 is
     s_axi_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_bvalid : out STD_LOGIC;
     s_axi_bready : in STD_LOGIC;
-    s_axi_araddr : in STD_LOGIC_VECTOR ( 17 downto 0 );
+    s_axi_araddr : in STD_LOGIC_VECTOR ( 12 downto 0 );
     s_axi_arprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_arvalid : in STD_LOGIC;
     s_axi_arready : out STD_LOGIC;
@@ -324,7 +324,7 @@ entity design_1_auto_pc_0 is
     s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_rvalid : out STD_LOGIC;
     s_axi_rready : in STD_LOGIC;
-    m_axi_awaddr : out STD_LOGIC_VECTOR ( 17 downto 0 );
+    m_axi_awaddr : out STD_LOGIC_VECTOR ( 12 downto 0 );
     m_axi_awlen : out STD_LOGIC_VECTOR ( 7 downto 0 );
     m_axi_awsize : out STD_LOGIC_VECTOR ( 2 downto 0 );
     m_axi_awburst : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -343,7 +343,7 @@ entity design_1_auto_pc_0 is
     m_axi_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
     m_axi_bvalid : in STD_LOGIC;
     m_axi_bready : out STD_LOGIC;
-    m_axi_araddr : out STD_LOGIC_VECTOR ( 17 downto 0 );
+    m_axi_araddr : out STD_LOGIC_VECTOR ( 12 downto 0 );
     m_axi_arlen : out STD_LOGIC_VECTOR ( 7 downto 0 );
     m_axi_arsize : out STD_LOGIC_VECTOR ( 2 downto 0 );
     m_axi_arburst : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -383,7 +383,7 @@ architecture STRUCTURE of design_1_auto_pc_0 is
   signal NLW_inst_s_axi_rid_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_inst_s_axi_ruser_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   attribute C_AXI_ADDR_WIDTH : integer;
-  attribute C_AXI_ADDR_WIDTH of inst : label is 18;
+  attribute C_AXI_ADDR_WIDTH of inst : label is 13;
   attribute C_AXI_ARUSER_WIDTH : integer;
   attribute C_AXI_ARUSER_WIDTH of inst : label is 1;
   attribute C_AXI_AWUSER_WIDTH : integer;
@@ -447,7 +447,7 @@ architecture STRUCTURE of design_1_auto_pc_0 is
   attribute X_INTERFACE_INFO of m_axi_bvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI BVALID";
   attribute X_INTERFACE_INFO of m_axi_rlast : signal is "xilinx.com:interface:aximm:1.0 M_AXI RLAST";
   attribute X_INTERFACE_INFO of m_axi_rready : signal is "xilinx.com:interface:aximm:1.0 M_AXI RREADY";
-  attribute X_INTERFACE_PARAMETER of m_axi_rready : signal is "XIL_INTERFACENAME M_AXI, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 200000000, ID_WIDTH 0, ADDR_WIDTH 18, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 32, NUM_WRITE_OUTSTANDING 16, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of m_axi_rready : signal is "XIL_INTERFACENAME M_AXI, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 200000000, ID_WIDTH 0, ADDR_WIDTH 13, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 1, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 32, NUM_WRITE_OUTSTANDING 16, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of m_axi_rvalid : signal is "xilinx.com:interface:aximm:1.0 M_AXI RVALID";
   attribute X_INTERFACE_INFO of m_axi_wlast : signal is "xilinx.com:interface:aximm:1.0 M_AXI WLAST";
   attribute X_INTERFACE_INFO of m_axi_wready : signal is "xilinx.com:interface:aximm:1.0 M_AXI WREADY";
@@ -459,7 +459,7 @@ architecture STRUCTURE of design_1_auto_pc_0 is
   attribute X_INTERFACE_INFO of s_axi_bready : signal is "xilinx.com:interface:aximm:1.0 S_AXI BREADY";
   attribute X_INTERFACE_INFO of s_axi_bvalid : signal is "xilinx.com:interface:aximm:1.0 S_AXI BVALID";
   attribute X_INTERFACE_INFO of s_axi_rready : signal is "xilinx.com:interface:aximm:1.0 S_AXI RREADY";
-  attribute X_INTERFACE_PARAMETER of s_axi_rready : signal is "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 200000000, ID_WIDTH 0, ADDR_WIDTH 18, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 32, NUM_WRITE_OUTSTANDING 16, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of s_axi_rready : signal is "XIL_INTERFACENAME S_AXI, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 200000000, ID_WIDTH 0, ADDR_WIDTH 13, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 32, NUM_WRITE_OUTSTANDING 16, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s_axi_rvalid : signal is "xilinx.com:interface:aximm:1.0 S_AXI RVALID";
   attribute X_INTERFACE_INFO of s_axi_wready : signal is "xilinx.com:interface:aximm:1.0 S_AXI WREADY";
   attribute X_INTERFACE_INFO of s_axi_wvalid : signal is "xilinx.com:interface:aximm:1.0 S_AXI WVALID";
@@ -500,7 +500,7 @@ inst: entity work.design_1_auto_pc_0_axi_protocol_converter_v2_1_19_axi_protocol
      port map (
       aclk => aclk,
       aresetn => aresetn,
-      m_axi_araddr(17 downto 0) => m_axi_araddr(17 downto 0),
+      m_axi_araddr(12 downto 0) => m_axi_araddr(12 downto 0),
       m_axi_arburst(1 downto 0) => m_axi_arburst(1 downto 0),
       m_axi_arcache(3 downto 0) => m_axi_arcache(3 downto 0),
       m_axi_arid(0) => NLW_inst_m_axi_arid_UNCONNECTED(0),
@@ -513,7 +513,7 @@ inst: entity work.design_1_auto_pc_0_axi_protocol_converter_v2_1_19_axi_protocol
       m_axi_arsize(2 downto 0) => m_axi_arsize(2 downto 0),
       m_axi_aruser(0) => NLW_inst_m_axi_aruser_UNCONNECTED(0),
       m_axi_arvalid => m_axi_arvalid,
-      m_axi_awaddr(17 downto 0) => m_axi_awaddr(17 downto 0),
+      m_axi_awaddr(12 downto 0) => m_axi_awaddr(12 downto 0),
       m_axi_awburst(1 downto 0) => m_axi_awburst(1 downto 0),
       m_axi_awcache(3 downto 0) => m_axi_awcache(3 downto 0),
       m_axi_awid(0) => NLW_inst_m_axi_awid_UNCONNECTED(0),
@@ -545,7 +545,7 @@ inst: entity work.design_1_auto_pc_0_axi_protocol_converter_v2_1_19_axi_protocol
       m_axi_wstrb(3 downto 0) => m_axi_wstrb(3 downto 0),
       m_axi_wuser(0) => NLW_inst_m_axi_wuser_UNCONNECTED(0),
       m_axi_wvalid => m_axi_wvalid,
-      s_axi_araddr(17 downto 0) => s_axi_araddr(17 downto 0),
+      s_axi_araddr(12 downto 0) => s_axi_araddr(12 downto 0),
       s_axi_arburst(1 downto 0) => B"01",
       s_axi_arcache(3 downto 0) => B"0000",
       s_axi_arid(0) => '0',
@@ -558,7 +558,7 @@ inst: entity work.design_1_auto_pc_0_axi_protocol_converter_v2_1_19_axi_protocol
       s_axi_arsize(2 downto 0) => B"000",
       s_axi_aruser(0) => '0',
       s_axi_arvalid => s_axi_arvalid,
-      s_axi_awaddr(17 downto 0) => s_axi_awaddr(17 downto 0),
+      s_axi_awaddr(12 downto 0) => s_axi_awaddr(12 downto 0),
       s_axi_awburst(1 downto 0) => B"01",
       s_axi_awcache(3 downto 0) => B"0000",
       s_axi_awid(0) => '0',

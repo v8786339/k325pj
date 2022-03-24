@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
 // Date        : Thu Feb 11 20:42:19 2021
 // Host        : dereck running 64-bit Service Pack 1  (build 7601)
-// Command     : write_verilog -force -mode funcsim
-//               d:/BaiduNetdiskDownload/memblaze/k325pj/k325pj/project_1.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top design_1_util_ds_buf_0_0 -prefix
+//               design_1_util_ds_buf_0_0_ design_1_util_ds_buf_0_0_sim_netlist.v
 // Design      : design_1_util_ds_buf_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -74,7 +74,6 @@ module design_1_util_ds_buf_0_0
 endmodule
 
 (* C_BUFGCE_DIV = "1" *) (* C_BUF_TYPE = "BUFG" *) (* C_SIZE = "1" *) 
-(* ORIG_REF_NAME = "util_ds_buf" *) 
 module design_1_util_ds_buf_0_0_util_ds_buf
    (IBUF_DS_P,
     IBUF_DS_N,

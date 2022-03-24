@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Thu Feb 11 19:18:31 2021
+-- Date        : Thu Feb 11 19:18:30 2021
 -- Host        : dereck running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode funcsim
---               D:/BaiduNetdiskDownload/memblaze/k325pj/k325pj/project_1.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_v_tc_0_0 -prefix
+--               design_1_v_tc_0_0_ design_1_v_tc_0_0_sim_netlist.vhdl
 -- Design      : design_1_v_tc_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -47,8 +47,6 @@ entity design_1_v_tc_0_0_tc_generator is
     \time_control_regs[24]\ : in STD_LOGIC_VECTOR ( 23 downto 0 );
     \time_control_regs[23]\ : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_v_tc_0_0_tc_generator : entity is "tc_generator";
 end design_1_v_tc_0_0_tc_generator;
 
 architecture STRUCTURE of design_1_v_tc_0_0_tc_generator is
@@ -4079,8 +4077,6 @@ entity design_1_v_tc_0_0_video_ctrl is
   attribute C_VERSION_MINOR of design_1_v_tc_0_0_video_ctrl : entity is 1;
   attribute C_VERSION_REVISION : integer;
   attribute C_VERSION_REVISION of design_1_v_tc_0_0_video_ctrl : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_v_tc_0_0_video_ctrl : entity is "video_ctrl";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of design_1_v_tc_0_0_video_ctrl : entity is "yes";
 end design_1_v_tc_0_0_video_ctrl;
@@ -5883,8 +5879,6 @@ entity design_1_v_tc_0_0_tc_top is
     \time_control_regs[24]\ : in STD_LOGIC_VECTOR ( 23 downto 0 );
     \time_control_regs[23]\ : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_v_tc_0_0_tc_top : entity is "tc_top";
 end design_1_v_tc_0_0_tc_top;
 
 architecture STRUCTURE of design_1_v_tc_0_0_tc_top is
@@ -6452,8 +6446,6 @@ entity design_1_v_tc_0_0_v_tc is
   attribute C_S_AXI_CLK_FREQ_HZ of design_1_v_tc_0_0_v_tc : entity is 100000000;
   attribute C_S_AXI_DATA_WIDTH : integer;
   attribute C_S_AXI_DATA_WIDTH of design_1_v_tc_0_0_v_tc : entity is 32;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_v_tc_0_0_v_tc : entity is "v_tc";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of design_1_v_tc_0_0_v_tc : entity is "yes";
 end design_1_v_tc_0_0_v_tc;

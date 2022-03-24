@@ -91,20 +91,20 @@ module design_1_mig_7series_0_0_mig #
    parameter CKE_WIDTH             = 1,
                                      // # of CKE outputs to memory.
    parameter DATA_BUF_ADDR_WIDTH   = 5,
-   parameter DQ_CNT_WIDTH          = 5,
+   parameter DQ_CNT_WIDTH          = 6,
                                      // = ceil(log2(DQ_WIDTH))
    parameter DQ_PER_DM             = 8,
-   parameter DM_WIDTH              = 4,
+   parameter DM_WIDTH              = 8,
                                      // # of DM (data mask)
-   parameter DQ_WIDTH              = 32,
+   parameter DQ_WIDTH              = 64,
                                      // # of DQ (data)
-   parameter DQS_WIDTH             = 4,
-   parameter DQS_CNT_WIDTH         = 2,
+   parameter DQS_WIDTH             = 8,
+   parameter DQS_CNT_WIDTH         = 3,
                                      // = ceil(log2(DQS_WIDTH))
    parameter DRAM_WIDTH            = 8,
                                      // # of DQ per DQS
    parameter ECC                   = "OFF",
-   parameter DATA_WIDTH            = 32,
+   parameter DATA_WIDTH            = 64,
    parameter ECC_TEST              = "OFF",
    parameter PAYLOAD_WIDTH         = (ECC_TEST == "OFF") ? DATA_WIDTH : DQ_WIDTH,
    parameter MEM_ADDR_ORDER        = "BANK_ROW_COLUMN",
@@ -301,17 +301,17 @@ module design_1_mig_7series_0_0_mig #
    // Do not change any of these parameters directly by editing the RTL.
    // Any changes required should be done through GUI and the design regenerated.
    //***************************************************************************
-   parameter BYTE_LANES_B0         = 4'b1010,
+   parameter BYTE_LANES_B0         = 4'b1111,
                                      // Byte lanes used in an IO column.
    parameter BYTE_LANES_B1         = 4'b0111,
                                      // Byte lanes used in an IO column.
-   parameter BYTE_LANES_B2         = 4'b0101,
+   parameter BYTE_LANES_B2         = 4'b1111,
                                      // Byte lanes used in an IO column.
    parameter BYTE_LANES_B3         = 4'b0000,
                                      // Byte lanes used in an IO column.
    parameter BYTE_LANES_B4         = 4'b0000,
                                      // Byte lanes used in an IO column.
-   parameter DATA_CTL_B0           = 4'b1010,
+   parameter DATA_CTL_B0           = 4'b1111,
                                      // Indicates Byte lane is data byte lane
                                      // or control Byte lane. '1' in a bit
                                      // position indicates a data byte lane and
@@ -321,7 +321,7 @@ module design_1_mig_7series_0_0_mig #
                                      // or control Byte lane. '1' in a bit
                                      // position indicates a data byte lane and
                                      // a '0' indicates a control byte lane
-   parameter DATA_CTL_B2           = 4'b0101,
+   parameter DATA_CTL_B2           = 4'b1111,
                                      // Indicates Byte lane is data byte lane
                                      // or control Byte lane. '1' in a bit
                                      // position indicates a data byte lane and
@@ -336,9 +336,9 @@ module design_1_mig_7series_0_0_mig #
                                      // or control Byte lane. '1' in a bit
                                      // position indicates a data byte lane and
                                      // a '0' indicates a control byte lane
-   parameter PHY_0_BITLANES        = 48'h3FE_000_3FD_000,
+   parameter PHY_0_BITLANES        = 48'h3FE_3FE_3FD_2FF,
    parameter PHY_1_BITLANES        = 48'h000_FFC_F3F_CC0,
-   parameter PHY_2_BITLANES        = 48'h000_3FE_000_2FF,
+   parameter PHY_2_BITLANES        = 48'h3FE_3FE_3FE_2FF,
 
    // control/address/data pin mapping parameters
    parameter CK_BYTE_MAP
@@ -355,15 +355,15 @@ module design_1_mig_7series_0_0_mig #
    parameter RAS_MAP    = 12'h12B,
    parameter WE_MAP     = 12'h12A,
    parameter DQS_BYTE_MAP
-     = 144'h00_00_00_00_00_00_00_00_00_00_00_00_00_00_01_03_20_22,
+     = 144'h00_00_00_00_00_00_00_00_00_00_02_01_00_03_23_20_21_22,
    parameter DATA0_MAP  = 96'h229_223_224_222_225_227_228_226,
-   parameter DATA1_MAP  = 96'h201_207_203_204_202_205_206_209,
-   parameter DATA2_MAP  = 96'h035_037_032_034_033_036_039_038,
-   parameter DATA3_MAP  = 96'h018_014_017_012_016_019_013_015,
-   parameter DATA4_MAP  = 96'h000_000_000_000_000_000_000_000,
-   parameter DATA5_MAP  = 96'h000_000_000_000_000_000_000_000,
-   parameter DATA6_MAP  = 96'h000_000_000_000_000_000_000_000,
-   parameter DATA7_MAP  = 96'h000_000_000_000_000_000_000_000,
+   parameter DATA1_MAP  = 96'h216_214_218_213_217_215_219_212,
+   parameter DATA2_MAP  = 96'h201_207_203_204_202_205_206_209,
+   parameter DATA3_MAP  = 96'h238_232_236_233_234_235_237_239,
+   parameter DATA4_MAP  = 96'h035_037_032_034_033_036_039_038,
+   parameter DATA5_MAP  = 96'h004_006_005_009_007_003_001_002,
+   parameter DATA6_MAP  = 96'h018_014_017_012_016_019_013_015,
+   parameter DATA7_MAP  = 96'h028_022_024_023_027_025_026_029,
    parameter DATA8_MAP  = 96'h000_000_000_000_000_000_000_000,
    parameter DATA9_MAP  = 96'h000_000_000_000_000_000_000_000,
    parameter DATA10_MAP = 96'h000_000_000_000_000_000_000_000,
@@ -374,7 +374,7 @@ module design_1_mig_7series_0_0_mig #
    parameter DATA15_MAP = 96'h000_000_000_000_000_000_000_000,
    parameter DATA16_MAP = 96'h000_000_000_000_000_000_000_000,
    parameter DATA17_MAP = 96'h000_000_000_000_000_000_000_000,
-   parameter MASK0_MAP  = 108'h000_000_000_000_000_010_031_200_221,
+   parameter MASK0_MAP  = 108'h000_021_010_000_031_231_200_211_221,
    parameter MASK1_MAP  = 108'h000_000_000_000_000_000_000_000_000,
 
    parameter SLOT_0_CONFIG         = 8'b0000_0001,
@@ -425,7 +425,7 @@ module design_1_mig_7series_0_0_mig #
    parameter SYSCLK_TYPE           = "NO_BUFFER",
                                      // System clock type DIFFERENTIAL, SINGLE_ENDED,
                                      // NO_BUFFER
-   parameter REFCLK_TYPE           = "NO_BUFFER",
+   parameter REFCLK_TYPE           = "USE_SYSTEM_CLOCK",
                                      // Reference clock type DIFFERENTIAL, SINGLE_ENDED,
                                      // NO_BUFFER, USE_SYSTEM_CLOCK
    parameter SYS_RST_PORT          = "FALSE",
@@ -479,20 +479,20 @@ module design_1_mig_7series_0_0_mig #
    parameter C_S_AXI_ID_WIDTH              = 2,
                                              // Width of all master and slave ID signals.
                                              // # = >= 1.
-   parameter C_S_AXI_MEM_SIZE              = "1073741824",
+   parameter C_S_AXI_MEM_SIZE              = "2147483648",
                                      // Address Space required for this component
-   parameter C_S_AXI_ADDR_WIDTH            = 30,
+   parameter C_S_AXI_ADDR_WIDTH            = 31,
                                              // Width of S_AXI_AWADDR, S_AXI_ARADDR, M_AXI_AWADDR and
                                              // M_AXI_ARADDR for all SI/MI slots.
                                              // # = 32.
-   parameter C_S_AXI_DATA_WIDTH            = 256,
+   parameter C_S_AXI_DATA_WIDTH            = 512,
                                              // Width of WDATA and RDATA on SI slot.
                                              // Must be <= APP_DATA_WIDTH.
                                              // # = 32, 64, 128, 256.
    parameter C_MC_nCK_PER_CLK              = 4,
                                              // Indicates whether to instatiate upsizer
                                              // Range: 0, 1
-   parameter C_S_AXI_SUPPORTS_NARROW_BURST = 0,
+   parameter C_S_AXI_SUPPORTS_NARROW_BURST = 1,
                                              // Indicates whether to instatiate upsizer
                                              // Range: 0, 1
    parameter C_RD_WR_ARB_ALGORITHM          = "RD_PRI_REG",
@@ -598,8 +598,6 @@ module design_1_mig_7series_0_0_mig #
    // Single-ended system clock
    input                                        sys_clk_i,
    
-   // Single-ended iodelayctrl clk (reference clock)
-   input                                        clk_ref_i,
    
    // user interface signals
    output                                       ui_clk,
@@ -777,6 +775,7 @@ module design_1_mig_7series_0_0_mig #
   wire                              mmcm_clk;
   wire                              clk_ref_p;
   wire                              clk_ref_n;
+  wire                              clk_ref_i;
   wire [11:0]                       device_temp_s;
   wire [11:0]                       device_temp_i;
 
@@ -867,8 +866,7 @@ module design_1_mig_7series_0_0_mig #
   
   assign sys_clk_p = 1'b0;
   assign sys_clk_n = 1'b0;
-  assign clk_ref_p = 1'b0;
-  assign clk_ref_n = 1'b0;
+  assign clk_ref_i = 1'b0;
   assign device_temp = device_temp_s;
       
 

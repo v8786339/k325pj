@@ -1,14 +1,14 @@
 #-----------------------------------------------------------
-# Vivado v2019.1 (64-bit)
-# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
-# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sat Jan 16 00:27:40 2021
-# Process ID: 7036
-# Current directory: D:/BaiduNetdiskDownload/memblaze/testLED-microblaze/testLED
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6148 D:\BaiduNetdiskDownload\memblaze\testLED-microblaze\testLED\project_1.xpr
-# Log file: D:/BaiduNetdiskDownload/memblaze/testLED-microblaze/testLED/vivado.log
-# Journal file: D:/BaiduNetdiskDownload/memblaze/testLED-microblaze/testLED\vivado.jou
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Mar 21 08:04:59 2022
+# Process ID: 7784
+# Current directory: F:/git/nyuzi/k325pj/k325pj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8040 F:\git\nyuzi\k325pj\k325pj\project_1.xpr
+# Log file: F:/git/nyuzi/k325pj/k325pj/vivado.log
+# Journal file: F:/git/nyuzi/k325pj/k325pj\vivado.jou
 #-----------------------------------------------------------
 start_gui
 exit
-INFO: [Common 17-206] Exiting Vivado at Sat Jan 16 00:27:59 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 21 08:05:21 2022...

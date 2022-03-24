@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Mon Feb 15 10:27:03 2021
--- Host        : dereck running 64-bit Service Pack 1  (build 7601)
+-- Date        : Sun Mar 20 10:05:49 2022
+-- Host        : DESKTOP-DFR9DAQ running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_auto_pc_1 -prefix
---               design_1_auto_pc_1_ design_1_auto_pc_5_stub.vhdl
--- Design      : design_1_auto_pc_5
+--               design_1_auto_pc_1_ design_1_auto_pc_1_stub.vhdl
+-- Design      : design_1_auto_pc_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7k325tffg900-2
 -- --------------------------------------------------------------------------------
